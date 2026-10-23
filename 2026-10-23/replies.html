@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Cache-Control" content="no-cache"/>
-<title>50 X replies — stay on this list</title>
+<title>50 X replies — afternoon pack Oct 23</title>
 <style>
   :root { font-family: system-ui, sans-serif; color: #e7e9ea; background: #000; }
   body { margin: 0; padding: 16px; max-width: 640px; margin-inline: auto; padding-bottom: 72px; }
@@ -19,11 +19,14 @@
   .card { border: 1px solid #2f3336; border-radius: 12px; padding: 14px; margin-bottom: 12px; position:relative; }
   .card.finished { opacity: 0.45; }
   .card h2 { margin: 0 0 8px; font-size: 1rem; padding-right: 72px; }
+  .tier { font-size:0.7rem; font-weight:600; padding:2px 8px; border-radius:999px; margin-left:6px; vertical-align:middle; }
+  .tier.mega { background:#1d9bf0; color:#fff; }
+  .tier.mid { background:#2f3336; color:#e7e9ea; }
   .done { position:absolute; top:14px; right:14px; font-size:0.85rem; color:#8b98a5; }
   .text { margin: 0 0 12px; white-space: pre-wrap; line-height: 1.4; }
   .actions { display: flex; flex-wrap: wrap; gap: 8px; }
   .btn { appearance: none; border: 1px solid #2f3336; background: #16181c; color: #e7e9ea;
-         border-radius: 999px; padding: 10px 14px; text-decoration: none; font-size: 0.9rem; cursor: pointer; display:inline-block; }
+         border-radius: 999px; padding: 10px 14px; text-decoration: none; font-size: 0.85rem; cursor: pointer; display:inline-block; }
   .btn.primary { background: #1d9bf0; border-color: #1d9bf0; color: #fff; font-weight: 600; }
   .btn.copied { background: #00ba7c; border-color: #00ba7c; color: #fff; }
 </style>
@@ -36,713 +39,914 @@
   <div class="warn">
     <b>How to use (Android Chrome)</b><br/>
     1) Tap <b>Copy reply</b> (you stay here)<br/>
-    2) Tap <b>Open composer</b> — should open/reuse a second tab<br/>
+    2) Tap <b>Reply in Chrome</b> — forces Chrome, not the X app<br/>
     3) Paste → Post → swipe back to this list<br/><br/>
-    If Open composer still takes over this tab: <b>long-press</b> it → <b>Open in new tab</b>. That always works.
+    If a button still takes over this tab: <b>long-press</b> it → <b>Open in new tab</b>. That always works.<br/>
+    Prefer <b>Reply in Chrome</b> / <b>Open post in Chrome</b> over the plain Open buttons.
   </div>
-  <p class="note">X “Open supported links” must stay OFF (Settings → Apps → X → Open by default).</p>
+  <p class="note">X “Open supported links” must stay OFF (Settings → Apps → X → Open by default). Fresh afternoon pack — 0 overlap with morning replies already posted.</p>
     <article class="card" id="r1" data-n="1">
       <label class="done"><input type="checkbox" data-done="1" onchange="saveDone()"/> Done</label>
-      <h2>1. @claudeai</h2>
-      <p class="note-sm">Claude models on Google Cloud (Anthropic-managed) now GA with GCP IAM + billing</p>
-      <p class="text" id="t1">Billing through existing cloud commitments is the real unlock here. For a lot of companies, procurement was the blocker, not the model.</p>
+      <h2>1. @OpenAI <span class="tier mega">mega</span></h2>
+      <p class="note-sm">METR + Redwood pilot of OpenAI internal monitoring</p>
+      <p class="text" id="t1">External red teams with deep access beat another dashboard. The useful output is the list of monitoring gaps they found, not the press release about inviting them.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t1', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113380122468454765&amp;text=%40claudeai%20Billing%20through%20existing%20cloud%20commitments%20is%20the%20real%20unlock%20here.%20For%20a%20lot%20of%20companies%2C%20procurement%20was%20the%20blocker%2C%20not%20the%20model." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/claudeai/status/2113380122468454765" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113298833392496746&amp;text=%40OpenAI%20External%20red%20teams%20with%20deep%20access%20beat%20another%20dashboard.%20The%20useful%20output%20is%20the%20list%20of%20monitoring%20gaps%20they%20found%2C%20not%20the%20press%20release%20about%20inviting%20them.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113298833392496746%26text%3D%2540OpenAI%2520External%2520red%2520teams%2520with%2520deep%2520access%2520beat%2520another%2520dashboard.%2520The%2520useful%2520output%2520is%2520the%2520list%2520of%2520monitoring%2520gaps%2520they%2520found%252C%2520not%2520the%2520press%2520release%2520about%2520inviting%2520them.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113298833392496746&amp;text=%40OpenAI%20External%20red%20teams%20with%20deep%20access%20beat%20another%20dashboard.%20The%20useful%20output%20is%20the%20list%20of%20monitoring%20gaps%20they%20found%2C%20not%20the%20press%20release%20about%20inviting%20them." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/OpenAI/status/2113298833392496746#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FOpenAI%2Fstatus%2F2113298833392496746;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/OpenAI/status/2113298833392496746" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r2" data-n="2">
       <label class="done"><input type="checkbox" data-done="2" onchange="saveDone()"/> Done</label>
-      <h2>2. @ClaudeDevs</h2>
-      <p class="note-sm">Full Claude API incl. Managed Agents + code execution now on Google Cloud</p>
-      <p class="text" id="t2">Same-day feature parity is the key bit. Does that include the Managed Agents permission settings, or do teams configure those separately per cloud?</p>
+      <h2>2. @AnthropicAI <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Claude for large-scale formal verification</p>
+      <p class="text" id="t2">Bug finding gets headlines. Proofs are what let you trust code that agents keep rewriting. Formal verify on the paths money and auth touch first.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t2', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113381868364271743&amp;text=%40ClaudeDevs%20Same-day%20feature%20parity%20is%20the%20key%20bit.%20Does%20that%20include%20the%20Managed%20Agents%20permission%20settings%2C%20or%20do%20teams%20configure%20those%20separately%20per%20cloud%3F" target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/ClaudeDevs/status/2113381868364271743" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113390212911083894&amp;text=%40AnthropicAI%20Bug%20finding%20gets%20headlines.%20Proofs%20are%20what%20let%20you%20trust%20code%20that%20agents%20keep%20rewriting.%20Formal%20verify%20on%20the%20paths%20money%20and%20auth%20touch%20first.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113390212911083894%26text%3D%2540AnthropicAI%2520Bug%2520finding%2520gets%2520headlines.%2520Proofs%2520are%2520what%2520let%2520you%2520trust%2520code%2520that%2520agents%2520keep%2520rewriting.%2520Formal%2520verify%2520on%2520the%2520paths%2520money%2520and%2520auth%2520touch%2520first.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113390212911083894&amp;text=%40AnthropicAI%20Bug%20finding%20gets%20headlines.%20Proofs%20are%20what%20let%20you%20trust%20code%20that%20agents%20keep%20rewriting.%20Formal%20verify%20on%20the%20paths%20money%20and%20auth%20touch%20first." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/AnthropicAI/status/2113390212911083894#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FAnthropicAI%2Fstatus%2F2113390212911083894;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/AnthropicAI/status/2113390212911083894" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r3" data-n="3">
       <label class="done"><input type="checkbox" data-done="3" onchange="saveDone()"/> Done</label>
-      <h2>3. @OpenAIDevs</h2>
-      <p class="note-sm">Decisions API GA: classify/evaluate/route without a full model response</p>
-      <p class="text" id="t3">This is the piece most automations actually need. Half the LLM calls in a typical workflow are routing a ticket, not writing anything.</p>
+      <h2>3. @claudeai <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Auto mode default next week on Pro/Max/Team</p>
+      <p class="text" id="t3">Fewer approve prompts is good — people stop reading them anyway. The part I&#x27;d want is a clear log of what auto mode blocked and why.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t3', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113346642787086538&amp;text=%40OpenAIDevs%20This%20is%20the%20piece%20most%20automations%20actually%20need.%20Half%20the%20LLM%20calls%20in%20a%20typical%20workflow%20are%20routing%20a%20ticket%2C%20not%20writing%20anything." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/OpenAIDevs/status/2113346642787086538" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113360845409583307&amp;text=%40claudeai%20Fewer%20approve%20prompts%20is%20good%20%E2%80%94%20people%20stop%20reading%20them%20anyway.%20The%20part%20I%27d%20want%20is%20a%20clear%20log%20of%20what%20auto%20mode%20blocked%20and%20why.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113360845409583307%26text%3D%2540claudeai%2520Fewer%2520approve%2520prompts%2520is%2520good%2520%25E2%2580%2594%2520people%2520stop%2520reading%2520them%2520anyway.%2520The%2520part%2520I%2527d%2520want%2520is%2520a%2520clear%2520log%2520of%2520what%2520auto%2520mode%2520blocked%2520and%2520why.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113360845409583307&amp;text=%40claudeai%20Fewer%20approve%20prompts%20is%20good%20%E2%80%94%20people%20stop%20reading%20them%20anyway.%20The%20part%20I%27d%20want%20is%20a%20clear%20log%20of%20what%20auto%20mode%20blocked%20and%20why." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/claudeai/status/2113360845409583307#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fclaudeai%2Fstatus%2F2113360845409583307;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/claudeai/status/2113360845409583307" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r4" data-n="4">
       <label class="done"><input type="checkbox" data-done="4" onchange="saveDone()"/> Done</label>
-      <h2>4. @AravSrinivas</h2>
-      <p class="note-sm">Perplexity Decision Model now runs fully locally on Mac</p>
-      <p class="text" id="t4">Local routing is huge for anything with customer data. Classify on-device, and only send the cases that need a big model to the cloud.</p>
+      <h2>4. @claudeai <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Claude Platform features same-day on GCP</p>
+      <p class="text" id="t4">Same-day feature parity on GCP is the real news. Procurement already bought cloud credits; they shouldn&#x27;t wait a quarter for agent features.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t4', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113420151232352444&amp;text=%40AravSrinivas%20Local%20routing%20is%20huge%20for%20anything%20with%20customer%20data.%20Classify%20on-device%2C%20and%20only%20send%20the%20cases%20that%20need%20a%20big%20model%20to%20the%20cloud." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/AravSrinivas/status/2113420151232352444" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113380126561800305&amp;text=%40claudeai%20Same-day%20feature%20parity%20on%20GCP%20is%20the%20real%20news.%20Procurement%20already%20bought%20cloud%20credits%3B%20they%20shouldn%27t%20wait%20a%20quarter%20for%20agent%20features.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113380126561800305%26text%3D%2540claudeai%2520Same-day%2520feature%2520parity%2520on%2520GCP%2520is%2520the%2520real%2520news.%2520Procurement%2520already%2520bought%2520cloud%2520credits%253B%2520they%2520shouldn%2527t%2520wait%2520a%2520quarter%2520for%2520agent%2520features.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113380126561800305&amp;text=%40claudeai%20Same-day%20feature%20parity%20on%20GCP%20is%20the%20real%20news.%20Procurement%20already%20bought%20cloud%20credits%3B%20they%20shouldn%27t%20wait%20a%20quarter%20for%20agent%20features." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/claudeai/status/2113380126561800305#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fclaudeai%2Fstatus%2F2113380126561800305;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/claudeai/status/2113380126561800305" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r5" data-n="5">
       <label class="done"><input type="checkbox" data-done="5" onchange="saveDone()"/> Done</label>
-      <h2>5. @rauchg</h2>
-      <p class="note-sm">Rauch: time to kill static credentials, push OIDC like TLS</p>
-      <p class="text" id="t5">The hard part is all the internal scripts and cron jobs with a key pasted in 2021. Short-lived tokens need to be the default in every template and starter, or nobody migrates.</p>
+      <h2>5. @ClaudeDevs <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Agent Skills donated to Agentic AI Foundation</p>
+      <p class="text" id="t5">Skills next to MCP in a shared foundation is the unlock for client work. Package an SOP once, run it in whichever agent the company already uses.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t5', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113399539227136084&amp;text=%40rauchg%20The%20hard%20part%20is%20all%20the%20internal%20scripts%20and%20cron%20jobs%20with%20a%20key%20pasted%20in%202021.%20Short-lived%20tokens%20need%20to%20be%20the%20default%20in%20every%20template%20and%20starter%2C%20or%20nobody%20migrates." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/rauchg/status/2113399539227136084" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113328526413996100&amp;text=%40ClaudeDevs%20Skills%20next%20to%20MCP%20in%20a%20shared%20foundation%20is%20the%20unlock%20for%20client%20work.%20Package%20an%20SOP%20once%2C%20run%20it%20in%20whichever%20agent%20the%20company%20already%20uses.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113328526413996100%26text%3D%2540ClaudeDevs%2520Skills%2520next%2520to%2520MCP%2520in%2520a%2520shared%2520foundation%2520is%2520the%2520unlock%2520for%2520client%2520work.%2520Package%2520an%2520SOP%2520once%252C%2520run%2520it%2520in%2520whichever%2520agent%2520the%2520company%2520already%2520uses.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113328526413996100&amp;text=%40ClaudeDevs%20Skills%20next%20to%20MCP%20in%20a%20shared%20foundation%20is%20the%20unlock%20for%20client%20work.%20Package%20an%20SOP%20once%2C%20run%20it%20in%20whichever%20agent%20the%20company%20already%20uses." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/ClaudeDevs/status/2113328526413996100#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2113328526413996100;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/ClaudeDevs/status/2113328526413996100" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r6" data-n="6">
       <label class="done"><input type="checkbox" data-done="6" onchange="saveDone()"/> Done</label>
-      <h2>6. @vercel</h2>
-      <p class="note-sm">Vercel survey: only 8.4% of 1,000+ SaaS vendors support secure auth</p>
-      <p class="text" id="t6">8.4% is rough. Agents make it worse too, since every new tool connection tends to mean one more long-lived API key sitting in an env file.</p>
+      <h2>6. @rauchg <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Internet encryption password was just &#x27;4&#x27;</p>
+      <p class="text" id="t6">A single weak root key undoes years of app-level security theater. Agents make this worse if every tool connection still means a long-lived secret.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t6', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113397272943976560&amp;text=%40vercel%208.4%25%20is%20rough.%20Agents%20make%20it%20worse%20too%2C%20since%20every%20new%20tool%20connection%20tends%20to%20mean%20one%20more%20long-lived%20API%20key%20sitting%20in%20an%20env%20file." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/vercel/status/2113397272943976560" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113462657059639505&amp;text=%40rauchg%20A%20single%20weak%20root%20key%20undoes%20years%20of%20app-level%20security%20theater.%20Agents%20make%20this%20worse%20if%20every%20tool%20connection%20still%20means%20a%20long-lived%20secret.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113462657059639505%26text%3D%2540rauchg%2520A%2520single%2520weak%2520root%2520key%2520undoes%2520years%2520of%2520app-level%2520security%2520theater.%2520Agents%2520make%2520this%2520worse%2520if%2520every%2520tool%2520connection%2520still%2520means%2520a%2520long-lived%2520secret.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113462657059639505&amp;text=%40rauchg%20A%20single%20weak%20root%20key%20undoes%20years%20of%20app-level%20security%20theater.%20Agents%20make%20this%20worse%20if%20every%20tool%20connection%20still%20means%20a%20long-lived%20secret." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/rauchg/status/2113462657059639505#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2113462657059639505;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/rauchg/status/2113462657059639505" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r7" data-n="7">
       <label class="done"><input type="checkbox" data-done="7" onchange="saveDone()"/> Done</label>
-      <h2>7. @alexalbert__</h2>
-      <p class="note-sm">Alex Albert: running local small businesses with AI, Duet could beat Square</p>
-      <p class="text" id="t7">Agree on the upside. Most small businesses don&#x27;t need an autonomous agent, though. They need the follow-ups, bookings and invoices to stop slipping through the cracks.</p>
+      <h2>7. @rauchg <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Vercel has full at-scale backend pieces</p>
+      <p class="text" id="t7">Agents need backends more than pretty landing pages. Queues, long jobs, and sandboxes are the boring pieces that make automations reliable.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t7', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113386454907007444&amp;text=%40alexalbert__%20Agree%20on%20the%20upside.%20Most%20small%20businesses%20don%27t%20need%20an%20autonomous%20agent%2C%20though.%20They%20need%20the%20follow-ups%2C%20bookings%20and%20invoices%20to%20stop%20slipping%20through%20the%20cracks." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/alexalbert__/status/2113386454907007444" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113251591822471644&amp;text=%40rauchg%20Agents%20need%20backends%20more%20than%20pretty%20landing%20pages.%20Queues%2C%20long%20jobs%2C%20and%20sandboxes%20are%20the%20boring%20pieces%20that%20make%20automations%20reliable.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113251591822471644%26text%3D%2540rauchg%2520Agents%2520need%2520backends%2520more%2520than%2520pretty%2520landing%2520pages.%2520Queues%252C%2520long%2520jobs%252C%2520and%2520sandboxes%2520are%2520the%2520boring%2520pieces%2520that%2520make%2520automations%2520reliable.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113251591822471644&amp;text=%40rauchg%20Agents%20need%20backends%20more%20than%20pretty%20landing%20pages.%20Queues%2C%20long%20jobs%2C%20and%20sandboxes%20are%20the%20boring%20pieces%20that%20make%20automations%20reliable." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/rauchg/status/2113251591822471644#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2113251591822471644;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/rauchg/status/2113251591822471644" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r8" data-n="8">
       <label class="done"><input type="checkbox" data-done="8" onchange="saveDone()"/> Done</label>
-      <h2>8. @ArtificialAnlys</h2>
-      <p class="note-sm">Coding Agent Index v2.0: Claude Code + Opus 5.5 leads at 61.7</p>
-      <p class="text" id="t8">Nice to see the harness in the name, not just the model. Same model in a different harness can land in a very different place.</p>
+      <h2>8. @OpenAIDevs <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Decisions API: voice, prompt caching, JSON inputs</p>
+      <p class="text" id="t8">Voice + caching + JSON inputs turns Decisions into a real workflow primitive. Most of my n8n steps are classify/route, not write an essay.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t8', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113424551396934134&amp;text=%40ArtificialAnlys%20Nice%20to%20see%20the%20harness%20in%20the%20name%2C%20not%20just%20the%20model.%20Same%20model%20in%20a%20different%20harness%20can%20land%20in%20a%20very%20different%20place." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/ArtificialAnlys/status/2113424551396934134" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113346645463081418&amp;text=%40OpenAIDevs%20Voice%20%2B%20caching%20%2B%20JSON%20inputs%20turns%20Decisions%20into%20a%20real%20workflow%20primitive.%20Most%20of%20my%20n8n%20steps%20are%20classify%2Froute%2C%20not%20write%20an%20essay.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113346645463081418%26text%3D%2540OpenAIDevs%2520Voice%2520%252B%2520caching%2520%252B%2520JSON%2520inputs%2520turns%2520Decisions%2520into%2520a%2520real%2520workflow%2520primitive.%2520Most%2520of%2520my%2520n8n%2520steps%2520are%2520classify%252Froute%252C%2520not%2520write%2520an%2520essay.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113346645463081418&amp;text=%40OpenAIDevs%20Voice%20%2B%20caching%20%2B%20JSON%20inputs%20turns%20Decisions%20into%20a%20real%20workflow%20primitive.%20Most%20of%20my%20n8n%20steps%20are%20classify%2Froute%2C%20not%20write%20an%20essay." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/OpenAIDevs/status/2113346645463081418#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FOpenAIDevs%2Fstatus%2F2113346645463081418;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/OpenAIDevs/status/2113346645463081418" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r9" data-n="9">
       <label class="done"><input type="checkbox" data-done="9" onchange="saveDone()"/> Done</label>
-      <h2>9. @theo</h2>
-      <p class="note-sm">Theo: many devs don&#x27;t know what a harness is</p>
-      <p class="text" id="t9">Simplest way I&#x27;ve seen it put: the model decides what to do next, the harness decides what it&#x27;s allowed to do and remembers what happened.</p>
+      <h2>9. @mattshumer_ <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Matt exhausted by ongoing security chaos</p>
+      <p class="text" id="t9">The exhausting part isn&#x27;t one CVE. It&#x27;s the patch treadmill with no owner. Most small teams still don&#x27;t have anyone whose job is to apply fixes.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t9', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113380576652890591&amp;text=%40theo%20Simplest%20way%20I%27ve%20seen%20it%20put%3A%20the%20model%20decides%20what%20to%20do%20next%2C%20the%20harness%20decides%20what%20it%27s%20allowed%20to%20do%20and%20remembers%20what%20happened." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/theo/status/2113380576652890591" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113467468438212893&amp;text=%40mattshumer_%20The%20exhausting%20part%20isn%27t%20one%20CVE.%20It%27s%20the%20patch%20treadmill%20with%20no%20owner.%20Most%20small%20teams%20still%20don%27t%20have%20anyone%20whose%20job%20is%20to%20apply%20fixes.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113467468438212893%26text%3D%2540mattshumer_%2520The%2520exhausting%2520part%2520isn%2527t%2520one%2520CVE.%2520It%2527s%2520the%2520patch%2520treadmill%2520with%2520no%2520owner.%2520Most%2520small%2520teams%2520still%2520don%2527t%2520have%2520anyone%2520whose%2520job%2520is%2520to%2520apply%2520fixes.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113467468438212893&amp;text=%40mattshumer_%20The%20exhausting%20part%20isn%27t%20one%20CVE.%20It%27s%20the%20patch%20treadmill%20with%20no%20owner.%20Most%20small%20teams%20still%20don%27t%20have%20anyone%20whose%20job%20is%20to%20apply%20fixes." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/mattshumer_/status/2113467468438212893#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fmattshumer_%2Fstatus%2F2113467468438212893;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/mattshumer_/status/2113467468438212893" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r10" data-n="10">
       <label class="done"><input type="checkbox" data-done="10" onchange="saveDone()"/> Done</label>
-      <h2>10. @omarsar0</h2>
-      <p class="note-sm">Build your own harness: Ramp&#x27;s agent harness writeup</p>
-      <p class="text" id="t10">Owning observability is the underrated reason. When an agent does something weird in prod, you need your own traces, not a vendor dashboard.</p>
+      <h2>10. @mattshumer_ <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Every startup CEO needs to read this</p>
+      <p class="text" id="t10">Startup CEOs treat security like a Series B problem. Agents with tool access make it a day-one problem, whether you raised or not.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t10', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113435080278360133&amp;text=%40omarsar0%20Owning%20observability%20is%20the%20underrated%20reason.%20When%20an%20agent%20does%20something%20weird%20in%20prod%2C%20you%20need%20your%20own%20traces%2C%20not%20a%20vendor%20dashboard." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/omarsar0/status/2113435080278360133" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113465112896164306&amp;text=%40mattshumer_%20Startup%20CEOs%20treat%20security%20like%20a%20Series%20B%20problem.%20Agents%20with%20tool%20access%20make%20it%20a%20day-one%20problem%2C%20whether%20you%20raised%20or%20not.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113465112896164306%26text%3D%2540mattshumer_%2520Startup%2520CEOs%2520treat%2520security%2520like%2520a%2520Series%2520B%2520problem.%2520Agents%2520with%2520tool%2520access%2520make%2520it%2520a%2520day-one%2520problem%252C%2520whether%2520you%2520raised%2520or%2520not.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113465112896164306&amp;text=%40mattshumer_%20Startup%20CEOs%20treat%20security%20like%20a%20Series%20B%20problem.%20Agents%20with%20tool%20access%20make%20it%20a%20day-one%20problem%2C%20whether%20you%20raised%20or%20not." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/mattshumer_/status/2113465112896164306#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fmattshumer_%2Fstatus%2F2113465112896164306;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/mattshumer_/status/2113465112896164306" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r11" data-n="11">
       <label class="done"><input type="checkbox" data-done="11" onchange="saveDone()"/> Done</label>
-      <h2>11. @svpino</h2>
-      <p class="note-sm">New freelancer platform where an agent drafts proposals, tasks, updates and invoices</p>
-      <p class="text" id="t11">The client-update piece is the one I&#x27;d trust first. Proposals and invoices still deserve a human glance before they go out.</p>
+      <h2>11. @mattshumer_ <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Internet under attack: protect yourself article</p>
+      <p class="text" id="t11">Plain-language security explainers beat another SOC2 badge. Password manager + 2FA on email first covers most of the risk for normal people.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t11', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113362839666876437&amp;text=%40svpino%20The%20client-update%20piece%20is%20the%20one%20I%27d%20trust%20first.%20Proposals%20and%20invoices%20still%20deserve%20a%20human%20glance%20before%20they%20go%20out." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/svpino/status/2113362839666876437" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113360930876580337&amp;text=%40mattshumer_%20Plain-language%20security%20explainers%20beat%20another%20SOC2%20badge.%20Password%20manager%20%2B%202FA%20on%20email%20first%20covers%20most%20of%20the%20risk%20for%20normal%20people.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113360930876580337%26text%3D%2540mattshumer_%2520Plain-language%2520security%2520explainers%2520beat%2520another%2520SOC2%2520badge.%2520Password%2520manager%2520%252B%25202FA%2520on%2520email%2520first%2520covers%2520most%2520of%2520the%2520risk%2520for%2520normal%2520people.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113360930876580337&amp;text=%40mattshumer_%20Plain-language%20security%20explainers%20beat%20another%20SOC2%20badge.%20Password%20manager%20%2B%202FA%20on%20email%20first%20covers%20most%20of%20the%20risk%20for%20normal%20people." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/mattshumer_/status/2113360930876580337#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fmattshumer_%2Fstatus%2F2113360930876580337;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/mattshumer_/status/2113360930876580337" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r12" data-n="12">
       <label class="done"><input type="checkbox" data-done="12" onchange="saveDone()"/> Done</label>
-      <h2>12. @svpino</h2>
-      <p class="note-sm">MemT 1.0: open model with Mixture-of-Storage memory experts</p>
-      <p class="text" id="t12">Curious how it handles stale or wrong memories. Yesterday&#x27;s feedback being applied today is great until yesterday&#x27;s feedback was a one-off.</p>
+      <h2>12. @emollick <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Opus 4.8 beats human experts as peer reviewers</p>
+      <p class="text" id="t12">If models beat humans at peer review, the scarce skill becomes framing the question and deciding what evidence counts. Review process needs a redesign.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t12', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113374845522395618&amp;text=%40svpino%20Curious%20how%20it%20handles%20stale%20or%20wrong%20memories.%20Yesterday%27s%20feedback%20being%20applied%20today%20is%20great%20until%20yesterday%27s%20feedback%20was%20a%20one-off." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/svpino/status/2113374845522395618" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113483068174692831&amp;text=%40emollick%20If%20models%20beat%20humans%20at%20peer%20review%2C%20the%20scarce%20skill%20becomes%20framing%20the%20question%20and%20deciding%20what%20evidence%20counts.%20Review%20process%20needs%20a%20redesign.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113483068174692831%26text%3D%2540emollick%2520If%2520models%2520beat%2520humans%2520at%2520peer%2520review%252C%2520the%2520scarce%2520skill%2520becomes%2520framing%2520the%2520question%2520and%2520deciding%2520what%2520evidence%2520counts.%2520Review%2520process%2520needs%2520a%2520redesign.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113483068174692831&amp;text=%40emollick%20If%20models%20beat%20humans%20at%20peer%20review%2C%20the%20scarce%20skill%20becomes%20framing%20the%20question%20and%20deciding%20what%20evidence%20counts.%20Review%20process%20needs%20a%20redesign." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/emollick/status/2113483068174692831#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Femollick%2Fstatus%2F2113483068174692831;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/emollick/status/2113483068174692831" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r13" data-n="13">
       <label class="done"><input type="checkbox" data-done="13" onchange="saveDone()"/> Done</label>
-      <h2>13. @Replit</h2>
-      <p class="note-sm">Replit Monitoring Agent: sees, fixes and deploys changes autonomously</p>
-      <p class="text" id="t13">Does it deploy fixes straight to prod, or open a change someone approves first? That one setting decides whether I&#x27;d let it near a client app.</p>
+      <h2>13. @emollick <span class="tier mega">mega</span></h2>
+      <p class="note-sm">AI initially helps attackers more than defenders</p>
+      <p class="text" id="t13">Attackers scale cheaper because one script hits everyone. Defenders win only when fixes ship as fast as findings — most SMBs aren&#x27;t there yet.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t13', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113376576230637629&amp;text=%40Replit%20Does%20it%20deploy%20fixes%20straight%20to%20prod%2C%20or%20open%20a%20change%20someone%20approves%20first%3F%20That%20one%20setting%20decides%20whether%20I%27d%20let%20it%20near%20a%20client%20app." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/Replit/status/2113376576230637629" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113466978035749097&amp;text=%40emollick%20Attackers%20scale%20cheaper%20because%20one%20script%20hits%20everyone.%20Defenders%20win%20only%20when%20fixes%20ship%20as%20fast%20as%20findings%20%E2%80%94%20most%20SMBs%20aren%27t%20there%20yet.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113466978035749097%26text%3D%2540emollick%2520Attackers%2520scale%2520cheaper%2520because%2520one%2520script%2520hits%2520everyone.%2520Defenders%2520win%2520only%2520when%2520fixes%2520ship%2520as%2520fast%2520as%2520findings%2520%25E2%2580%2594%2520most%2520SMBs%2520aren%2527t%2520there%2520yet.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113466978035749097&amp;text=%40emollick%20Attackers%20scale%20cheaper%20because%20one%20script%20hits%20everyone.%20Defenders%20win%20only%20when%20fixes%20ship%20as%20fast%20as%20findings%20%E2%80%94%20most%20SMBs%20aren%27t%20there%20yet." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/emollick/status/2113466978035749097#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Femollick%2Fstatus%2F2113466978035749097;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/emollick/status/2113466978035749097" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r14" data-n="14">
       <label class="done"><input type="checkbox" data-done="14" onchange="saveDone()"/> Done</label>
-      <h2>14. @GergelyOrosz</h2>
-      <p class="note-sm">Gergely: biggest bug bash in history, industry needs fixers</p>
-      <p class="text" id="t14">The bottleneck flips from finding to fixing and shipping patches. Teams without solid tests and fast deploys will feel this the most.</p>
+      <h2>14. @emollick <span class="tier mega">mega</span></h2>
+      <p class="note-sm">AI: 4 min → 17 weeks of human work</p>
+      <p class="text" id="t14">4 minutes to 17 weeks changes the bottleneck. It won&#x27;t be the model. It&#x27;ll be whether your process can absorb and review that much output.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t14', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113377199793332320&amp;text=%40GergelyOrosz%20The%20bottleneck%20flips%20from%20finding%20to%20fixing%20and%20shipping%20patches.%20Teams%20without%20solid%20tests%20and%20fast%20deploys%20will%20feel%20this%20the%20most." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/GergelyOrosz/status/2113377199793332320" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113323645284344215&amp;text=%40emollick%204%20minutes%20to%2017%20weeks%20changes%20the%20bottleneck.%20It%20won%27t%20be%20the%20model.%20It%27ll%20be%20whether%20your%20process%20can%20absorb%20and%20review%20that%20much%20output.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113323645284344215%26text%3D%2540emollick%25204%2520minutes%2520to%252017%2520weeks%2520changes%2520the%2520bottleneck.%2520It%2520won%2527t%2520be%2520the%2520model.%2520It%2527ll%2520be%2520whether%2520your%2520process%2520can%2520absorb%2520and%2520review%2520that%2520much%2520output.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113323645284344215&amp;text=%40emollick%204%20minutes%20to%2017%20weeks%20changes%20the%20bottleneck.%20It%20won%27t%20be%20the%20model.%20It%27ll%20be%20whether%20your%20process%20can%20absorb%20and%20review%20that%20much%20output." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/emollick/status/2113323645284344215#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Femollick%2Fstatus%2F2113323645284344215;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/emollick/status/2113323645284344215" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r15" data-n="15">
       <label class="done"><input type="checkbox" data-done="15" onchange="saveDone()"/> Done</label>
-      <h2>15. @NickADobos</h2>
-      <p class="note-sm">3% of all recorded critical security bugs found in the last month</p>
-      <p class="text" id="t15">The scary part isn&#x27;t the count, it&#x27;s patch adoption. Plenty of businesses still run software that never got last year&#x27;s fixes.</p>
+      <h2>15. @Replit <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Replit patched infra after third-party vulns</p>
+      <p class="text" id="t15">Auto-patching infra is the right default. The remaining risk is the apps you can&#x27;t rewrite overnight — those need a human approval lane.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t15', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113430301183823901&amp;text=%40NickADobos%20The%20scary%20part%20isn%27t%20the%20count%2C%20it%27s%20patch%20adoption.%20Plenty%20of%20businesses%20still%20run%20software%20that%20never%20got%20last%20year%27s%20fixes." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/NickADobos/status/2113430301183823901" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113472692892614996&amp;text=%40Replit%20Auto-patching%20infra%20is%20the%20right%20default.%20The%20remaining%20risk%20is%20the%20apps%20you%20can%27t%20rewrite%20overnight%20%E2%80%94%20those%20need%20a%20human%20approval%20lane.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113472692892614996%26text%3D%2540Replit%2520Auto-patching%2520infra%2520is%2520the%2520right%2520default.%2520The%2520remaining%2520risk%2520is%2520the%2520apps%2520you%2520can%2527t%2520rewrite%2520overnight%2520%25E2%2580%2594%2520those%2520need%2520a%2520human%2520approval%2520lane.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113472692892614996&amp;text=%40Replit%20Auto-patching%20infra%20is%20the%20right%20default.%20The%20remaining%20risk%20is%20the%20apps%20you%20can%27t%20rewrite%20overnight%20%E2%80%94%20those%20need%20a%20human%20approval%20lane." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/Replit/status/2113472692892614996#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FReplit%2Fstatus%2F2113472692892614996;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/Replit/status/2113472692892614996" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r16" data-n="16">
       <label class="done"><input type="checkbox" data-done="16" onchange="saveDone()"/> Done</label>
-      <h2>16. @rauchg</h2>
-      <p class="note-sm">Rauch: agents pull software into deep backends + just-in-time frontends</p>
-      <p class="text" id="t16">Matches what I see in automation work. The durable value sits in clean APIs and data; the UI becomes whatever the user needs that day.</p>
+      <h2>16. @theo <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Theo: What is a harness? article</p>
+      <p class="text" id="t16">Clean writeup. Harness = tools + memory + approvals + logs. Model picks the next step; harness decides what it&#x27;s allowed to do.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t16', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113357674989650307&amp;text=%40rauchg%20Matches%20what%20I%20see%20in%20automation%20work.%20The%20durable%20value%20sits%20in%20clean%20APIs%20and%20data%3B%20the%20UI%20becomes%20whatever%20the%20user%20needs%20that%20day." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/rauchg/status/2113357674989650307" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113424203345265053&amp;text=%40theo%20Clean%20writeup.%20Harness%20%3D%20tools%20%2B%20memory%20%2B%20approvals%20%2B%20logs.%20Model%20picks%20the%20next%20step%3B%20harness%20decides%20what%20it%27s%20allowed%20to%20do.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113424203345265053%26text%3D%2540theo%2520Clean%2520writeup.%2520Harness%2520%253D%2520tools%2520%252B%2520memory%2520%252B%2520approvals%2520%252B%2520logs.%2520Model%2520picks%2520the%2520next%2520step%253B%2520harness%2520decides%2520what%2520it%2527s%2520allowed%2520to%2520do.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113424203345265053&amp;text=%40theo%20Clean%20writeup.%20Harness%20%3D%20tools%20%2B%20memory%20%2B%20approvals%20%2B%20logs.%20Model%20picks%20the%20next%20step%3B%20harness%20decides%20what%20it%27s%20allowed%20to%20do." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/theo/status/2113424203345265053#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2113424203345265053;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/theo/status/2113424203345265053" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r17" data-n="17">
       <label class="done"><input type="checkbox" data-done="17" onchange="saveDone()"/> Done</label>
-      <h2>17. @AravSrinivas</h2>
-      <p class="note-sm">Perplexity Agent API Batch: 50k requests per file, full agent loop</p>
-      <p class="text" id="t17">Lead enrichment at 50k rows with web search per row is a real use case. How are failed or low-confidence rows flagged in the output?</p>
+      <h2>17. @theo <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Everything got pwn&#x27;d. I tried to warn you</p>
+      <p class="text" id="t17">Warning without a patch playbook doesn&#x27;t help. For most businesses the playbook is: inventory deps, auto-update where safe, human gate where money moves.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t17', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113368776532271185&amp;text=%40AravSrinivas%20Lead%20enrichment%20at%2050k%20rows%20with%20web%20search%20per%20row%20is%20a%20real%20use%20case.%20How%20are%20failed%20or%20low-confidence%20rows%20flagged%20in%20the%20output%3F" target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/AravSrinivas/status/2113368776532271185" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113363851018403900&amp;text=%40theo%20Warning%20without%20a%20patch%20playbook%20doesn%27t%20help.%20For%20most%20businesses%20the%20playbook%20is%3A%20inventory%20deps%2C%20auto-update%20where%20safe%2C%20human%20gate%20where%20money%20moves.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113363851018403900%26text%3D%2540theo%2520Warning%2520without%2520a%2520patch%2520playbook%2520doesn%2527t%2520help.%2520For%2520most%2520businesses%2520the%2520playbook%2520is%253A%2520inventory%2520deps%252C%2520auto-update%2520where%2520safe%252C%2520human%2520gate%2520where%2520money%2520moves.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113363851018403900&amp;text=%40theo%20Warning%20without%20a%20patch%20playbook%20doesn%27t%20help.%20For%20most%20businesses%20the%20playbook%20is%3A%20inventory%20deps%2C%20auto-update%20where%20safe%2C%20human%20gate%20where%20money%20moves." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/theo/status/2113363851018403900#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2113363851018403900;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/theo/status/2113363851018403900" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r18" data-n="18">
       <label class="done"><input type="checkbox" data-done="18" onchange="saveDone()"/> Done</label>
-      <h2>18. @WesRoth</h2>
-      <p class="note-sm">Google Cloud Agent Compute Engine: isolated VMs for agents with pause/resume</p>
-      <p class="text" id="t18">Pause/resume is the interesting part. Long-running agents waiting on a human approval shouldn&#x27;t burn compute the whole time.</p>
+      <h2>18. @theo <span class="tier mega">mega</span></h2>
+      <p class="note-sm">If you say AI can&#x27;t write good code...</p>
+      <p class="text" id="t18">Agree. Bad takes usually come from people who never reviewed AI output against a real test suite. Specs and tests still decide quality.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t18', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113427685267624182&amp;text=%40WesRoth%20Pause%2Fresume%20is%20the%20interesting%20part.%20Long-running%20agents%20waiting%20on%20a%20human%20approval%20shouldn%27t%20burn%20compute%20the%20whole%20time." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/WesRoth/status/2113427685267624182" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113214951599092051&amp;text=%40theo%20Agree.%20Bad%20takes%20usually%20come%20from%20people%20who%20never%20reviewed%20AI%20output%20against%20a%20real%20test%20suite.%20Specs%20and%20tests%20still%20decide%20quality.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113214951599092051%26text%3D%2540theo%2520Agree.%2520Bad%2520takes%2520usually%2520come%2520from%2520people%2520who%2520never%2520reviewed%2520AI%2520output%2520against%2520a%2520real%2520test%2520suite.%2520Specs%2520and%2520tests%2520still%2520decide%2520quality.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113214951599092051&amp;text=%40theo%20Agree.%20Bad%20takes%20usually%20come%20from%20people%20who%20never%20reviewed%20AI%20output%20against%20a%20real%20test%20suite.%20Specs%20and%20tests%20still%20decide%20quality." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/theo/status/2113214951599092051#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2113214951599092051;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/theo/status/2113214951599092051" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r19" data-n="19">
       <label class="done"><input type="checkbox" data-done="19" onchange="saveDone()"/> Done</label>
-      <h2>19. @WesRoth</h2>
-      <p class="note-sm">METR: ~10% of eligible Codex traffic went unmonitored before context compaction</p>
-      <p class="text" id="t19">Context compaction as a monitoring blind spot is a great catch. Anyone logging agent actions should log before summarizing, not after.</p>
+      <h2>19. @theo <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Wouldn&#x27;t have survived the day without agents</p>
+      <p class="text" id="t19">Agents for triage and key rotation is the underrated use case. Boring ops work is where they earn trust before you let them near customers.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t19', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113450333976375684&amp;text=%40WesRoth%20Context%20compaction%20as%20a%20monitoring%20blind%20spot%20is%20a%20great%20catch.%20Anyone%20logging%20agent%20actions%20should%20log%20before%20summarizing%2C%20not%20after." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/WesRoth/status/2113450333976375684" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113206819132985450&amp;text=%40theo%20Agents%20for%20triage%20and%20key%20rotation%20is%20the%20underrated%20use%20case.%20Boring%20ops%20work%20is%20where%20they%20earn%20trust%20before%20you%20let%20them%20near%20customers.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113206819132985450%26text%3D%2540theo%2520Agents%2520for%2520triage%2520and%2520key%2520rotation%2520is%2520the%2520underrated%2520use%2520case.%2520Boring%2520ops%2520work%2520is%2520where%2520they%2520earn%2520trust%2520before%2520you%2520let%2520them%2520near%2520customers.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113206819132985450&amp;text=%40theo%20Agents%20for%20triage%20and%20key%20rotation%20is%20the%20underrated%20use%20case.%20Boring%20ops%20work%20is%20where%20they%20earn%20trust%20before%20you%20let%20them%20near%20customers." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/theo/status/2113206819132985450#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2113206819132985450;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/theo/status/2113206819132985450" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r20" data-n="20">
       <label class="done"><input type="checkbox" data-done="20" onchange="saveDone()"/> Done</label>
-      <h2>20. @a16z</h2>
-      <p class="note-sm">a16z: Brockman on defenders holding the cyber advantage, $1B commitment</p>
-      <p class="text" id="t20">Defenders win only if fixes ship as fast as findings. Most small companies don&#x27;t have anyone whose job is to apply patches.</p>
+      <h2>20. @theo <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Caring about harnesses like tabs vs spaces</p>
+      <p class="text" id="t20">It feels niche until an agent does something weird in prod. Then you really want to own the harness, not rent someone else&#x27;s black box.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t20', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113404552439558377&amp;text=%40a16z%20Defenders%20win%20only%20if%20fixes%20ship%20as%20fast%20as%20findings.%20Most%20small%20companies%20don%27t%20have%20anyone%20whose%20job%20is%20to%20apply%20patches." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/a16z/status/2113404552439558377" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113170687401803863&amp;text=%40theo%20It%20feels%20niche%20until%20an%20agent%20does%20something%20weird%20in%20prod.%20Then%20you%20really%20want%20to%20own%20the%20harness%2C%20not%20rent%20someone%20else%27s%20black%20box.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113170687401803863%26text%3D%2540theo%2520It%2520feels%2520niche%2520until%2520an%2520agent%2520does%2520something%2520weird%2520in%2520prod.%2520Then%2520you%2520really%2520want%2520to%2520own%2520the%2520harness%252C%2520not%2520rent%2520someone%2520else%2527s%2520black%2520box.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113170687401803863&amp;text=%40theo%20It%20feels%20niche%20until%20an%20agent%20does%20something%20weird%20in%20prod.%20Then%20you%20really%20want%20to%20own%20the%20harness%2C%20not%20rent%20someone%20else%27s%20black%20box." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/theo/status/2113170687401803863#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2113170687401803863;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/theo/status/2113170687401803863" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r21" data-n="21">
       <label class="done"><input type="checkbox" data-done="21" onchange="saveDone()"/> Done</label>
-      <h2>21. @e2b</h2>
-      <p class="note-sm">E2B cookbook adds Veris for simulated stateful twins of prod</p>
-      <p class="text" id="t21">Testing agents against a stateful twin is the right idea. Most agent bugs show up on the 3rd or 4th step, not the first call.</p>
+      <h2>21. @levelsio <span class="tier mega">mega</span></h2>
+      <p class="note-sm">levelsio on SpaceX AI landing page</p>
+      <p class="text" id="t21">Indie builders on a SpaceX AI page is a signal. Distribution still beats clever code — ship in public, even when the product looks small.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t21', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113401615441146308&amp;text=%40e2b%20Testing%20agents%20against%20a%20stateful%20twin%20is%20the%20right%20idea.%20Most%20agent%20bugs%20show%20up%20on%20the%203rd%20or%204th%20step%2C%20not%20the%20first%20call." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/e2b/status/2113401615441146308" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113390205264609482&amp;text=%40levelsio%20Indie%20builders%20on%20a%20SpaceX%20AI%20page%20is%20a%20signal.%20Distribution%20still%20beats%20clever%20code%20%E2%80%94%20ship%20in%20public%2C%20even%20when%20the%20product%20looks%20small.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113390205264609482%26text%3D%2540levelsio%2520Indie%2520builders%2520on%2520a%2520SpaceX%2520AI%2520page%2520is%2520a%2520signal.%2520Distribution%2520still%2520beats%2520clever%2520code%2520%25E2%2580%2594%2520ship%2520in%2520public%252C%2520even%2520when%2520the%2520product%2520looks%2520small.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113390205264609482&amp;text=%40levelsio%20Indie%20builders%20on%20a%20SpaceX%20AI%20page%20is%20a%20signal.%20Distribution%20still%20beats%20clever%20code%20%E2%80%94%20ship%20in%20public%2C%20even%20when%20the%20product%20looks%20small." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/levelsio/status/2113390205264609482#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Flevelsio%2Fstatus%2F2113390205264609482;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/levelsio/status/2113390205264609482" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r22" data-n="22">
       <label class="done"><input type="checkbox" data-done="22" onchange="saveDone()"/> Done</label>
-      <h2>22. @ArtificialAnlys</h2>
-      <p class="note-sm">AA PersonalityBench: slop varies widely even at same intelligence</p>
-      <p class="text" id="t22">Same intelligence score, rank 1 vs 80 on slop, is wild. For client-facing writing, that ranking might matter more than the intelligence index.</p>
+      <h2>22. @svpino <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Writing code is worth very little today</p>
+      <p class="text" id="t22">Writing code got cheap. Specifying outcomes, owning review, and wiring it into a real business process is the valuable part now.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t22', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113402182292648369&amp;text=%40ArtificialAnlys%20Same%20intelligence%20score%2C%20rank%201%20vs%2080%20on%20slop%2C%20is%20wild.%20For%20client-facing%20writing%2C%20that%20ranking%20might%20matter%20more%20than%20the%20intelligence%20index." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/ArtificialAnlys/status/2113402182292648369" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113248504823124147&amp;text=%40svpino%20Writing%20code%20got%20cheap.%20Specifying%20outcomes%2C%20owning%20review%2C%20and%20wiring%20it%20into%20a%20real%20business%20process%20is%20the%20valuable%20part%20now.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113248504823124147%26text%3D%2540svpino%2520Writing%2520code%2520got%2520cheap.%2520Specifying%2520outcomes%252C%2520owning%2520review%252C%2520and%2520wiring%2520it%2520into%2520a%2520real%2520business%2520process%2520is%2520the%2520valuable%2520part%2520now.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113248504823124147&amp;text=%40svpino%20Writing%20code%20got%20cheap.%20Specifying%20outcomes%2C%20owning%20review%2C%20and%20wiring%20it%20into%20a%20real%20business%20process%20is%20the%20valuable%20part%20now." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113248504823124147#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113248504823124147;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/svpino/status/2113248504823124147" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r23" data-n="23">
       <label class="done"><input type="checkbox" data-done="23" onchange="saveDone()"/> Done</label>
-      <h2>23. @testingcatalog</h2>
-      <p class="note-sm">Decisions API GA: predicate, choice and score decisions</p>
-      <p class="text" id="t23">Predicate + score is basically every if-node in an automation, but now with a confidence number you can threshold for human review.</p>
+      <h2>23. @svpino <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Sell your data to train AI marketplace</p>
+      <p class="text" id="t23">Data marketplaces only work if provenance and consent are first-class. Otherwise you&#x27;re just selling someone else&#x27;s spreadsheet with a nicer UI.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t23', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113398273352368473&amp;text=%40testingcatalog%20Predicate%20%2B%20score%20is%20basically%20every%20if-node%20in%20an%20automation%2C%20but%20now%20with%20a%20confidence%20number%20you%20can%20threshold%20for%20human%20review." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/testingcatalog/status/2113398273352368473" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113317746054467859&amp;text=%40svpino%20Data%20marketplaces%20only%20work%20if%20provenance%20and%20consent%20are%20first-class.%20Otherwise%20you%27re%20just%20selling%20someone%20else%27s%20spreadsheet%20with%20a%20nicer%20UI.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113317746054467859%26text%3D%2540svpino%2520Data%2520marketplaces%2520only%2520work%2520if%2520provenance%2520and%2520consent%2520are%2520first-class.%2520Otherwise%2520you%2527re%2520just%2520selling%2520someone%2520else%2527s%2520spreadsheet%2520with%2520a%2520nicer%2520UI.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113317746054467859&amp;text=%40svpino%20Data%20marketplaces%20only%20work%20if%20provenance%20and%20consent%20are%20first-class.%20Otherwise%20you%27re%20just%20selling%20someone%20else%27s%20spreadsheet%20with%20a%20nicer%20UI." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113317746054467859#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113317746054467859;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/svpino/status/2113317746054467859" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r24" data-n="24">
       <label class="done"><input type="checkbox" data-done="24" onchange="saveDone()"/> Done</label>
-      <h2>24. @rauchg</h2>
-      <p class="note-sm">Rauch: generative UI example + AI Gateway tools in 1 LOC</p>
-      <p class="text" id="t24">Tools as a marketplace inside the gateway is clever. Where does auth live when a tool needs a user&#x27;s own account instead of a public API?</p>
+      <h2>24. @svpino <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Why AI slop replies start with &#x27;What really got me&#x27;</p>
+      <p class="text" id="t24">It&#x27;s pattern collapse from RLHF-ish training. Force a concrete claim or a question in the first line and the slop drops fast.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t24', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113451268316205515&amp;text=%40rauchg%20Tools%20as%20a%20marketplace%20inside%20the%20gateway%20is%20clever.%20Where%20does%20auth%20live%20when%20a%20tool%20needs%20a%20user%27s%20own%20account%20instead%20of%20a%20public%20API%3F" target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/rauchg/status/2113451268316205515" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113280293625090131&amp;text=%40svpino%20It%27s%20pattern%20collapse%20from%20RLHF-ish%20training.%20Force%20a%20concrete%20claim%20or%20a%20question%20in%20the%20first%20line%20and%20the%20slop%20drops%20fast.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113280293625090131%26text%3D%2540svpino%2520It%2527s%2520pattern%2520collapse%2520from%2520RLHF-ish%2520training.%2520Force%2520a%2520concrete%2520claim%2520or%2520a%2520question%2520in%2520the%2520first%2520line%2520and%2520the%2520slop%2520drops%2520fast.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113280293625090131&amp;text=%40svpino%20It%27s%20pattern%20collapse%20from%20RLHF-ish%20training.%20Force%20a%20concrete%20claim%20or%20a%20question%20in%20the%20first%20line%20and%20the%20slop%20drops%20fast." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113280293625090131#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113280293625090131;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/svpino/status/2113280293625090131" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r25" data-n="25">
       <label class="done"><input type="checkbox" data-done="25" onchange="saveDone()"/> Done</label>
-      <h2>25. @rauchg</h2>
-      <p class="note-sm">vercel deploy --temporary</p>
-      <p class="text" id="t25">Temporary deploys are perfect for agent output. Let it ship a preview, a human checks it, and nothing permanent exists until someone says yes.</p>
+      <h2>25. @svpino <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Agent reviewing social for who to reply to</p>
+      <p class="text" id="t25">Prioritizing who to reply to is a real workflow. I&#x27;d score by fit + reach, then draft — never auto-send without a human glance.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t25', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113383291621671147&amp;text=%40rauchg%20Temporary%20deploys%20are%20perfect%20for%20agent%20output.%20Let%20it%20ship%20a%20preview%2C%20a%20human%20checks%20it%2C%20and%20nothing%20permanent%20exists%20until%20someone%20says%20yes." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/rauchg/status/2113383291621671147" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113286601111752717&amp;text=%40svpino%20Prioritizing%20who%20to%20reply%20to%20is%20a%20real%20workflow.%20I%27d%20score%20by%20fit%20%2B%20reach%2C%20then%20draft%20%E2%80%94%20never%20auto-send%20without%20a%20human%20glance.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113286601111752717%26text%3D%2540svpino%2520Prioritizing%2520who%2520to%2520reply%2520to%2520is%2520a%2520real%2520workflow.%2520I%2527d%2520score%2520by%2520fit%2520%252B%2520reach%252C%2520then%2520draft%2520%25E2%2580%2594%2520never%2520auto-send%2520without%2520a%2520human%2520glance.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113286601111752717&amp;text=%40svpino%20Prioritizing%20who%20to%20reply%20to%20is%20a%20real%20workflow.%20I%27d%20score%20by%20fit%20%2B%20reach%2C%20then%20draft%20%E2%80%94%20never%20auto-send%20without%20a%20human%20glance." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113286601111752717#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113286601111752717;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/svpino/status/2113286601111752717" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r26" data-n="26">
       <label class="done"><input type="checkbox" data-done="26" onchange="saveDone()"/> Done</label>
-      <h2>26. @swyx</h2>
-      <p class="note-sm">swyx: don&#x27;t blame AI for finding bugs, lock in on clearing them</p>
-      <p class="text" id="t26">Agree. Triage is the new bottleneck. Ranking bugs by actual exposure matters more than the raw count right now.</p>
+      <h2>26. @svpino <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Writing code solved; trusting code is not</p>
+      <p class="text" id="t26">Writing code is solved enough. Trusting it isn&#x27;t. Tests, staged deploys, and approval gates matter more than which model wrote the file.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t26', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113359027682050352&amp;text=%40swyx%20Agree.%20Triage%20is%20the%20new%20bottleneck.%20Ranking%20bugs%20by%20actual%20exposure%20matters%20more%20than%20the%20raw%20count%20right%20now." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/swyx/status/2113359027682050352" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113270399656169773&amp;text=%40svpino%20Writing%20code%20is%20solved%20enough.%20Trusting%20it%20isn%27t.%20Tests%2C%20staged%20deploys%2C%20and%20approval%20gates%20matter%20more%20than%20which%20model%20wrote%20the%20file.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113270399656169773%26text%3D%2540svpino%2520Writing%2520code%2520is%2520solved%2520enough.%2520Trusting%2520it%2520isn%2527t.%2520Tests%252C%2520staged%2520deploys%252C%2520and%2520approval%2520gates%2520matter%2520more%2520than%2520which%2520model%2520wrote%2520the%2520file.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113270399656169773&amp;text=%40svpino%20Writing%20code%20is%20solved%20enough.%20Trusting%20it%20isn%27t.%20Tests%2C%20staged%20deploys%2C%20and%20approval%20gates%20matter%20more%20than%20which%20model%20wrote%20the%20file." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113270399656169773#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113270399656169773;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/svpino/status/2113270399656169773" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r27" data-n="27">
       <label class="done"><input type="checkbox" data-done="27" onchange="saveDone()"/> Done</label>
-      <h2>27. @ThePrimeagen</h2>
-      <p class="note-sm">Primeagen: wants to talk through interfaces and ideas without derailing</p>
-      <p class="text" id="t27">Voice for design talk and text for code changes feels like the right split. Typing out architecture ideas kills the flow.</p>
+      <h2>27. @svpino <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Take cyber vulns seriously; ask your agent</p>
+      <p class="text" id="t27">Asking an agent how to lock down accounts is fine. Doing everything it says without understanding the blast radius is how you lock yourself out.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t27', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113375327057506499&amp;text=%40ThePrimeagen%20Voice%20for%20design%20talk%20and%20text%20for%20code%20changes%20feels%20like%20the%20right%20split.%20Typing%20out%20architecture%20ideas%20kills%20the%20flow." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/ThePrimeagen/status/2113375327057506499" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113314180027879597&amp;text=%40svpino%20Asking%20an%20agent%20how%20to%20lock%20down%20accounts%20is%20fine.%20Doing%20everything%20it%20says%20without%20understanding%20the%20blast%20radius%20is%20how%20you%20lock%20yourself%20out.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113314180027879597%26text%3D%2540svpino%2520Asking%2520an%2520agent%2520how%2520to%2520lock%2520down%2520accounts%2520is%2520fine.%2520Doing%2520everything%2520it%2520says%2520without%2520understanding%2520the%2520blast%2520radius%2520is%2520how%2520you%2520lock%2520yourself%2520out.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113314180027879597&amp;text=%40svpino%20Asking%20an%20agent%20how%20to%20lock%20down%20accounts%20is%20fine.%20Doing%20everything%20it%20says%20without%20understanding%20the%20blast%20radius%20is%20how%20you%20lock%20yourself%20out." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113314180027879597#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113314180027879597;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/svpino/status/2113314180027879597" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r28" data-n="28">
       <label class="done"><input type="checkbox" data-done="28" onchange="saveDone()"/> Done</label>
-      <h2>28. @ThePrimeagen</h2>
-      <p class="note-sm">Primeagen: AI keeps being &#x27;stunned by my insight&#x27;</p>
-      <p class="text" id="t28">The flattery is a real cost. If every idea gets called brilliant, you lose the one signal you wanted from it: is this wrong?</p>
+      <h2>28. @petergyang <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Great AI news vs still faxing cancer docs</p>
+      <p class="text" id="t28">This gap is everywhere. Fancy models upstream, fax machines and CD-ROMs downstream. Automation wins first where the handoff is still paper.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t28', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113377142721692103&amp;text=%40ThePrimeagen%20The%20flattery%20is%20a%20real%20cost.%20If%20every%20idea%20gets%20called%20brilliant%2C%20you%20lose%20the%20one%20signal%20you%20wanted%20from%20it%3A%20is%20this%20wrong%3F" target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/ThePrimeagen/status/2113377142721692103" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113420357726257335&amp;text=%40petergyang%20This%20gap%20is%20everywhere.%20Fancy%20models%20upstream%2C%20fax%20machines%20and%20CD-ROMs%20downstream.%20Automation%20wins%20first%20where%20the%20handoff%20is%20still%20paper.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113420357726257335%26text%3D%2540petergyang%2520This%2520gap%2520is%2520everywhere.%2520Fancy%2520models%2520upstream%252C%2520fax%2520machines%2520and%2520CD-ROMs%2520downstream.%2520Automation%2520wins%2520first%2520where%2520the%2520handoff%2520is%2520still%2520paper.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113420357726257335&amp;text=%40petergyang%20This%20gap%20is%20everywhere.%20Fancy%20models%20upstream%2C%20fax%20machines%20and%20CD-ROMs%20downstream.%20Automation%20wins%20first%20where%20the%20handoff%20is%20still%20paper." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/petergyang/status/2113420357726257335#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fpetergyang%2Fstatus%2F2113420357726257335;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/petergyang/status/2113420357726257335" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r29" data-n="29">
       <label class="done"><input type="checkbox" data-done="29" onchange="saveDone()"/> Done</label>
-      <h2>29. @mattshumer_</h2>
-      <p class="note-sm">Matt Shumer wrote a security explainer for non-tech family</p>
-      <p class="text" id="t29">This is needed. Password manager, 2FA on email first, and stop reusing passwords covers most of the risk for normal people.</p>
+      <h2>29. @petergyang <span class="tier mega">mega</span></h2>
+      <p class="note-sm">6 steps to secure accounts emergency video</p>
+      <p class="text" id="t29">Disconnect unused agents/apps is underrated step one. Every forgotten OAuth grant is another long-lived key waiting to leak.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t29', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113363050745217364&amp;text=%40mattshumer_%20This%20is%20needed.%20Password%20manager%2C%202FA%20on%20email%20first%2C%20and%20stop%20reusing%20passwords%20covers%20most%20of%20the%20risk%20for%20normal%20people." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/mattshumer_/status/2113363050745217364" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113345739820777654&amp;text=%40petergyang%20Disconnect%20unused%20agents%2Fapps%20is%20underrated%20step%20one.%20Every%20forgotten%20OAuth%20grant%20is%20another%20long-lived%20key%20waiting%20to%20leak.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113345739820777654%26text%3D%2540petergyang%2520Disconnect%2520unused%2520agents%252Fapps%2520is%2520underrated%2520step%2520one.%2520Every%2520forgotten%2520OAuth%2520grant%2520is%2520another%2520long-lived%2520key%2520waiting%2520to%2520leak.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113345739820777654&amp;text=%40petergyang%20Disconnect%20unused%20agents%2Fapps%20is%20underrated%20step%20one.%20Every%20forgotten%20OAuth%20grant%20is%20another%20long-lived%20key%20waiting%20to%20leak." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/petergyang/status/2113345739820777654#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fpetergyang%2Fstatus%2F2113345739820777654;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/petergyang/status/2113345739820777654" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r30" data-n="30">
       <label class="done"><input type="checkbox" data-done="30" onchange="saveDone()"/> Done</label>
-      <h2>30. @petergyang</h2>
-      <p class="note-sm">Peter Yang: 6 steps to secure accounts + AI prompt for a personal report</p>
-      <p class="text" id="t30">Nice idea to have AI walk people through it. Step one for most people should be locking down the email account, since everything resets through it.</p>
+      <h2>30. @GergelyOrosz <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Secure software will get a LOT more expensive</p>
+      <p class="text" id="t30">AI-native security talent costing more tracks. The other cost is process: if patch review still takes a week, the model bill is irrelevant.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t30', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113405131106742406&amp;text=%40petergyang%20Nice%20idea%20to%20have%20AI%20walk%20people%20through%20it.%20Step%20one%20for%20most%20people%20should%20be%20locking%20down%20the%20email%20account%2C%20since%20everything%20resets%20through%20it." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/petergyang/status/2113405131106742406" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113357337926779093&amp;text=%40GergelyOrosz%20AI-native%20security%20talent%20costing%20more%20tracks.%20The%20other%20cost%20is%20process%3A%20if%20patch%20review%20still%20takes%20a%20week%2C%20the%20model%20bill%20is%20irrelevant.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113357337926779093%26text%3D%2540GergelyOrosz%2520AI-native%2520security%2520talent%2520costing%2520more%2520tracks.%2520The%2520other%2520cost%2520is%2520process%253A%2520if%2520patch%2520review%2520still%2520takes%2520a%2520week%252C%2520the%2520model%2520bill%2520is%2520irrelevant.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113357337926779093&amp;text=%40GergelyOrosz%20AI-native%20security%20talent%20costing%20more%20tracks.%20The%20other%20cost%20is%20process%3A%20if%20patch%20review%20still%20takes%20a%20week%2C%20the%20model%20bill%20is%20irrelevant." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/GergelyOrosz/status/2113357337926779093#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FGergelyOrosz%2Fstatus%2F2113357337926779093;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/GergelyOrosz/status/2113357337926779093" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r31" data-n="31">
       <label class="done"><input type="checkbox" data-done="31" onchange="saveDone()"/> Done</label>
-      <h2>31. @petergyang</h2>
-      <p class="note-sm">Peter Yang: agents taken down by Comcast outage</p>
-      <p class="text" id="t31">The least glamorous agent failure mode. Anything long-running needs to resume cleanly after the network drops.</p>
+      <h2>31. @GergelyOrosz <span class="tier mega">mega</span></h2>
+      <p class="note-sm">eMudhra exiting SSL after CA key mishap</p>
+      <p class="text" id="t31">Blaming social media instead of shipping a postmortem is a tell. Trust is the product for a CA — opacity ends the business either way.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t31', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113393808935391270&amp;text=%40petergyang%20The%20least%20glamorous%20agent%20failure%20mode.%20Anything%20long-running%20needs%20to%20resume%20cleanly%20after%20the%20network%20drops." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/petergyang/status/2113393808935391270" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113272593205940684&amp;text=%40GergelyOrosz%20Blaming%20social%20media%20instead%20of%20shipping%20a%20postmortem%20is%20a%20tell.%20Trust%20is%20the%20product%20for%20a%20CA%20%E2%80%94%20opacity%20ends%20the%20business%20either%20way.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113272593205940684%26text%3D%2540GergelyOrosz%2520Blaming%2520social%2520media%2520instead%2520of%2520shipping%2520a%2520postmortem%2520is%2520a%2520tell.%2520Trust%2520is%2520the%2520product%2520for%2520a%2520CA%2520%25E2%2580%2594%2520opacity%2520ends%2520the%2520business%2520either%2520way.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113272593205940684&amp;text=%40GergelyOrosz%20Blaming%20social%20media%20instead%20of%20shipping%20a%20postmortem%20is%20a%20tell.%20Trust%20is%20the%20product%20for%20a%20CA%20%E2%80%94%20opacity%20ends%20the%20business%20either%20way." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/GergelyOrosz/status/2113272593205940684#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FGergelyOrosz%2Fstatus%2F2113272593205940684;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/GergelyOrosz/status/2113272593205940684" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r32" data-n="32">
       <label class="done"><input type="checkbox" data-done="32" onchange="saveDone()"/> Done</label>
-      <h2>32. @svpino</h2>
-      <p class="note-sm">svpino: people in denial that AI-generated code is here to stay</p>
-      <p class="text" id="t32">The code isn&#x27;t going away. The open question is who owns reviewing and maintaining it, and most teams haven&#x27;t decided.</p>
+      <h2>32. @GergelyOrosz <span class="tier mega">mega</span></h2>
+      <p class="note-sm">5 implications of AI for software security</p>
+      <p class="text" id="t32">#2 is the hard one. Manual patching doesn&#x27;t scale at AI discovery speed. Auto-PR + human merge on critical paths is the pragmatic middle.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t32', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113352457359097930&amp;text=%40svpino%20The%20code%20isn%27t%20going%20away.%20The%20open%20question%20is%20who%20owns%20reviewing%20and%20maintaining%20it%2C%20and%20most%20teams%20haven%27t%20decided." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/svpino/status/2113352457359097930" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113269811664883735&amp;text=%40GergelyOrosz%20%232%20is%20the%20hard%20one.%20Manual%20patching%20doesn%27t%20scale%20at%20AI%20discovery%20speed.%20Auto-PR%20%2B%20human%20merge%20on%20critical%20paths%20is%20the%20pragmatic%20middle.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113269811664883735%26text%3D%2540GergelyOrosz%2520%25232%2520is%2520the%2520hard%2520one.%2520Manual%2520patching%2520doesn%2527t%2520scale%2520at%2520AI%2520discovery%2520speed.%2520Auto-PR%2520%252B%2520human%2520merge%2520on%2520critical%2520paths%2520is%2520the%2520pragmatic%2520middle.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113269811664883735&amp;text=%40GergelyOrosz%20%232%20is%20the%20hard%20one.%20Manual%20patching%20doesn%27t%20scale%20at%20AI%20discovery%20speed.%20Auto-PR%20%2B%20human%20merge%20on%20critical%20paths%20is%20the%20pragmatic%20middle." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/GergelyOrosz/status/2113269811664883735#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FGergelyOrosz%2Fstatus%2F2113269811664883735;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/GergelyOrosz/status/2113269811664883735" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r33" data-n="33">
       <label class="done"><input type="checkbox" data-done="33" onchange="saveDone()"/> Done</label>
-      <h2>33. @Replit</h2>
-      <p class="note-sm">Replit Free mode: Q&amp;A and follow-ups don&#x27;t use paid credits</p>
-      <p class="text" id="t33">Free exploration before building is smart. Most bad builds come from a fuzzy brief, not a bad model.</p>
+      <h2>33. @GergelyOrosz <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Dario predicted Chinese model catch-up window</p>
+      <p class="text" id="t33">Calling the window early is useful. For builders the takeaway is: don&#x27;t bet a client system on one lab&#x27;s temporary lead.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t33', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113389946430185632&amp;text=%40Replit%20Free%20exploration%20before%20building%20is%20smart.%20Most%20bad%20builds%20come%20from%20a%20fuzzy%20brief%2C%20not%20a%20bad%20model." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/Replit/status/2113389946430185632" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113391644204847365&amp;text=%40GergelyOrosz%20Calling%20the%20window%20early%20is%20useful.%20For%20builders%20the%20takeaway%20is%3A%20don%27t%20bet%20a%20client%20system%20on%20one%20lab%27s%20temporary%20lead.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113391644204847365%26text%3D%2540GergelyOrosz%2520Calling%2520the%2520window%2520early%2520is%2520useful.%2520For%2520builders%2520the%2520takeaway%2520is%253A%2520don%2527t%2520bet%2520a%2520client%2520system%2520on%2520one%2520lab%2527s%2520temporary%2520lead.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113391644204847365&amp;text=%40GergelyOrosz%20Calling%20the%20window%20early%20is%20useful.%20For%20builders%20the%20takeaway%20is%3A%20don%27t%20bet%20a%20client%20system%20on%20one%20lab%27s%20temporary%20lead." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/GergelyOrosz/status/2113391644204847365#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FGergelyOrosz%2Fstatus%2F2113391644204847365;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/GergelyOrosz/status/2113391644204847365" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r34" data-n="34">
       <label class="done"><input type="checkbox" data-done="34" onchange="saveDone()"/> Done</label>
-      <h2>34. @n8n_io</h2>
-      <p class="note-sm">Satya: n8n deploying 50M agentic workflows/month on Foundry</p>
-      <p class="text" id="t34">50M a month says a lot. Most real business automation is agent steps inside a deterministic workflow, not one free-roaming agent.</p>
+      <h2>34. @swyx <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Opus 5.5 best work estimator model</p>
+      <p class="text" id="t34">Work estimation that matches agent speed is a big deal. Planning still assumes human-day units and that&#x27;s why timelines keep lying.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t34', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113337141174383079&amp;text=%40n8n_io%2050M%20a%20month%20says%20a%20lot.%20Most%20real%20business%20automation%20is%20agent%20steps%20inside%20a%20deterministic%20workflow%2C%20not%20one%20free-roaming%20agent." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/n8n_io/status/2113337141174383079" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113283272130412684&amp;text=%40swyx%20Work%20estimation%20that%20matches%20agent%20speed%20is%20a%20big%20deal.%20Planning%20still%20assumes%20human-day%20units%20and%20that%27s%20why%20timelines%20keep%20lying.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113283272130412684%26text%3D%2540swyx%2520Work%2520estimation%2520that%2520matches%2520agent%2520speed%2520is%2520a%2520big%2520deal.%2520Planning%2520still%2520assumes%2520human-day%2520units%2520and%2520that%2527s%2520why%2520timelines%2520keep%2520lying.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113283272130412684&amp;text=%40swyx%20Work%20estimation%20that%20matches%20agent%20speed%20is%20a%20big%20deal.%20Planning%20still%20assumes%20human-day%20units%20and%20that%27s%20why%20timelines%20keep%20lying." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/swyx/status/2113283272130412684#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fswyx%2Fstatus%2F2113283272130412684;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/swyx/status/2113283272130412684" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r35" data-n="35">
       <label class="done"><input type="checkbox" data-done="35" onchange="saveDone()"/> Done</label>
-      <h2>35. @n8n_io</h2>
-      <p class="note-sm">n8n at GTC Berlin: NVIDIA powers models, n8n controls what they&#x27;re allowed to do</p>
-      <p class="text" id="t35">&quot;Models do the work, the workflow decides what they&#x27;re allowed to do&quot; is the cleanest summary of agent architecture I&#x27;ve seen.</p>
+      <h2>35. @Hesamation <span class="tier mid">mid</span></h2>
+      <p class="note-sm">Anthropic deputy CISO: hang on 18 months</p>
+      <p class="text" id="t35">18 months of hanging on is a long time for SMBs with no security hire. Cheap detection + fast patch loops beat waiting for Mythos prices.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t35', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113321873408774616&amp;text=%40n8n_io%20%22Models%20do%20the%20work%2C%20the%20workflow%20decides%20what%20they%27re%20allowed%20to%20do%22%20is%20the%20cleanest%20summary%20of%20agent%20architecture%20I%27ve%20seen." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/n8n_io/status/2113321873408774616" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113365083502072174&amp;text=%40Hesamation%2018%20months%20of%20hanging%20on%20is%20a%20long%20time%20for%20SMBs%20with%20no%20security%20hire.%20Cheap%20detection%20%2B%20fast%20patch%20loops%20beat%20waiting%20for%20Mythos%20prices.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113365083502072174%26text%3D%2540Hesamation%252018%2520months%2520of%2520hanging%2520on%2520is%2520a%2520long%2520time%2520for%2520SMBs%2520with%2520no%2520security%2520hire.%2520Cheap%2520detection%2520%252B%2520fast%2520patch%2520loops%2520beat%2520waiting%2520for%2520Mythos%2520prices.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113365083502072174&amp;text=%40Hesamation%2018%20months%20of%20hanging%20on%20is%20a%20long%20time%20for%20SMBs%20with%20no%20security%20hire.%20Cheap%20detection%20%2B%20fast%20patch%20loops%20beat%20waiting%20for%20Mythos%20prices." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/Hesamation/status/2113365083502072174#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FHesamation%2Fstatus%2F2113365083502072174;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/Hesamation/status/2113365083502072174" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r36" data-n="36">
       <label class="done"><input type="checkbox" data-done="36" onchange="saveDone()"/> Done</label>
-      <h2>36. @hwchase17</h2>
-      <p class="note-sm">Harrison Chase: is &#x27;agent server&#x27; a good name? agent os/kernel?</p>
-      <p class="text" id="t36">Agent server says what it does without overpromising. &quot;OS&quot; makes people expect a lot more than a runtime with state and tools.</p>
+      <h2>36. @Hesamation <span class="tier mid">mid</span></h2>
+      <p class="note-sm">METR at OpenAI: 10% Codex unmonitored</p>
+      <p class="text" id="t36">Unmonitored traffic before compaction is a classic logging bug. Log actions before you summarize context, or you invent blind spots.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t36', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113339406299853076&amp;text=%40hwchase17%20Agent%20server%20says%20what%20it%20does%20without%20overpromising.%20%22OS%22%20makes%20people%20expect%20a%20lot%20more%20than%20a%20runtime%20with%20state%20and%20tools." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/hwchase17/status/2113339406299853076" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113302216945582197&amp;text=%40Hesamation%20Unmonitored%20traffic%20before%20compaction%20is%20a%20classic%20logging%20bug.%20Log%20actions%20before%20you%20summarize%20context%2C%20or%20you%20invent%20blind%20spots.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113302216945582197%26text%3D%2540Hesamation%2520Unmonitored%2520traffic%2520before%2520compaction%2520is%2520a%2520classic%2520logging%2520bug.%2520Log%2520actions%2520before%2520you%2520summarize%2520context%252C%2520or%2520you%2520invent%2520blind%2520spots.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113302216945582197&amp;text=%40Hesamation%20Unmonitored%20traffic%20before%20compaction%20is%20a%20classic%20logging%20bug.%20Log%20actions%20before%20you%20summarize%20context%2C%20or%20you%20invent%20blind%20spots." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/Hesamation/status/2113302216945582197#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FHesamation%2Fstatus%2F2113302216945582197;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/Hesamation/status/2113302216945582197" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r37" data-n="37">
       <label class="done"><input type="checkbox" data-done="37" onchange="saveDone()"/> Done</label>
-      <h2>37. @emollick</h2>
-      <p class="note-sm">Mollick: useful prompt for Codex with computer use</p>
-      <p class="text" id="t37">The prompts that work best for computer use usually spell out when to stop and ask. Without that, it just keeps clicking.</p>
+      <h2>37. @Hesamation <span class="tier mid">mid</span></h2>
+      <p class="note-sm">PHP scanned by Claude Mythos + Daybreak</p>
+      <p class="text" id="t37">Keeping cyber models gated didn&#x27;t stop scanning. Disclosure speed and patch adoption are the real public goods now.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t37', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113361252173091114&amp;text=%40emollick%20The%20prompts%20that%20work%20best%20for%20computer%20use%20usually%20spell%20out%20when%20to%20stop%20and%20ask.%20Without%20that%2C%20it%20just%20keeps%20clicking." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/emollick/status/2113361252173091114" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113151246039241040&amp;text=%40Hesamation%20Keeping%20cyber%20models%20gated%20didn%27t%20stop%20scanning.%20Disclosure%20speed%20and%20patch%20adoption%20are%20the%20real%20public%20goods%20now.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113151246039241040%26text%3D%2540Hesamation%2520Keeping%2520cyber%2520models%2520gated%2520didn%2527t%2520stop%2520scanning.%2520Disclosure%2520speed%2520and%2520patch%2520adoption%2520are%2520the%2520real%2520public%2520goods%2520now.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113151246039241040&amp;text=%40Hesamation%20Keeping%20cyber%20models%20gated%20didn%27t%20stop%20scanning.%20Disclosure%20speed%20and%20patch%20adoption%20are%20the%20real%20public%20goods%20now." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/Hesamation/status/2113151246039241040#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FHesamation%2Fstatus%2F2113151246039241040;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/Hesamation/status/2113151246039241040" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r38" data-n="38">
       <label class="done"><input type="checkbox" data-done="38" onchange="saveDone()"/> Done</label>
-      <h2>38. @kimmonismus</h2>
-      <p class="note-sm">kimmonismus: AI cyberattacks will accelerate AI defense</p>
-      <p class="text" id="t38">The arms race is real, but defense has one structural edge: you know your own systems. Agents with full context on your infra should win that.</p>
+      <h2>38. @ThePrimeagen <span class="tier mega">mega</span></h2>
+      <p class="note-sm">PHP + Railway + Brotli hell of a week</p>
+      <p class="text" id="t38">That stack is every agency&#x27;s client frankenstein. Inventory + blast-radius tiers beat panic updates across 12 unrelated services.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t38', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113372823141896217&amp;text=%40kimmonismus%20The%20arms%20race%20is%20real%2C%20but%20defense%20has%20one%20structural%20edge%3A%20you%20know%20your%20own%20systems.%20Agents%20with%20full%20context%20on%20your%20infra%20should%20win%20that." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/kimmonismus/status/2113372823141896217" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113329965148016726&amp;text=%40ThePrimeagen%20That%20stack%20is%20every%20agency%27s%20client%20frankenstein.%20Inventory%20%2B%20blast-radius%20tiers%20beat%20panic%20updates%20across%2012%20unrelated%20services.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113329965148016726%26text%3D%2540ThePrimeagen%2520That%2520stack%2520is%2520every%2520agency%2527s%2520client%2520frankenstein.%2520Inventory%2520%252B%2520blast-radius%2520tiers%2520beat%2520panic%2520updates%2520across%252012%2520unrelated%2520services.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113329965148016726&amp;text=%40ThePrimeagen%20That%20stack%20is%20every%20agency%27s%20client%20frankenstein.%20Inventory%20%2B%20blast-radius%20tiers%20beat%20panic%20updates%20across%2012%20unrelated%20services." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/ThePrimeagen/status/2113329965148016726#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FThePrimeagen%2Fstatus%2F2113329965148016726;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/ThePrimeagen/status/2113329965148016726" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r39" data-n="39">
       <label class="done"><input type="checkbox" data-done="39" onchange="saveDone()"/> Done</label>
-      <h2>39. @WesRoth</h2>
-      <p class="note-sm">Ideogram Vector 1.0: editable SVG generation</p>
-      <p class="text" id="t39">Editable SVG is the right output. Designers can actually fix one shape instead of regenerating the whole image.</p>
+      <h2>39. @ThePrimeagen <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Update everything or don&#x27;t: both screw you</p>
+      <p class="text" id="t39">Both sides of the PSA are true. Default to auto-update for deps with tests; human gate anything that touches auth, payments, or prod data.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t39', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113442785370259929&amp;text=%40WesRoth%20Editable%20SVG%20is%20the%20right%20output.%20Designers%20can%20actually%20fix%20one%20shape%20instead%20of%20regenerating%20the%20whole%20image." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/WesRoth/status/2113442785370259929" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113265537753227627&amp;text=%40ThePrimeagen%20Both%20sides%20of%20the%20PSA%20are%20true.%20Default%20to%20auto-update%20for%20deps%20with%20tests%3B%20human%20gate%20anything%20that%20touches%20auth%2C%20payments%2C%20or%20prod%20data.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113265537753227627%26text%3D%2540ThePrimeagen%2520Both%2520sides%2520of%2520the%2520PSA%2520are%2520true.%2520Default%2520to%2520auto-update%2520for%2520deps%2520with%2520tests%253B%2520human%2520gate%2520anything%2520that%2520touches%2520auth%252C%2520payments%252C%2520or%2520prod%2520data.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113265537753227627&amp;text=%40ThePrimeagen%20Both%20sides%20of%20the%20PSA%20are%20true.%20Default%20to%20auto-update%20for%20deps%20with%20tests%3B%20human%20gate%20anything%20that%20touches%20auth%2C%20payments%2C%20or%20prod%20data." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/ThePrimeagen/status/2113265537753227627#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FThePrimeagen%2Fstatus%2F2113265537753227627;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/ThePrimeagen/status/2113265537753227627" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r40" data-n="40">
       <label class="done"><input type="checkbox" data-done="40" onchange="saveDone()"/> Done</label>
-      <h2>40. @WesRoth</h2>
-      <p class="note-sm">WesRoth: Decisions API GA, up to 10x faster than via Responses API</p>
-      <p class="text" id="t40">10x faster matters most in multi-step workflows, where small per-step delays stack up into minutes.</p>
+      <h2>40. @ThePrimeagen <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Ok... I see why Bend is pretty radical</p>
+      <p class="text" id="t40">Radical runtimes only matter if your workflow can absorb them. Most business automation still dies on integrations and approvals, not language choice.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t40', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113435243667693848&amp;text=%40WesRoth%2010x%20faster%20matters%20most%20in%20multi-step%20workflows%2C%20where%20small%20per-step%20delays%20stack%20up%20into%20minutes." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/WesRoth/status/2113435243667693848" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113422870181261419&amp;text=%40ThePrimeagen%20Radical%20runtimes%20only%20matter%20if%20your%20workflow%20can%20absorb%20them.%20Most%20business%20automation%20still%20dies%20on%20integrations%20and%20approvals%2C%20not%20language%20choice.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113422870181261419%26text%3D%2540ThePrimeagen%2520Radical%2520runtimes%2520only%2520matter%2520if%2520your%2520workflow%2520can%2520absorb%2520them.%2520Most%2520business%2520automation%2520still%2520dies%2520on%2520integrations%2520and%2520approvals%252C%2520not%2520language%2520choice.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113422870181261419&amp;text=%40ThePrimeagen%20Radical%20runtimes%20only%20matter%20if%20your%20workflow%20can%20absorb%20them.%20Most%20business%20automation%20still%20dies%20on%20integrations%20and%20approvals%2C%20not%20language%20choice." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/ThePrimeagen/status/2113422870181261419#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FThePrimeagen%2Fstatus%2F2113422870181261419;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/ThePrimeagen/status/2113422870181261419" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r41" data-n="41">
       <label class="done"><input type="checkbox" data-done="41" onchange="saveDone()"/> Done</label>
-      <h2>41. @testingcatalog</h2>
-      <p class="note-sm">TestingCatalog: Claude Platform features incl. Agent Skills now on GCP</p>
-      <p class="text" id="t41">Agent Skills on GCP means you can package a workflow once and run it where the company&#x27;s data already sits. That&#x27;s what enterprises were waiting for.</p>
+      <h2>41. @ThePrimeagen <span class="tier mega">mega</span></h2>
+      <p class="note-sm">On the bright side, we are fixing things</p>
+      <p class="text" id="t41">Fixing in public builds more trust than the outage took. Ship the postmortem next — what changed so it can&#x27;t recur.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t41', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113417344877760874&amp;text=%40testingcatalog%20Agent%20Skills%20on%20GCP%20means%20you%20can%20package%20a%20workflow%20once%20and%20run%20it%20where%20the%20company%27s%20data%20already%20sits.%20That%27s%20what%20enterprises%20were%20waiting%20for." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/testingcatalog/status/2113417344877760874" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113386573391606195&amp;text=%40ThePrimeagen%20Fixing%20in%20public%20builds%20more%20trust%20than%20the%20outage%20took.%20Ship%20the%20postmortem%20next%20%E2%80%94%20what%20changed%20so%20it%20can%27t%20recur.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113386573391606195%26text%3D%2540ThePrimeagen%2520Fixing%2520in%2520public%2520builds%2520more%2520trust%2520than%2520the%2520outage%2520took.%2520Ship%2520the%2520postmortem%2520next%2520%25E2%2580%2594%2520what%2520changed%2520so%2520it%2520can%2527t%2520recur.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113386573391606195&amp;text=%40ThePrimeagen%20Fixing%20in%20public%20builds%20more%20trust%20than%20the%20outage%20took.%20Ship%20the%20postmortem%20next%20%E2%80%94%20what%20changed%20so%20it%20can%27t%20recur." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/ThePrimeagen/status/2113386573391606195#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FThePrimeagen%2Fstatus%2F2113386573391606195;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/ThePrimeagen/status/2113386573391606195" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r42" data-n="42">
       <label class="done"><input type="checkbox" data-done="42" onchange="saveDone()"/> Done</label>
-      <h2>42. @testingcatalog</h2>
-      <p class="note-sm">TestingCatalog: Claude auto mode on by default for Pro, Max, Team next week</p>
-      <p class="text" id="t42">Fewer prompts is good, since people stop reading them anyway. I&#x27;d love to see a log of what auto mode blocked and why.</p>
+      <h2>42. @testingcatalog <span class="tier mid">mid</span></h2>
+      <p class="note-sm">Grok Bot can connect to Calendar/Reminders/Home</p>
+      <p class="text" id="t42">Phone OS hooks are huge for personal agents. For business automations I&#x27;d still keep send/pay actions behind an explicit approve step.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t42', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113381842187604017&amp;text=%40testingcatalog%20Fewer%20prompts%20is%20good%2C%20since%20people%20stop%20reading%20them%20anyway.%20I%27d%20love%20to%20see%20a%20log%20of%20what%20auto%20mode%20blocked%20and%20why." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/testingcatalog/status/2113381842187604017" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113411683997606290&amp;text=%40testingcatalog%20Phone%20OS%20hooks%20are%20huge%20for%20personal%20agents.%20For%20business%20automations%20I%27d%20still%20keep%20send%2Fpay%20actions%20behind%20an%20explicit%20approve%20step.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113411683997606290%26text%3D%2540testingcatalog%2520Phone%2520OS%2520hooks%2520are%2520huge%2520for%2520personal%2520agents.%2520For%2520business%2520automations%2520I%2527d%2520still%2520keep%2520send%252Fpay%2520actions%2520behind%2520an%2520explicit%2520approve%2520step.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113411683997606290&amp;text=%40testingcatalog%20Phone%20OS%20hooks%20are%20huge%20for%20personal%20agents.%20For%20business%20automations%20I%27d%20still%20keep%20send%2Fpay%20actions%20behind%20an%20explicit%20approve%20step." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/testingcatalog/status/2113411683997606290#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftestingcatalog%2Fstatus%2F2113411683997606290;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/testingcatalog/status/2113411683997606290" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r43" data-n="43">
       <label class="done"><input type="checkbox" data-done="43" onchange="saveDone()"/> Done</label>
-      <h2>43. @testingcatalog</h2>
-      <p class="note-sm">Envato MonoDesk: freelancer workspace from inquiry to invoice</p>
-      <p class="text" id="t43">Auto-creating the project from the signed proposal is the clever part. That handoff is where scope details usually get lost.</p>
+      <h2>43. @WesRoth <span class="tier mid">mid</span></h2>
+      <p class="note-sm">Grok Bot 1Password integration rolling out</p>
+      <p class="text" id="t43">User-approved logins beat pasting passwords into chat. Next step: short-lived sessions and a clear revoke list per agent.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t43', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113379478592168336&amp;text=%40testingcatalog%20Auto-creating%20the%20project%20from%20the%20signed%20proposal%20is%20the%20clever%20part.%20That%20handoff%20is%20where%20scope%20details%20usually%20get%20lost." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/testingcatalog/status/2113379478592168336" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113420135969243183&amp;text=%40WesRoth%20User-approved%20logins%20beat%20pasting%20passwords%20into%20chat.%20Next%20step%3A%20short-lived%20sessions%20and%20a%20clear%20revoke%20list%20per%20agent.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113420135969243183%26text%3D%2540WesRoth%2520User-approved%2520logins%2520beat%2520pasting%2520passwords%2520into%2520chat.%2520Next%2520step%253A%2520short-lived%2520sessions%2520and%2520a%2520clear%2520revoke%2520list%2520per%2520agent.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113420135969243183&amp;text=%40WesRoth%20User-approved%20logins%20beat%20pasting%20passwords%20into%20chat.%20Next%20step%3A%20short-lived%20sessions%20and%20a%20clear%20revoke%20list%20per%20agent." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/WesRoth/status/2113420135969243183#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FWesRoth%2Fstatus%2F2113420135969243183;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/WesRoth/status/2113420135969243183" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r44" data-n="44">
       <label class="done"><input type="checkbox" data-done="44" onchange="saveDone()"/> Done</label>
-      <h2>44. @testingcatalog</h2>
-      <p class="note-sm">Kylon Annotations: remake a video you like around your brand</p>
-      <p class="text" id="t44">Breaking a video into components before rebuilding is the right approach. Curious how it handles music and footage rights in the original.</p>
+      <h2>44. @WesRoth <span class="tier mid">mid</span></h2>
+      <p class="note-sm">Claude auto action reviews by default</p>
+      <p class="text" id="t44">Risk-based auto mode is the pattern to copy. Read free, internal writes logged, external/money needs a human.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t44', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113392697964671474&amp;text=%40testingcatalog%20Breaking%20a%20video%20into%20components%20before%20rebuilding%20is%20the%20right%20approach.%20Curious%20how%20it%20handles%20music%20and%20footage%20rights%20in%20the%20original." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/testingcatalog/status/2113392697964671474" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113412585844588792&amp;text=%40WesRoth%20Risk-based%20auto%20mode%20is%20the%20pattern%20to%20copy.%20Read%20free%2C%20internal%20writes%20logged%2C%20external%2Fmoney%20needs%20a%20human.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113412585844588792%26text%3D%2540WesRoth%2520Risk-based%2520auto%2520mode%2520is%2520the%2520pattern%2520to%2520copy.%2520Read%2520free%252C%2520internal%2520writes%2520logged%252C%2520external%252Fmoney%2520needs%2520a%2520human.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113412585844588792&amp;text=%40WesRoth%20Risk-based%20auto%20mode%20is%20the%20pattern%20to%20copy.%20Read%20free%2C%20internal%20writes%20logged%2C%20external%2Fmoney%20needs%20a%20human." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/WesRoth/status/2113412585844588792#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FWesRoth%2Fstatus%2F2113412585844588792;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/WesRoth/status/2113412585844588792" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r45" data-n="45">
       <label class="done"><input type="checkbox" data-done="45" onchange="saveDone()"/> Done</label>
-      <h2>45. @TheRundownAI</h2>
-      <p class="note-sm">Canva Craft debuts at No. 4 on Design Arena</p>
-      <p class="text" id="t45">Planning the layout before drawing is why it converts to editable designs. Same lesson as agents: plan first, then generate.</p>
+      <h2>45. @e2b <span class="tier mid">mid</span></h2>
+      <p class="note-sm">E2B custom KVM: isolation without speed loss</p>
+      <p class="text" id="t45">VM isolation without killing cold start is the whole game for agent sandboxes. Pre-warmed templates are how you make that usable day to day.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t45', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113392393953104076&amp;text=%40TheRundownAI%20Planning%20the%20layout%20before%20drawing%20is%20why%20it%20converts%20to%20editable%20designs.%20Same%20lesson%20as%20agents%3A%20plan%20first%2C%20then%20generate." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/TheRundownAI/status/2113392393953104076" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113289273164141037&amp;text=%40e2b%20VM%20isolation%20without%20killing%20cold%20start%20is%20the%20whole%20game%20for%20agent%20sandboxes.%20Pre-warmed%20templates%20are%20how%20you%20make%20that%20usable%20day%20to%20day.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113289273164141037%26text%3D%2540e2b%2520VM%2520isolation%2520without%2520killing%2520cold%2520start%2520is%2520the%2520whole%2520game%2520for%2520agent%2520sandboxes.%2520Pre-warmed%2520templates%2520are%2520how%2520you%2520make%2520that%2520usable%2520day%2520to%2520day.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113289273164141037&amp;text=%40e2b%20VM%20isolation%20without%20killing%20cold%20start%20is%20the%20whole%20game%20for%20agent%20sandboxes.%20Pre-warmed%20templates%20are%20how%20you%20make%20that%20usable%20day%20to%20day." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/e2b/status/2113289273164141037#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fe2b%2Fstatus%2F2113289273164141037;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/e2b/status/2113289273164141037" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r46" data-n="46">
       <label class="done"><input type="checkbox" data-done="46" onchange="saveDone()"/> Done</label>
-      <h2>46. @rohanpaul_ai</h2>
-      <p class="note-sm">Canva Craft has a planner that writes composition before pixels</p>
-      <p class="text" id="t46">A planner that outputs structure first is basically an agent pattern applied to images. Makes edits far more predictable.</p>
+      <h2>46. @n8n_io <span class="tier mid">mid</span></h2>
+      <p class="note-sm">n8n template: consistent AI video characters</p>
+      <p class="text" id="t46">Character consistency templates are a good n8n fit: deterministic pipeline around a generative step. That&#x27;s most useful business AI too.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t46', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113368356099424702&amp;text=%40rohanpaul_ai%20A%20planner%20that%20outputs%20structure%20first%20is%20basically%20an%20agent%20pattern%20applied%20to%20images.%20Makes%20edits%20far%20more%20predictable." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/rohanpaul_ai/status/2113368356099424702" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113220092716581006&amp;text=%40n8n_io%20Character%20consistency%20templates%20are%20a%20good%20n8n%20fit%3A%20deterministic%20pipeline%20around%20a%20generative%20step.%20That%27s%20most%20useful%20business%20AI%20too.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113220092716581006%26text%3D%2540n8n_io%2520Character%2520consistency%2520templates%2520are%2520a%2520good%2520n8n%2520fit%253A%2520deterministic%2520pipeline%2520around%2520a%2520generative%2520step.%2520That%2527s%2520most%2520useful%2520business%2520AI%2520too.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113220092716581006&amp;text=%40n8n_io%20Character%20consistency%20templates%20are%20a%20good%20n8n%20fit%3A%20deterministic%20pipeline%20around%20a%20generative%20step.%20That%27s%20most%20useful%20business%20AI%20too." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/n8n_io/status/2113220092716581006#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fn8n_io%2Fstatus%2F2113220092716581006;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/n8n_io/status/2113220092716581006" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r47" data-n="47">
       <label class="done"><input type="checkbox" data-done="47" onchange="saveDone()"/> Done</label>
-      <h2>47. @rohanpaul_ai</h2>
-      <p class="note-sm">NVIDIA lays out the full Vera Rubin agentic system stack</p>
-      <p class="text" id="t47">Separate hardware for secure agent processing is notable. Isolation is turning into a hardware concern, not just a sandbox setting.</p>
+      <h2>47. @theo <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Can I finally stop explaining what a harness is</p>
+      <p class="text" id="t47">Please do. Every team reinventing &#x27;harness&#x27; as a synonym for &#x27;chat UI&#x27; is burning a week of vocabulary before they ship.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t47', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113375187840479690&amp;text=%40rohanpaul_ai%20Separate%20hardware%20for%20secure%20agent%20processing%20is%20notable.%20Isolation%20is%20turning%20into%20a%20hardware%20concern%2C%20not%20just%20a%20sandbox%20setting." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/rohanpaul_ai/status/2113375187840479690" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113426556861444271&amp;text=%40theo%20Please%20do.%20Every%20team%20reinventing%20%27harness%27%20as%20a%20synonym%20for%20%27chat%20UI%27%20is%20burning%20a%20week%20of%20vocabulary%20before%20they%20ship.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113426556861444271%26text%3D%2540theo%2520Please%2520do.%2520Every%2520team%2520reinventing%2520%2527harness%2527%2520as%2520a%2520synonym%2520for%2520%2527chat%2520UI%2527%2520is%2520burning%2520a%2520week%2520of%2520vocabulary%2520before%2520they%2520ship.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113426556861444271&amp;text=%40theo%20Please%20do.%20Every%20team%20reinventing%20%27harness%27%20as%20a%20synonym%20for%20%27chat%20UI%27%20is%20burning%20a%20week%20of%20vocabulary%20before%20they%20ship." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/theo/status/2113426556861444271#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2113426556861444271;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/theo/status/2113426556861444271" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r48" data-n="48">
       <label class="done"><input type="checkbox" data-done="48" onchange="saveDone()"/> Done</label>
-      <h2>48. @Prathkum</h2>
-      <p class="note-sm">Prathkum: Claude formal verification is the most underrated AI result</p>
-      <p class="text" id="t48">Agreed. Bug finding gets headlines, but proofs are what let you trust code that agents and humans keep changing.</p>
+      <h2>48. @ArtificialAnlys <span class="tier mega">mega</span></h2>
+      <p class="note-sm">FrontierCode v1.1: Claude Code Opus 56%</p>
+      <p class="text" id="t48">Maintainer-would-merge grading is stricter in a good way. Pass rate dropping under a harder bar is signal, not regression theater.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t48', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113393495717421093&amp;text=%40Prathkum%20Agreed.%20Bug%20finding%20gets%20headlines%2C%20but%20proofs%20are%20what%20let%20you%20trust%20code%20that%20agents%20and%20humans%20keep%20changing." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/Prathkum/status/2113393495717421093" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113424556069372203&amp;text=%40ArtificialAnlys%20Maintainer-would-merge%20grading%20is%20stricter%20in%20a%20good%20way.%20Pass%20rate%20dropping%20under%20a%20harder%20bar%20is%20signal%2C%20not%20regression%20theater.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113424556069372203%26text%3D%2540ArtificialAnlys%2520Maintainer-would-merge%2520grading%2520is%2520stricter%2520in%2520a%2520good%2520way.%2520Pass%2520rate%2520dropping%2520under%2520a%2520harder%2520bar%2520is%2520signal%252C%2520not%2520regression%2520theater.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113424556069372203&amp;text=%40ArtificialAnlys%20Maintainer-would-merge%20grading%20is%20stricter%20in%20a%20good%20way.%20Pass%20rate%20dropping%20under%20a%20harder%20bar%20is%20signal%2C%20not%20regression%20theater." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/ArtificialAnlys/status/2113424556069372203#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FArtificialAnlys%2Fstatus%2F2113424556069372203;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/ArtificialAnlys/status/2113424556069372203" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r49" data-n="49">
       <label class="done"><input type="checkbox" data-done="49" onchange="saveDone()"/> Done</label>
-      <h2>49. @Hesamation</h2>
-      <p class="note-sm">Hesamation: AI is an accelerator in whichever direction you choose</p>
-      <p class="text" id="t49">The Phaedrus quote fits. The difference now is speed. Shortcuts compound faster, and so does curiosity.</p>
+      <h2>49. @alexalbert__ <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Alex: running small biz with Claude, tell me</p>
+      <p class="text" id="t49">Most of what I see: lead follow-up, invoice nudges, and support triage with a human approve step. Not autonomous — just fewer dropped balls.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t49', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113409048288571635&amp;text=%40Hesamation%20The%20Phaedrus%20quote%20fits.%20The%20difference%20now%20is%20speed.%20Shortcuts%20compound%20faster%2C%20and%20so%20does%20curiosity." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/Hesamation/status/2113409048288571635" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113386456098197941&amp;text=%40alexalbert__%20Most%20of%20what%20I%20see%3A%20lead%20follow-up%2C%20invoice%20nudges%2C%20and%20support%20triage%20with%20a%20human%20approve%20step.%20Not%20autonomous%20%E2%80%94%20just%20fewer%20dropped%20balls.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113386456098197941%26text%3D%2540alexalbert__%2520Most%2520of%2520what%2520I%2520see%253A%2520lead%2520follow-up%252C%2520invoice%2520nudges%252C%2520and%2520support%2520triage%2520with%2520a%2520human%2520approve%2520step.%2520Not%2520autonomous%2520%25E2%2580%2594%2520just%2520fewer%2520dropped%2520balls.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113386456098197941&amp;text=%40alexalbert__%20Most%20of%20what%20I%20see%3A%20lead%20follow-up%2C%20invoice%20nudges%2C%20and%20support%20triage%20with%20a%20human%20approve%20step.%20Not%20autonomous%20%E2%80%94%20just%20fewer%20dropped%20balls." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/alexalbert__/status/2113386456098197941#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Falexalbert__%2Fstatus%2F2113386456098197941;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/alexalbert__/status/2113386456098197941" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
     <article class="card" id="r50" data-n="50">
       <label class="done"><input type="checkbox" data-done="50" onchange="saveDone()"/> Done</label>
-      <h2>50. @ArtificialAnlys</h2>
-      <p class="note-sm">Ming-3.0-tts: top-tier TTS in 0.5B params, MIT licensed</p>
-      <p class="text" id="t50">0.5B and MIT licensed means voice agents that run on cheap hardware. That opens up a lot for small business phone flows.</p>
+      <h2>50. @ClaudeDevs <span class="tier mega">mega</span></h2>
+      <p class="note-sm">Agent Skills TSC: roadmap, proposals, security</p>
+      <p class="text" id="t50">Versioned skills + a proposal process is what client SOPs need. Without that, every agent rewrite becomes a silent behavior change.</p>
       <div class="actions">
         <button type="button" class="btn primary" onclick="copyText('t50', this)">1. Copy reply</button>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113380805552857591&amp;text=%40ArtificialAnlys%200.5B%20and%20MIT%20licensed%20means%20voice%20agents%20that%20run%20on%20cheap%20hardware.%20That%20opens%20up%20a%20lot%20for%20small%20business%20phone%20flows." target="x-reply-composer" rel="opener"
-           onclick="return openNamed(event, this, 'x-reply-composer')">2. Open composer</a>
-        <a class="btn" href="https://x.com/ArtificialAnlys/status/2113380805552857591" target="x-reply-post" rel="opener"
+        <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2113328529911730587&amp;text=%40ClaudeDevs%20Versioned%20skills%20%2B%20a%20proposal%20process%20is%20what%20client%20SOPs%20need.%20Without%20that%2C%20every%20agent%20rewrite%20becomes%20a%20silent%20behavior%20change.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113328529911730587%26text%3D%2540ClaudeDevs%2520Versioned%2520skills%2520%252B%2520a%2520proposal%2520process%2520is%2520what%2520client%2520SOPs%2520need.%2520Without%2520that%252C%2520every%2520agent%2520rewrite%2520becomes%2520a%2520silent%2520behavior%2520change.;end" target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113328529911730587&amp;text=%40ClaudeDevs%20Versioned%20skills%20%2B%20a%20proposal%20process%20is%20what%20client%20SOPs%20need.%20Without%20that%2C%20every%20agent%20rewrite%20becomes%20a%20silent%20behavior%20change." target="x-reply-composer" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+        <a class="btn" href="intent://x.com/ClaudeDevs/status/2113328529911730587#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2113328529911730587;end" target="x-reply-post" rel="opener"
+           onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+        <a class="btn" href="https://x.com/ClaudeDevs/status/2113328529911730587" target="x-reply-post" rel="opener"
            onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
       </div>
-      <p class="hint">If step 2 replaces this page: long-press → <b>Open in new tab</b>, then switch back here.</p>
+      <p class="hint">If a button replaces this page: <b>long-press → Open in new tab</b>, then switch back here.</p>
     </article>
 <script>
-const KEY = 'x-replies-done-2026-10-23';
+const KEY = 'x-replies-done-2026-10-23-v2';
 function loadDone() {
   try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { return {}; }
 }
@@ -795,9 +999,6 @@ function openNamed(event, anchor, name) {
       return false;
     }
   } catch(e) {}
-  // Popup blocked or Android ignored named window — let the <a> run.
-  // Prefer not replacing this tab: still prevent and tell user to long-press.
-  // If we prevent without open, nothing happens — so allow default as last resort.
   return true;
 }
 restoreDone();
