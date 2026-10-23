@@ -1,0 +1,259 @@
+# 50 replies under their posts (Android-safe)
+
+On Android, the X app **cannot** open a prefilled reply from a link (X drops that part). Two ways that work:
+
+1. **Open post** → tap **Reply** at the bottom → paste the text → Post
+2. **Reply in Chrome** → opens Chrome (not the X app) with the reply already attached under their post
+
+Do **not** use any link that opens the blue “Post” composer with only `@handle` and no “Replying to …” banner.
+
+### 1. @claudeai
+- [Open their post](https://x.com/claudeai/status/2113380122468454765)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113380122468454765&text=%40claudeai%20Billing%20through%20existing%20cloud%20commitments%20is%20the%20real%20unlock%20here.%20For%20a%20lot%20of%20companies%2C%20procurement%20was%20the%20blocker%2C%20not%20the%20model.)
+- Paste text: `Billing through existing cloud commitments is the real unlock here. For a lot of companies, procurement was the blocker, not the model.`
+
+### 2. @ClaudeDevs
+- [Open their post](https://x.com/ClaudeDevs/status/2113381868364271743)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113381868364271743&text=%40ClaudeDevs%20Same-day%20feature%20parity%20is%20the%20key%20bit.%20Does%20that%20include%20the%20Managed%20Agents%20permission%20settings%2C%20or%20do%20teams%20configure%20those%20separately%20per%20cloud%3F)
+- Paste text: `Same-day feature parity is the key bit. Does that include the Managed Agents permission settings, or do teams configure those separately per cloud?`
+
+### 3. @OpenAIDevs
+- [Open their post](https://x.com/OpenAIDevs/status/2113346642787086538)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113346642787086538&text=%40OpenAIDevs%20This%20is%20the%20piece%20most%20automations%20actually%20need.%20Half%20the%20LLM%20calls%20in%20a%20typical%20workflow%20are%20routing%20a%20ticket%2C%20not%20writing%20anything.)
+- Paste text: `This is the piece most automations actually need. Half the LLM calls in a typical workflow are routing a ticket, not writing anything.`
+
+### 4. @AravSrinivas
+- [Open their post](https://x.com/AravSrinivas/status/2113420151232352444)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113420151232352444&text=%40AravSrinivas%20Local%20routing%20is%20huge%20for%20anything%20with%20customer%20data.%20Classify%20on-device%2C%20and%20only%20send%20the%20cases%20that%20need%20a%20big%20model%20to%20the%20cloud.)
+- Paste text: `Local routing is huge for anything with customer data. Classify on-device, and only send the cases that need a big model to the cloud.`
+
+### 5. @rauchg
+- [Open their post](https://x.com/rauchg/status/2113399539227136084)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113399539227136084&text=%40rauchg%20The%20hard%20part%20is%20all%20the%20internal%20scripts%20and%20cron%20jobs%20with%20a%20key%20pasted%20in%202021.%20Short-lived%20tokens%20need%20to%20be%20the%20default%20in%20every%20template%20and%20starter%2C%20or%20nobody%20migrates.)
+- Paste text: `The hard part is all the internal scripts and cron jobs with a key pasted in 2021. Short-lived tokens need to be the default in every template and starter, or nobody migrates.`
+
+### 6. @vercel
+- [Open their post](https://x.com/vercel/status/2113397272943976560)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113397272943976560&text=%40vercel%208.4%25%20is%20rough.%20Agents%20make%20it%20worse%20too%2C%20since%20every%20new%20tool%20connection%20tends%20to%20mean%20one%20more%20long-lived%20API%20key%20sitting%20in%20an%20env%20file.)
+- Paste text: `8.4% is rough. Agents make it worse too, since every new tool connection tends to mean one more long-lived API key sitting in an env file.`
+
+### 7. @alexalbert__
+- [Open their post](https://x.com/alexalbert__/status/2113386454907007444)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113386454907007444&text=%40alexalbert__%20Agree%20on%20the%20upside.%20Most%20small%20businesses%20don%27t%20need%20an%20autonomous%20agent%2C%20though.%20They%20need%20the%20follow-ups%2C%20bookings%20and%20invoices%20to%20stop%20slipping%20through%20the%20cracks.)
+- Paste text: `Agree on the upside. Most small businesses don't need an autonomous agent, though. They need the follow-ups, bookings and invoices to stop slipping through the cracks.`
+
+### 8. @ArtificialAnlys
+- [Open their post](https://x.com/ArtificialAnlys/status/2113424551396934134)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113424551396934134&text=%40ArtificialAnlys%20Nice%20to%20see%20the%20harness%20in%20the%20name%2C%20not%20just%20the%20model.%20Same%20model%20in%20a%20different%20harness%20can%20land%20in%20a%20very%20different%20place.)
+- Paste text: `Nice to see the harness in the name, not just the model. Same model in a different harness can land in a very different place.`
+
+### 9. @theo
+- [Open their post](https://x.com/theo/status/2113380576652890591)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113380576652890591&text=%40theo%20Simplest%20way%20I%27ve%20seen%20it%20put%3A%20the%20model%20decides%20what%20to%20do%20next%2C%20the%20harness%20decides%20what%20it%27s%20allowed%20to%20do%20and%20remembers%20what%20happened.)
+- Paste text: `Simplest way I've seen it put: the model decides what to do next, the harness decides what it's allowed to do and remembers what happened.`
+
+### 10. @omarsar0
+- [Open their post](https://x.com/omarsar0/status/2113435080278360133)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113435080278360133&text=%40omarsar0%20Owning%20observability%20is%20the%20underrated%20reason.%20When%20an%20agent%20does%20something%20weird%20in%20prod%2C%20you%20need%20your%20own%20traces%2C%20not%20a%20vendor%20dashboard.)
+- Paste text: `Owning observability is the underrated reason. When an agent does something weird in prod, you need your own traces, not a vendor dashboard.`
+
+### 11. @svpino
+- [Open their post](https://x.com/svpino/status/2113362839666876437)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113362839666876437&text=%40svpino%20The%20client-update%20piece%20is%20the%20one%20I%27d%20trust%20first.%20Proposals%20and%20invoices%20still%20deserve%20a%20human%20glance%20before%20they%20go%20out.)
+- Paste text: `The client-update piece is the one I'd trust first. Proposals and invoices still deserve a human glance before they go out.`
+
+### 12. @svpino
+- [Open their post](https://x.com/svpino/status/2113374845522395618)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113374845522395618&text=%40svpino%20Curious%20how%20it%20handles%20stale%20or%20wrong%20memories.%20Yesterday%27s%20feedback%20being%20applied%20today%20is%20great%20until%20yesterday%27s%20feedback%20was%20a%20one-off.)
+- Paste text: `Curious how it handles stale or wrong memories. Yesterday's feedback being applied today is great until yesterday's feedback was a one-off.`
+
+### 13. @Replit
+- [Open their post](https://x.com/Replit/status/2113376576230637629)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113376576230637629&text=%40Replit%20Does%20it%20deploy%20fixes%20straight%20to%20prod%2C%20or%20open%20a%20change%20someone%20approves%20first%3F%20That%20one%20setting%20decides%20whether%20I%27d%20let%20it%20near%20a%20client%20app.)
+- Paste text: `Does it deploy fixes straight to prod, or open a change someone approves first? That one setting decides whether I'd let it near a client app.`
+
+### 14. @GergelyOrosz
+- [Open their post](https://x.com/GergelyOrosz/status/2113377199793332320)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113377199793332320&text=%40GergelyOrosz%20The%20bottleneck%20flips%20from%20finding%20to%20fixing%20and%20shipping%20patches.%20Teams%20without%20solid%20tests%20and%20fast%20deploys%20will%20feel%20this%20the%20most.)
+- Paste text: `The bottleneck flips from finding to fixing and shipping patches. Teams without solid tests and fast deploys will feel this the most.`
+
+### 15. @NickADobos
+- [Open their post](https://x.com/NickADobos/status/2113430301183823901)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113430301183823901&text=%40NickADobos%20The%20scary%20part%20isn%27t%20the%20count%2C%20it%27s%20patch%20adoption.%20Plenty%20of%20businesses%20still%20run%20software%20that%20never%20got%20last%20year%27s%20fixes.)
+- Paste text: `The scary part isn't the count, it's patch adoption. Plenty of businesses still run software that never got last year's fixes.`
+
+### 16. @rauchg
+- [Open their post](https://x.com/rauchg/status/2113357674989650307)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113357674989650307&text=%40rauchg%20Matches%20what%20I%20see%20in%20automation%20work.%20The%20durable%20value%20sits%20in%20clean%20APIs%20and%20data%3B%20the%20UI%20becomes%20whatever%20the%20user%20needs%20that%20day.)
+- Paste text: `Matches what I see in automation work. The durable value sits in clean APIs and data; the UI becomes whatever the user needs that day.`
+
+### 17. @AravSrinivas
+- [Open their post](https://x.com/AravSrinivas/status/2113368776532271185)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113368776532271185&text=%40AravSrinivas%20Lead%20enrichment%20at%2050k%20rows%20with%20web%20search%20per%20row%20is%20a%20real%20use%20case.%20How%20are%20failed%20or%20low-confidence%20rows%20flagged%20in%20the%20output%3F)
+- Paste text: `Lead enrichment at 50k rows with web search per row is a real use case. How are failed or low-confidence rows flagged in the output?`
+
+### 18. @WesRoth
+- [Open their post](https://x.com/WesRoth/status/2113427685267624182)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113427685267624182&text=%40WesRoth%20Pause%2Fresume%20is%20the%20interesting%20part.%20Long-running%20agents%20waiting%20on%20a%20human%20approval%20shouldn%27t%20burn%20compute%20the%20whole%20time.)
+- Paste text: `Pause/resume is the interesting part. Long-running agents waiting on a human approval shouldn't burn compute the whole time.`
+
+### 19. @WesRoth
+- [Open their post](https://x.com/WesRoth/status/2113450333976375684)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113450333976375684&text=%40WesRoth%20Context%20compaction%20as%20a%20monitoring%20blind%20spot%20is%20a%20great%20catch.%20Anyone%20logging%20agent%20actions%20should%20log%20before%20summarizing%2C%20not%20after.)
+- Paste text: `Context compaction as a monitoring blind spot is a great catch. Anyone logging agent actions should log before summarizing, not after.`
+
+### 20. @a16z
+- [Open their post](https://x.com/a16z/status/2113404552439558377)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113404552439558377&text=%40a16z%20Defenders%20win%20only%20if%20fixes%20ship%20as%20fast%20as%20findings.%20Most%20small%20companies%20don%27t%20have%20anyone%20whose%20job%20is%20to%20apply%20patches.)
+- Paste text: `Defenders win only if fixes ship as fast as findings. Most small companies don't have anyone whose job is to apply patches.`
+
+### 21. @e2b
+- [Open their post](https://x.com/e2b/status/2113401615441146308)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113401615441146308&text=%40e2b%20Testing%20agents%20against%20a%20stateful%20twin%20is%20the%20right%20idea.%20Most%20agent%20bugs%20show%20up%20on%20the%203rd%20or%204th%20step%2C%20not%20the%20first%20call.)
+- Paste text: `Testing agents against a stateful twin is the right idea. Most agent bugs show up on the 3rd or 4th step, not the first call.`
+
+### 22. @ArtificialAnlys
+- [Open their post](https://x.com/ArtificialAnlys/status/2113402182292648369)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113402182292648369&text=%40ArtificialAnlys%20Same%20intelligence%20score%2C%20rank%201%20vs%2080%20on%20slop%2C%20is%20wild.%20For%20client-facing%20writing%2C%20that%20ranking%20might%20matter%20more%20than%20the%20intelligence%20index.)
+- Paste text: `Same intelligence score, rank 1 vs 80 on slop, is wild. For client-facing writing, that ranking might matter more than the intelligence index.`
+
+### 23. @testingcatalog
+- [Open their post](https://x.com/testingcatalog/status/2113398273352368473)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113398273352368473&text=%40testingcatalog%20Predicate%20%2B%20score%20is%20basically%20every%20if-node%20in%20an%20automation%2C%20but%20now%20with%20a%20confidence%20number%20you%20can%20threshold%20for%20human%20review.)
+- Paste text: `Predicate + score is basically every if-node in an automation, but now with a confidence number you can threshold for human review.`
+
+### 24. @rauchg
+- [Open their post](https://x.com/rauchg/status/2113451268316205515)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113451268316205515&text=%40rauchg%20Tools%20as%20a%20marketplace%20inside%20the%20gateway%20is%20clever.%20Where%20does%20auth%20live%20when%20a%20tool%20needs%20a%20user%27s%20own%20account%20instead%20of%20a%20public%20API%3F)
+- Paste text: `Tools as a marketplace inside the gateway is clever. Where does auth live when a tool needs a user's own account instead of a public API?`
+
+### 25. @rauchg
+- [Open their post](https://x.com/rauchg/status/2113383291621671147)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113383291621671147&text=%40rauchg%20Temporary%20deploys%20are%20perfect%20for%20agent%20output.%20Let%20it%20ship%20a%20preview%2C%20a%20human%20checks%20it%2C%20and%20nothing%20permanent%20exists%20until%20someone%20says%20yes.)
+- Paste text: `Temporary deploys are perfect for agent output. Let it ship a preview, a human checks it, and nothing permanent exists until someone says yes.`
+
+### 26. @swyx
+- [Open their post](https://x.com/swyx/status/2113359027682050352)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113359027682050352&text=%40swyx%20Agree.%20Triage%20is%20the%20new%20bottleneck.%20Ranking%20bugs%20by%20actual%20exposure%20matters%20more%20than%20the%20raw%20count%20right%20now.)
+- Paste text: `Agree. Triage is the new bottleneck. Ranking bugs by actual exposure matters more than the raw count right now.`
+
+### 27. @ThePrimeagen
+- [Open their post](https://x.com/ThePrimeagen/status/2113375327057506499)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113375327057506499&text=%40ThePrimeagen%20Voice%20for%20design%20talk%20and%20text%20for%20code%20changes%20feels%20like%20the%20right%20split.%20Typing%20out%20architecture%20ideas%20kills%20the%20flow.)
+- Paste text: `Voice for design talk and text for code changes feels like the right split. Typing out architecture ideas kills the flow.`
+
+### 28. @ThePrimeagen
+- [Open their post](https://x.com/ThePrimeagen/status/2113377142721692103)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113377142721692103&text=%40ThePrimeagen%20The%20flattery%20is%20a%20real%20cost.%20If%20every%20idea%20gets%20called%20brilliant%2C%20you%20lose%20the%20one%20signal%20you%20wanted%20from%20it%3A%20is%20this%20wrong%3F)
+- Paste text: `The flattery is a real cost. If every idea gets called brilliant, you lose the one signal you wanted from it: is this wrong?`
+
+### 29. @mattshumer_
+- [Open their post](https://x.com/mattshumer_/status/2113363050745217364)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113363050745217364&text=%40mattshumer_%20This%20is%20needed.%20Password%20manager%2C%202FA%20on%20email%20first%2C%20and%20stop%20reusing%20passwords%20covers%20most%20of%20the%20risk%20for%20normal%20people.)
+- Paste text: `This is needed. Password manager, 2FA on email first, and stop reusing passwords covers most of the risk for normal people.`
+
+### 30. @petergyang
+- [Open their post](https://x.com/petergyang/status/2113405131106742406)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113405131106742406&text=%40petergyang%20Nice%20idea%20to%20have%20AI%20walk%20people%20through%20it.%20Step%20one%20for%20most%20people%20should%20be%20locking%20down%20the%20email%20account%2C%20since%20everything%20resets%20through%20it.)
+- Paste text: `Nice idea to have AI walk people through it. Step one for most people should be locking down the email account, since everything resets through it.`
+
+### 31. @petergyang
+- [Open their post](https://x.com/petergyang/status/2113393808935391270)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113393808935391270&text=%40petergyang%20The%20least%20glamorous%20agent%20failure%20mode.%20Anything%20long-running%20needs%20to%20resume%20cleanly%20after%20the%20network%20drops.)
+- Paste text: `The least glamorous agent failure mode. Anything long-running needs to resume cleanly after the network drops.`
+
+### 32. @svpino
+- [Open their post](https://x.com/svpino/status/2113352457359097930)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113352457359097930&text=%40svpino%20The%20code%20isn%27t%20going%20away.%20The%20open%20question%20is%20who%20owns%20reviewing%20and%20maintaining%20it%2C%20and%20most%20teams%20haven%27t%20decided.)
+- Paste text: `The code isn't going away. The open question is who owns reviewing and maintaining it, and most teams haven't decided.`
+
+### 33. @Replit
+- [Open their post](https://x.com/Replit/status/2113389946430185632)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113389946430185632&text=%40Replit%20Free%20exploration%20before%20building%20is%20smart.%20Most%20bad%20builds%20come%20from%20a%20fuzzy%20brief%2C%20not%20a%20bad%20model.)
+- Paste text: `Free exploration before building is smart. Most bad builds come from a fuzzy brief, not a bad model.`
+
+### 34. @n8n_io
+- [Open their post](https://x.com/n8n_io/status/2113337141174383079)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113337141174383079&text=%40n8n_io%2050M%20a%20month%20says%20a%20lot.%20Most%20real%20business%20automation%20is%20agent%20steps%20inside%20a%20deterministic%20workflow%2C%20not%20one%20free-roaming%20agent.)
+- Paste text: `50M a month says a lot. Most real business automation is agent steps inside a deterministic workflow, not one free-roaming agent.`
+
+### 35. @n8n_io
+- [Open their post](https://x.com/n8n_io/status/2113321873408774616)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113321873408774616&text=%40n8n_io%20%22Models%20do%20the%20work%2C%20the%20workflow%20decides%20what%20they%27re%20allowed%20to%20do%22%20is%20the%20cleanest%20summary%20of%20agent%20architecture%20I%27ve%20seen.)
+- Paste text: `"Models do the work, the workflow decides what they're allowed to do" is the cleanest summary of agent architecture I've seen.`
+
+### 36. @hwchase17
+- [Open their post](https://x.com/hwchase17/status/2113339406299853076)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113339406299853076&text=%40hwchase17%20Agent%20server%20says%20what%20it%20does%20without%20overpromising.%20%22OS%22%20makes%20people%20expect%20a%20lot%20more%20than%20a%20runtime%20with%20state%20and%20tools.)
+- Paste text: `Agent server says what it does without overpromising. "OS" makes people expect a lot more than a runtime with state and tools.`
+
+### 37. @emollick
+- [Open their post](https://x.com/emollick/status/2113361252173091114)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113361252173091114&text=%40emollick%20The%20prompts%20that%20work%20best%20for%20computer%20use%20usually%20spell%20out%20when%20to%20stop%20and%20ask.%20Without%20that%2C%20it%20just%20keeps%20clicking.)
+- Paste text: `The prompts that work best for computer use usually spell out when to stop and ask. Without that, it just keeps clicking.`
+
+### 38. @kimmonismus
+- [Open their post](https://x.com/kimmonismus/status/2113372823141896217)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113372823141896217&text=%40kimmonismus%20The%20arms%20race%20is%20real%2C%20but%20defense%20has%20one%20structural%20edge%3A%20you%20know%20your%20own%20systems.%20Agents%20with%20full%20context%20on%20your%20infra%20should%20win%20that.)
+- Paste text: `The arms race is real, but defense has one structural edge: you know your own systems. Agents with full context on your infra should win that.`
+
+### 39. @WesRoth
+- [Open their post](https://x.com/WesRoth/status/2113442785370259929)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113442785370259929&text=%40WesRoth%20Editable%20SVG%20is%20the%20right%20output.%20Designers%20can%20actually%20fix%20one%20shape%20instead%20of%20regenerating%20the%20whole%20image.)
+- Paste text: `Editable SVG is the right output. Designers can actually fix one shape instead of regenerating the whole image.`
+
+### 40. @WesRoth
+- [Open their post](https://x.com/WesRoth/status/2113435243667693848)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113435243667693848&text=%40WesRoth%2010x%20faster%20matters%20most%20in%20multi-step%20workflows%2C%20where%20small%20per-step%20delays%20stack%20up%20into%20minutes.)
+- Paste text: `10x faster matters most in multi-step workflows, where small per-step delays stack up into minutes.`
+
+### 41. @testingcatalog
+- [Open their post](https://x.com/testingcatalog/status/2113417344877760874)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113417344877760874&text=%40testingcatalog%20Agent%20Skills%20on%20GCP%20means%20you%20can%20package%20a%20workflow%20once%20and%20run%20it%20where%20the%20company%27s%20data%20already%20sits.%20That%27s%20what%20enterprises%20were%20waiting%20for.)
+- Paste text: `Agent Skills on GCP means you can package a workflow once and run it where the company's data already sits. That's what enterprises were waiting for.`
+
+### 42. @testingcatalog
+- [Open their post](https://x.com/testingcatalog/status/2113381842187604017)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113381842187604017&text=%40testingcatalog%20Fewer%20prompts%20is%20good%2C%20since%20people%20stop%20reading%20them%20anyway.%20I%27d%20love%20to%20see%20a%20log%20of%20what%20auto%20mode%20blocked%20and%20why.)
+- Paste text: `Fewer prompts is good, since people stop reading them anyway. I'd love to see a log of what auto mode blocked and why.`
+
+### 43. @testingcatalog
+- [Open their post](https://x.com/testingcatalog/status/2113379478592168336)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113379478592168336&text=%40testingcatalog%20Auto-creating%20the%20project%20from%20the%20signed%20proposal%20is%20the%20clever%20part.%20That%20handoff%20is%20where%20scope%20details%20usually%20get%20lost.)
+- Paste text: `Auto-creating the project from the signed proposal is the clever part. That handoff is where scope details usually get lost.`
+
+### 44. @testingcatalog
+- [Open their post](https://x.com/testingcatalog/status/2113392697964671474)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113392697964671474&text=%40testingcatalog%20Breaking%20a%20video%20into%20components%20before%20rebuilding%20is%20the%20right%20approach.%20Curious%20how%20it%20handles%20music%20and%20footage%20rights%20in%20the%20original.)
+- Paste text: `Breaking a video into components before rebuilding is the right approach. Curious how it handles music and footage rights in the original.`
+
+### 45. @TheRundownAI
+- [Open their post](https://x.com/TheRundownAI/status/2113392393953104076)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113392393953104076&text=%40TheRundownAI%20Planning%20the%20layout%20before%20drawing%20is%20why%20it%20converts%20to%20editable%20designs.%20Same%20lesson%20as%20agents%3A%20plan%20first%2C%20then%20generate.)
+- Paste text: `Planning the layout before drawing is why it converts to editable designs. Same lesson as agents: plan first, then generate.`
+
+### 46. @rohanpaul_ai
+- [Open their post](https://x.com/rohanpaul_ai/status/2113368356099424702)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113368356099424702&text=%40rohanpaul_ai%20A%20planner%20that%20outputs%20structure%20first%20is%20basically%20an%20agent%20pattern%20applied%20to%20images.%20Makes%20edits%20far%20more%20predictable.)
+- Paste text: `A planner that outputs structure first is basically an agent pattern applied to images. Makes edits far more predictable.`
+
+### 47. @rohanpaul_ai
+- [Open their post](https://x.com/rohanpaul_ai/status/2113375187840479690)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113375187840479690&text=%40rohanpaul_ai%20Separate%20hardware%20for%20secure%20agent%20processing%20is%20notable.%20Isolation%20is%20turning%20into%20a%20hardware%20concern%2C%20not%20just%20a%20sandbox%20setting.)
+- Paste text: `Separate hardware for secure agent processing is notable. Isolation is turning into a hardware concern, not just a sandbox setting.`
+
+### 48. @Prathkum
+- [Open their post](https://x.com/Prathkum/status/2113393495717421093)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113393495717421093&text=%40Prathkum%20Agreed.%20Bug%20finding%20gets%20headlines%2C%20but%20proofs%20are%20what%20let%20you%20trust%20code%20that%20agents%20and%20humans%20keep%20changing.)
+- Paste text: `Agreed. Bug finding gets headlines, but proofs are what let you trust code that agents and humans keep changing.`
+
+### 49. @Hesamation
+- [Open their post](https://x.com/Hesamation/status/2113409048288571635)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113409048288571635&text=%40Hesamation%20The%20Phaedrus%20quote%20fits.%20The%20difference%20now%20is%20speed.%20Shortcuts%20compound%20faster%2C%20and%20so%20does%20curiosity.)
+- Paste text: `The Phaedrus quote fits. The difference now is speed. Shortcuts compound faster, and so does curiosity.`
+
+### 50. @ArtificialAnlys
+- [Open their post](https://x.com/ArtificialAnlys/status/2113380805552857591)
+- [Reply in Chrome (prefilled)](https://twitter.com/intent/tweet?in_reply_to=2113380805552857591&text=%40ArtificialAnlys%200.5B%20and%20MIT%20licensed%20means%20voice%20agents%20that%20run%20on%20cheap%20hardware.%20That%20opens%20up%20a%20lot%20for%20small%20business%20phone%20flows.)
+- Paste text: `0.5B and MIT licensed means voice agents that run on cheap hardware. That opens up a lot for small business phone flows.`
+
