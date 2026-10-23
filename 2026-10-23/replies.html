@@ -8,7 +8,8 @@
   :root { font-family: system-ui, sans-serif; color: #e7e9ea; background: #000; }
   body { margin: 0; padding: 16px; max-width: 640px; margin-inline: auto; }
   h1 { font-size: 1.25rem; }
-  .note { color: #8b98a5; font-size: 0.9rem; line-height: 1.4; margin-bottom: 1.25rem; }
+  .note { color: #8b98a5; font-size: 0.9rem; line-height: 1.45; margin-bottom: 1.25rem; }
+  .note-sm { color: #8b98a5; font-size: 0.8rem; margin: 0 0 8px; }
   .card { border: 1px solid #2f3336; border-radius: 12px; padding: 14px; margin-bottom: 12px; }
   .card h2 { margin: 0 0 8px; font-size: 1rem; }
   .text { margin: 0 0 12px; white-space: pre-wrap; line-height: 1.4; }
@@ -22,457 +23,507 @@
 <body>
   <h1>50 replies under their posts</h1>
   <p class="note">
-    Android X app cannot prefill a reply from a link. Use <b>Copy reply</b> → <b>Open post</b> → tap Reply → paste → Post.
-    Or use <b>Reply in Chrome</b> (opens Chrome with the reply attached).
+    <b>Do not tap normal x.com links in the X app</b> — Android often dumps you on Home instead of the post (X bug).
+    Use <b>Reply in Chrome</b> (prefilled under their post) or <b>Open post in Chrome</b> → Reply → paste.
+    All 50 targets were re-checked live; authors and IDs match.
   </p>
-  
     <article class="card" id="r1">
       <h2>1. @claudeai</h2>
+      <p class="note-sm">Claude models on Google Cloud (Anthropic-managed) now GA with GCP IAM + billing</p>
       <p class="text" id="t1">Billing through existing cloud commitments is the real unlock here. For a lot of companies, procurement was the blocker, not the model.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/claudeai/status/2113380122468454765">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113380122468454765&text=%40claudeai%20Billing%20through%20existing%20cloud%20commitments%20is%20the%20real%20unlock%20here.%20For%20a%20lot%20of%20companies%2C%20procurement%20was%20the%20blocker%2C%20not%20the%20model.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113380122468454765&amp;text=%40claudeai%20Billing%20through%20existing%20cloud%20commitments%20is%20the%20real%20unlock%20here.%20For%20a%20lot%20of%20companies%2C%20procurement%20was%20the%20blocker%2C%20not%20the%20model.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113380122468454765%26text%3D%2540claudeai%2520Billing%2520through%2520existing%2520cloud%2520commitments%2520is%2520the%2520real%2520unlock%2520here.%2520For%2520a%2520lot%2520of%2520companies%252C%2520procurement%2520was%2520the%2520blocker%252C%2520not%2520the%2520model.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/claudeai/status/2113380122468454765#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fclaudeai%2Fstatus%2F2113380122468454765;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t1', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r2">
       <h2>2. @ClaudeDevs</h2>
+      <p class="note-sm">Full Claude API incl. Managed Agents + code execution now on Google Cloud</p>
       <p class="text" id="t2">Same-day feature parity is the key bit. Does that include the Managed Agents permission settings, or do teams configure those separately per cloud?</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/ClaudeDevs/status/2113381868364271743">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113381868364271743&text=%40ClaudeDevs%20Same-day%20feature%20parity%20is%20the%20key%20bit.%20Does%20that%20include%20the%20Managed%20Agents%20permission%20settings%2C%20or%20do%20teams%20configure%20those%20separately%20per%20cloud%3F">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113381868364271743&amp;text=%40ClaudeDevs%20Same-day%20feature%20parity%20is%20the%20key%20bit.%20Does%20that%20include%20the%20Managed%20Agents%20permission%20settings%2C%20or%20do%20teams%20configure%20those%20separately%20per%20cloud%3F#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113381868364271743%26text%3D%2540ClaudeDevs%2520Same-day%2520feature%2520parity%2520is%2520the%2520key%2520bit.%2520Does%2520that%2520include%2520the%2520Managed%2520Agents%2520permission%2520settings%252C%2520or%2520do%2520teams%2520configure%2520those%2520separately%2520per%2520cloud%253F;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/ClaudeDevs/status/2113381868364271743#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2113381868364271743;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t2', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r3">
       <h2>3. @OpenAIDevs</h2>
+      <p class="note-sm">Decisions API GA: classify/evaluate/route without a full model response</p>
       <p class="text" id="t3">This is the piece most automations actually need. Half the LLM calls in a typical workflow are routing a ticket, not writing anything.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/OpenAIDevs/status/2113346642787086538">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113346642787086538&text=%40OpenAIDevs%20This%20is%20the%20piece%20most%20automations%20actually%20need.%20Half%20the%20LLM%20calls%20in%20a%20typical%20workflow%20are%20routing%20a%20ticket%2C%20not%20writing%20anything.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113346642787086538&amp;text=%40OpenAIDevs%20This%20is%20the%20piece%20most%20automations%20actually%20need.%20Half%20the%20LLM%20calls%20in%20a%20typical%20workflow%20are%20routing%20a%20ticket%2C%20not%20writing%20anything.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113346642787086538%26text%3D%2540OpenAIDevs%2520This%2520is%2520the%2520piece%2520most%2520automations%2520actually%2520need.%2520Half%2520the%2520LLM%2520calls%2520in%2520a%2520typical%2520workflow%2520are%2520routing%2520a%2520ticket%252C%2520not%2520writing%2520anything.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/OpenAIDevs/status/2113346642787086538#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FOpenAIDevs%2Fstatus%2F2113346642787086538;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t3', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r4">
       <h2>4. @AravSrinivas</h2>
+      <p class="note-sm">Perplexity Decision Model now runs fully locally on Mac</p>
       <p class="text" id="t4">Local routing is huge for anything with customer data. Classify on-device, and only send the cases that need a big model to the cloud.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/AravSrinivas/status/2113420151232352444">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113420151232352444&text=%40AravSrinivas%20Local%20routing%20is%20huge%20for%20anything%20with%20customer%20data.%20Classify%20on-device%2C%20and%20only%20send%20the%20cases%20that%20need%20a%20big%20model%20to%20the%20cloud.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113420151232352444&amp;text=%40AravSrinivas%20Local%20routing%20is%20huge%20for%20anything%20with%20customer%20data.%20Classify%20on-device%2C%20and%20only%20send%20the%20cases%20that%20need%20a%20big%20model%20to%20the%20cloud.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113420151232352444%26text%3D%2540AravSrinivas%2520Local%2520routing%2520is%2520huge%2520for%2520anything%2520with%2520customer%2520data.%2520Classify%2520on-device%252C%2520and%2520only%2520send%2520the%2520cases%2520that%2520need%2520a%2520big%2520model%2520to%2520the%2520cloud.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/AravSrinivas/status/2113420151232352444#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FAravSrinivas%2Fstatus%2F2113420151232352444;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t4', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r5">
       <h2>5. @rauchg</h2>
+      <p class="note-sm">Rauch: time to kill static credentials, push OIDC like TLS</p>
       <p class="text" id="t5">The hard part is all the internal scripts and cron jobs with a key pasted in 2021. Short-lived tokens need to be the default in every template and starter, or nobody migrates.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/rauchg/status/2113399539227136084">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113399539227136084&text=%40rauchg%20The%20hard%20part%20is%20all%20the%20internal%20scripts%20and%20cron%20jobs%20with%20a%20key%20pasted%20in%202021.%20Short-lived%20tokens%20need%20to%20be%20the%20default%20in%20every%20template%20and%20starter%2C%20or%20nobody%20migrates.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113399539227136084&amp;text=%40rauchg%20The%20hard%20part%20is%20all%20the%20internal%20scripts%20and%20cron%20jobs%20with%20a%20key%20pasted%20in%202021.%20Short-lived%20tokens%20need%20to%20be%20the%20default%20in%20every%20template%20and%20starter%2C%20or%20nobody%20migrates.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113399539227136084%26text%3D%2540rauchg%2520The%2520hard%2520part%2520is%2520all%2520the%2520internal%2520scripts%2520and%2520cron%2520jobs%2520with%2520a%2520key%2520pasted%2520in%25202021.%2520Short-lived%2520tokens%2520need%2520to%2520be%2520the%2520default%2520in%2520every%2520template%2520and%2520starter%252C%2520or%2520nobody%2520migrates.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/rauchg/status/2113399539227136084#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2113399539227136084;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t5', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r6">
       <h2>6. @vercel</h2>
+      <p class="note-sm">Vercel survey: only 8.4% of 1,000+ SaaS vendors support secure auth</p>
       <p class="text" id="t6">8.4% is rough. Agents make it worse too, since every new tool connection tends to mean one more long-lived API key sitting in an env file.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/vercel/status/2113397272943976560">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113397272943976560&text=%40vercel%208.4%25%20is%20rough.%20Agents%20make%20it%20worse%20too%2C%20since%20every%20new%20tool%20connection%20tends%20to%20mean%20one%20more%20long-lived%20API%20key%20sitting%20in%20an%20env%20file.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113397272943976560&amp;text=%40vercel%208.4%25%20is%20rough.%20Agents%20make%20it%20worse%20too%2C%20since%20every%20new%20tool%20connection%20tends%20to%20mean%20one%20more%20long-lived%20API%20key%20sitting%20in%20an%20env%20file.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113397272943976560%26text%3D%2540vercel%25208.4%2525%2520is%2520rough.%2520Agents%2520make%2520it%2520worse%2520too%252C%2520since%2520every%2520new%2520tool%2520connection%2520tends%2520to%2520mean%2520one%2520more%2520long-lived%2520API%2520key%2520sitting%2520in%2520an%2520env%2520file.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/vercel/status/2113397272943976560#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fvercel%2Fstatus%2F2113397272943976560;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t6', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r7">
       <h2>7. @alexalbert__</h2>
-      <p class="text" id="t7">Agree on the upside. Most small businesses don't need an autonomous agent, though. They need the follow-ups, bookings and invoices to stop slipping through the cracks.</p>
+      <p class="note-sm">Alex Albert: running local small businesses with AI, Duet could beat Square</p>
+      <p class="text" id="t7">Agree on the upside. Most small businesses don&#x27;t need an autonomous agent, though. They need the follow-ups, bookings and invoices to stop slipping through the cracks.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/alexalbert__/status/2113386454907007444">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113386454907007444&text=%40alexalbert__%20Agree%20on%20the%20upside.%20Most%20small%20businesses%20don%27t%20need%20an%20autonomous%20agent%2C%20though.%20They%20need%20the%20follow-ups%2C%20bookings%20and%20invoices%20to%20stop%20slipping%20through%20the%20cracks.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113386454907007444&amp;text=%40alexalbert__%20Agree%20on%20the%20upside.%20Most%20small%20businesses%20don%27t%20need%20an%20autonomous%20agent%2C%20though.%20They%20need%20the%20follow-ups%2C%20bookings%20and%20invoices%20to%20stop%20slipping%20through%20the%20cracks.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113386454907007444%26text%3D%2540alexalbert__%2520Agree%2520on%2520the%2520upside.%2520Most%2520small%2520businesses%2520don%2527t%2520need%2520an%2520autonomous%2520agent%252C%2520though.%2520They%2520need%2520the%2520follow-ups%252C%2520bookings%2520and%2520invoices%2520to%2520stop%2520slipping%2520through%2520the%2520cracks.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/alexalbert__/status/2113386454907007444#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Falexalbert__%2Fstatus%2F2113386454907007444;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t7', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r8">
       <h2>8. @ArtificialAnlys</h2>
+      <p class="note-sm">Coding Agent Index v2.0: Claude Code + Opus 5.5 leads at 61.7</p>
       <p class="text" id="t8">Nice to see the harness in the name, not just the model. Same model in a different harness can land in a very different place.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/ArtificialAnlys/status/2113424551396934134">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113424551396934134&text=%40ArtificialAnlys%20Nice%20to%20see%20the%20harness%20in%20the%20name%2C%20not%20just%20the%20model.%20Same%20model%20in%20a%20different%20harness%20can%20land%20in%20a%20very%20different%20place.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113424551396934134&amp;text=%40ArtificialAnlys%20Nice%20to%20see%20the%20harness%20in%20the%20name%2C%20not%20just%20the%20model.%20Same%20model%20in%20a%20different%20harness%20can%20land%20in%20a%20very%20different%20place.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113424551396934134%26text%3D%2540ArtificialAnlys%2520Nice%2520to%2520see%2520the%2520harness%2520in%2520the%2520name%252C%2520not%2520just%2520the%2520model.%2520Same%2520model%2520in%2520a%2520different%2520harness%2520can%2520land%2520in%2520a%2520very%2520different%2520place.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/ArtificialAnlys/status/2113424551396934134#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FArtificialAnlys%2Fstatus%2F2113424551396934134;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t8', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r9">
       <h2>9. @theo</h2>
-      <p class="text" id="t9">Simplest way I've seen it put: the model decides what to do next, the harness decides what it's allowed to do and remembers what happened.</p>
+      <p class="note-sm">Theo: many devs don&#x27;t know what a harness is</p>
+      <p class="text" id="t9">Simplest way I&#x27;ve seen it put: the model decides what to do next, the harness decides what it&#x27;s allowed to do and remembers what happened.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/theo/status/2113380576652890591">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113380576652890591&text=%40theo%20Simplest%20way%20I%27ve%20seen%20it%20put%3A%20the%20model%20decides%20what%20to%20do%20next%2C%20the%20harness%20decides%20what%20it%27s%20allowed%20to%20do%20and%20remembers%20what%20happened.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113380576652890591&amp;text=%40theo%20Simplest%20way%20I%27ve%20seen%20it%20put%3A%20the%20model%20decides%20what%20to%20do%20next%2C%20the%20harness%20decides%20what%20it%27s%20allowed%20to%20do%20and%20remembers%20what%20happened.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113380576652890591%26text%3D%2540theo%2520Simplest%2520way%2520I%2527ve%2520seen%2520it%2520put%253A%2520the%2520model%2520decides%2520what%2520to%2520do%2520next%252C%2520the%2520harness%2520decides%2520what%2520it%2527s%2520allowed%2520to%2520do%2520and%2520remembers%2520what%2520happened.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/theo/status/2113380576652890591#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2113380576652890591;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t9', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r10">
       <h2>10. @omarsar0</h2>
+      <p class="note-sm">Build your own harness: Ramp&#x27;s agent harness writeup</p>
       <p class="text" id="t10">Owning observability is the underrated reason. When an agent does something weird in prod, you need your own traces, not a vendor dashboard.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/omarsar0/status/2113435080278360133">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113435080278360133&text=%40omarsar0%20Owning%20observability%20is%20the%20underrated%20reason.%20When%20an%20agent%20does%20something%20weird%20in%20prod%2C%20you%20need%20your%20own%20traces%2C%20not%20a%20vendor%20dashboard.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113435080278360133&amp;text=%40omarsar0%20Owning%20observability%20is%20the%20underrated%20reason.%20When%20an%20agent%20does%20something%20weird%20in%20prod%2C%20you%20need%20your%20own%20traces%2C%20not%20a%20vendor%20dashboard.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113435080278360133%26text%3D%2540omarsar0%2520Owning%2520observability%2520is%2520the%2520underrated%2520reason.%2520When%2520an%2520agent%2520does%2520something%2520weird%2520in%2520prod%252C%2520you%2520need%2520your%2520own%2520traces%252C%2520not%2520a%2520vendor%2520dashboard.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/omarsar0/status/2113435080278360133#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fomarsar0%2Fstatus%2F2113435080278360133;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t10', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r11">
       <h2>11. @svpino</h2>
-      <p class="text" id="t11">The client-update piece is the one I'd trust first. Proposals and invoices still deserve a human glance before they go out.</p>
+      <p class="note-sm">New freelancer platform where an agent drafts proposals, tasks, updates and invoices</p>
+      <p class="text" id="t11">The client-update piece is the one I&#x27;d trust first. Proposals and invoices still deserve a human glance before they go out.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/svpino/status/2113362839666876437">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113362839666876437&text=%40svpino%20The%20client-update%20piece%20is%20the%20one%20I%27d%20trust%20first.%20Proposals%20and%20invoices%20still%20deserve%20a%20human%20glance%20before%20they%20go%20out.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113362839666876437&amp;text=%40svpino%20The%20client-update%20piece%20is%20the%20one%20I%27d%20trust%20first.%20Proposals%20and%20invoices%20still%20deserve%20a%20human%20glance%20before%20they%20go%20out.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113362839666876437%26text%3D%2540svpino%2520The%2520client-update%2520piece%2520is%2520the%2520one%2520I%2527d%2520trust%2520first.%2520Proposals%2520and%2520invoices%2520still%2520deserve%2520a%2520human%2520glance%2520before%2520they%2520go%2520out.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113362839666876437#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113362839666876437;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t11', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r12">
       <h2>12. @svpino</h2>
-      <p class="text" id="t12">Curious how it handles stale or wrong memories. Yesterday's feedback being applied today is great until yesterday's feedback was a one-off.</p>
+      <p class="note-sm">MemT 1.0: open model with Mixture-of-Storage memory experts</p>
+      <p class="text" id="t12">Curious how it handles stale or wrong memories. Yesterday&#x27;s feedback being applied today is great until yesterday&#x27;s feedback was a one-off.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/svpino/status/2113374845522395618">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113374845522395618&text=%40svpino%20Curious%20how%20it%20handles%20stale%20or%20wrong%20memories.%20Yesterday%27s%20feedback%20being%20applied%20today%20is%20great%20until%20yesterday%27s%20feedback%20was%20a%20one-off.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113374845522395618&amp;text=%40svpino%20Curious%20how%20it%20handles%20stale%20or%20wrong%20memories.%20Yesterday%27s%20feedback%20being%20applied%20today%20is%20great%20until%20yesterday%27s%20feedback%20was%20a%20one-off.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113374845522395618%26text%3D%2540svpino%2520Curious%2520how%2520it%2520handles%2520stale%2520or%2520wrong%2520memories.%2520Yesterday%2527s%2520feedback%2520being%2520applied%2520today%2520is%2520great%2520until%2520yesterday%2527s%2520feedback%2520was%2520a%2520one-off.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113374845522395618#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113374845522395618;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t12', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r13">
       <h2>13. @Replit</h2>
-      <p class="text" id="t13">Does it deploy fixes straight to prod, or open a change someone approves first? That one setting decides whether I'd let it near a client app.</p>
+      <p class="note-sm">Replit Monitoring Agent: sees, fixes and deploys changes autonomously</p>
+      <p class="text" id="t13">Does it deploy fixes straight to prod, or open a change someone approves first? That one setting decides whether I&#x27;d let it near a client app.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/Replit/status/2113376576230637629">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113376576230637629&text=%40Replit%20Does%20it%20deploy%20fixes%20straight%20to%20prod%2C%20or%20open%20a%20change%20someone%20approves%20first%3F%20That%20one%20setting%20decides%20whether%20I%27d%20let%20it%20near%20a%20client%20app.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113376576230637629&amp;text=%40Replit%20Does%20it%20deploy%20fixes%20straight%20to%20prod%2C%20or%20open%20a%20change%20someone%20approves%20first%3F%20That%20one%20setting%20decides%20whether%20I%27d%20let%20it%20near%20a%20client%20app.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113376576230637629%26text%3D%2540Replit%2520Does%2520it%2520deploy%2520fixes%2520straight%2520to%2520prod%252C%2520or%2520open%2520a%2520change%2520someone%2520approves%2520first%253F%2520That%2520one%2520setting%2520decides%2520whether%2520I%2527d%2520let%2520it%2520near%2520a%2520client%2520app.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/Replit/status/2113376576230637629#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FReplit%2Fstatus%2F2113376576230637629;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t13', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r14">
       <h2>14. @GergelyOrosz</h2>
+      <p class="note-sm">Gergely: biggest bug bash in history, industry needs fixers</p>
       <p class="text" id="t14">The bottleneck flips from finding to fixing and shipping patches. Teams without solid tests and fast deploys will feel this the most.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/GergelyOrosz/status/2113377199793332320">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113377199793332320&text=%40GergelyOrosz%20The%20bottleneck%20flips%20from%20finding%20to%20fixing%20and%20shipping%20patches.%20Teams%20without%20solid%20tests%20and%20fast%20deploys%20will%20feel%20this%20the%20most.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113377199793332320&amp;text=%40GergelyOrosz%20The%20bottleneck%20flips%20from%20finding%20to%20fixing%20and%20shipping%20patches.%20Teams%20without%20solid%20tests%20and%20fast%20deploys%20will%20feel%20this%20the%20most.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113377199793332320%26text%3D%2540GergelyOrosz%2520The%2520bottleneck%2520flips%2520from%2520finding%2520to%2520fixing%2520and%2520shipping%2520patches.%2520Teams%2520without%2520solid%2520tests%2520and%2520fast%2520deploys%2520will%2520feel%2520this%2520the%2520most.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/GergelyOrosz/status/2113377199793332320#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FGergelyOrosz%2Fstatus%2F2113377199793332320;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t14', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r15">
       <h2>15. @NickADobos</h2>
-      <p class="text" id="t15">The scary part isn't the count, it's patch adoption. Plenty of businesses still run software that never got last year's fixes.</p>
+      <p class="note-sm">3% of all recorded critical security bugs found in the last month</p>
+      <p class="text" id="t15">The scary part isn&#x27;t the count, it&#x27;s patch adoption. Plenty of businesses still run software that never got last year&#x27;s fixes.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/NickADobos/status/2113430301183823901">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113430301183823901&text=%40NickADobos%20The%20scary%20part%20isn%27t%20the%20count%2C%20it%27s%20patch%20adoption.%20Plenty%20of%20businesses%20still%20run%20software%20that%20never%20got%20last%20year%27s%20fixes.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113430301183823901&amp;text=%40NickADobos%20The%20scary%20part%20isn%27t%20the%20count%2C%20it%27s%20patch%20adoption.%20Plenty%20of%20businesses%20still%20run%20software%20that%20never%20got%20last%20year%27s%20fixes.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113430301183823901%26text%3D%2540NickADobos%2520The%2520scary%2520part%2520isn%2527t%2520the%2520count%252C%2520it%2527s%2520patch%2520adoption.%2520Plenty%2520of%2520businesses%2520still%2520run%2520software%2520that%2520never%2520got%2520last%2520year%2527s%2520fixes.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/NickADobos/status/2113430301183823901#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FNickADobos%2Fstatus%2F2113430301183823901;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t15', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r16">
       <h2>16. @rauchg</h2>
+      <p class="note-sm">Rauch: agents pull software into deep backends + just-in-time frontends</p>
       <p class="text" id="t16">Matches what I see in automation work. The durable value sits in clean APIs and data; the UI becomes whatever the user needs that day.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/rauchg/status/2113357674989650307">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113357674989650307&text=%40rauchg%20Matches%20what%20I%20see%20in%20automation%20work.%20The%20durable%20value%20sits%20in%20clean%20APIs%20and%20data%3B%20the%20UI%20becomes%20whatever%20the%20user%20needs%20that%20day.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113357674989650307&amp;text=%40rauchg%20Matches%20what%20I%20see%20in%20automation%20work.%20The%20durable%20value%20sits%20in%20clean%20APIs%20and%20data%3B%20the%20UI%20becomes%20whatever%20the%20user%20needs%20that%20day.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113357674989650307%26text%3D%2540rauchg%2520Matches%2520what%2520I%2520see%2520in%2520automation%2520work.%2520The%2520durable%2520value%2520sits%2520in%2520clean%2520APIs%2520and%2520data%253B%2520the%2520UI%2520becomes%2520whatever%2520the%2520user%2520needs%2520that%2520day.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/rauchg/status/2113357674989650307#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2113357674989650307;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t16', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r17">
       <h2>17. @AravSrinivas</h2>
+      <p class="note-sm">Perplexity Agent API Batch: 50k requests per file, full agent loop</p>
       <p class="text" id="t17">Lead enrichment at 50k rows with web search per row is a real use case. How are failed or low-confidence rows flagged in the output?</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/AravSrinivas/status/2113368776532271185">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113368776532271185&text=%40AravSrinivas%20Lead%20enrichment%20at%2050k%20rows%20with%20web%20search%20per%20row%20is%20a%20real%20use%20case.%20How%20are%20failed%20or%20low-confidence%20rows%20flagged%20in%20the%20output%3F">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113368776532271185&amp;text=%40AravSrinivas%20Lead%20enrichment%20at%2050k%20rows%20with%20web%20search%20per%20row%20is%20a%20real%20use%20case.%20How%20are%20failed%20or%20low-confidence%20rows%20flagged%20in%20the%20output%3F#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113368776532271185%26text%3D%2540AravSrinivas%2520Lead%2520enrichment%2520at%252050k%2520rows%2520with%2520web%2520search%2520per%2520row%2520is%2520a%2520real%2520use%2520case.%2520How%2520are%2520failed%2520or%2520low-confidence%2520rows%2520flagged%2520in%2520the%2520output%253F;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/AravSrinivas/status/2113368776532271185#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FAravSrinivas%2Fstatus%2F2113368776532271185;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t17', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r18">
       <h2>18. @WesRoth</h2>
-      <p class="text" id="t18">Pause/resume is the interesting part. Long-running agents waiting on a human approval shouldn't burn compute the whole time.</p>
+      <p class="note-sm">Google Cloud Agent Compute Engine: isolated VMs for agents with pause/resume</p>
+      <p class="text" id="t18">Pause/resume is the interesting part. Long-running agents waiting on a human approval shouldn&#x27;t burn compute the whole time.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/WesRoth/status/2113427685267624182">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113427685267624182&text=%40WesRoth%20Pause%2Fresume%20is%20the%20interesting%20part.%20Long-running%20agents%20waiting%20on%20a%20human%20approval%20shouldn%27t%20burn%20compute%20the%20whole%20time.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113427685267624182&amp;text=%40WesRoth%20Pause%2Fresume%20is%20the%20interesting%20part.%20Long-running%20agents%20waiting%20on%20a%20human%20approval%20shouldn%27t%20burn%20compute%20the%20whole%20time.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113427685267624182%26text%3D%2540WesRoth%2520Pause%252Fresume%2520is%2520the%2520interesting%2520part.%2520Long-running%2520agents%2520waiting%2520on%2520a%2520human%2520approval%2520shouldn%2527t%2520burn%2520compute%2520the%2520whole%2520time.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/WesRoth/status/2113427685267624182#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FWesRoth%2Fstatus%2F2113427685267624182;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t18', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r19">
       <h2>19. @WesRoth</h2>
+      <p class="note-sm">METR: ~10% of eligible Codex traffic went unmonitored before context compaction</p>
       <p class="text" id="t19">Context compaction as a monitoring blind spot is a great catch. Anyone logging agent actions should log before summarizing, not after.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/WesRoth/status/2113450333976375684">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113450333976375684&text=%40WesRoth%20Context%20compaction%20as%20a%20monitoring%20blind%20spot%20is%20a%20great%20catch.%20Anyone%20logging%20agent%20actions%20should%20log%20before%20summarizing%2C%20not%20after.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113450333976375684&amp;text=%40WesRoth%20Context%20compaction%20as%20a%20monitoring%20blind%20spot%20is%20a%20great%20catch.%20Anyone%20logging%20agent%20actions%20should%20log%20before%20summarizing%2C%20not%20after.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113450333976375684%26text%3D%2540WesRoth%2520Context%2520compaction%2520as%2520a%2520monitoring%2520blind%2520spot%2520is%2520a%2520great%2520catch.%2520Anyone%2520logging%2520agent%2520actions%2520should%2520log%2520before%2520summarizing%252C%2520not%2520after.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/WesRoth/status/2113450333976375684#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FWesRoth%2Fstatus%2F2113450333976375684;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t19', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r20">
       <h2>20. @a16z</h2>
-      <p class="text" id="t20">Defenders win only if fixes ship as fast as findings. Most small companies don't have anyone whose job is to apply patches.</p>
+      <p class="note-sm">a16z: Brockman on defenders holding the cyber advantage, $1B commitment</p>
+      <p class="text" id="t20">Defenders win only if fixes ship as fast as findings. Most small companies don&#x27;t have anyone whose job is to apply patches.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/a16z/status/2113404552439558377">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113404552439558377&text=%40a16z%20Defenders%20win%20only%20if%20fixes%20ship%20as%20fast%20as%20findings.%20Most%20small%20companies%20don%27t%20have%20anyone%20whose%20job%20is%20to%20apply%20patches.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113404552439558377&amp;text=%40a16z%20Defenders%20win%20only%20if%20fixes%20ship%20as%20fast%20as%20findings.%20Most%20small%20companies%20don%27t%20have%20anyone%20whose%20job%20is%20to%20apply%20patches.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113404552439558377%26text%3D%2540a16z%2520Defenders%2520win%2520only%2520if%2520fixes%2520ship%2520as%2520fast%2520as%2520findings.%2520Most%2520small%2520companies%2520don%2527t%2520have%2520anyone%2520whose%2520job%2520is%2520to%2520apply%2520patches.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/a16z/status/2113404552439558377#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fa16z%2Fstatus%2F2113404552439558377;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t20', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r21">
       <h2>21. @e2b</h2>
+      <p class="note-sm">E2B cookbook adds Veris for simulated stateful twins of prod</p>
       <p class="text" id="t21">Testing agents against a stateful twin is the right idea. Most agent bugs show up on the 3rd or 4th step, not the first call.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/e2b/status/2113401615441146308">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113401615441146308&text=%40e2b%20Testing%20agents%20against%20a%20stateful%20twin%20is%20the%20right%20idea.%20Most%20agent%20bugs%20show%20up%20on%20the%203rd%20or%204th%20step%2C%20not%20the%20first%20call.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113401615441146308&amp;text=%40e2b%20Testing%20agents%20against%20a%20stateful%20twin%20is%20the%20right%20idea.%20Most%20agent%20bugs%20show%20up%20on%20the%203rd%20or%204th%20step%2C%20not%20the%20first%20call.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113401615441146308%26text%3D%2540e2b%2520Testing%2520agents%2520against%2520a%2520stateful%2520twin%2520is%2520the%2520right%2520idea.%2520Most%2520agent%2520bugs%2520show%2520up%2520on%2520the%25203rd%2520or%25204th%2520step%252C%2520not%2520the%2520first%2520call.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/e2b/status/2113401615441146308#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fe2b%2Fstatus%2F2113401615441146308;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t21', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r22">
       <h2>22. @ArtificialAnlys</h2>
+      <p class="note-sm">AA PersonalityBench: slop varies widely even at same intelligence</p>
       <p class="text" id="t22">Same intelligence score, rank 1 vs 80 on slop, is wild. For client-facing writing, that ranking might matter more than the intelligence index.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/ArtificialAnlys/status/2113402182292648369">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113402182292648369&text=%40ArtificialAnlys%20Same%20intelligence%20score%2C%20rank%201%20vs%2080%20on%20slop%2C%20is%20wild.%20For%20client-facing%20writing%2C%20that%20ranking%20might%20matter%20more%20than%20the%20intelligence%20index.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113402182292648369&amp;text=%40ArtificialAnlys%20Same%20intelligence%20score%2C%20rank%201%20vs%2080%20on%20slop%2C%20is%20wild.%20For%20client-facing%20writing%2C%20that%20ranking%20might%20matter%20more%20than%20the%20intelligence%20index.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113402182292648369%26text%3D%2540ArtificialAnlys%2520Same%2520intelligence%2520score%252C%2520rank%25201%2520vs%252080%2520on%2520slop%252C%2520is%2520wild.%2520For%2520client-facing%2520writing%252C%2520that%2520ranking%2520might%2520matter%2520more%2520than%2520the%2520intelligence%2520index.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/ArtificialAnlys/status/2113402182292648369#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FArtificialAnlys%2Fstatus%2F2113402182292648369;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t22', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r23">
       <h2>23. @testingcatalog</h2>
+      <p class="note-sm">Decisions API GA: predicate, choice and score decisions</p>
       <p class="text" id="t23">Predicate + score is basically every if-node in an automation, but now with a confidence number you can threshold for human review.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/testingcatalog/status/2113398273352368473">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113398273352368473&text=%40testingcatalog%20Predicate%20%2B%20score%20is%20basically%20every%20if-node%20in%20an%20automation%2C%20but%20now%20with%20a%20confidence%20number%20you%20can%20threshold%20for%20human%20review.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113398273352368473&amp;text=%40testingcatalog%20Predicate%20%2B%20score%20is%20basically%20every%20if-node%20in%20an%20automation%2C%20but%20now%20with%20a%20confidence%20number%20you%20can%20threshold%20for%20human%20review.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113398273352368473%26text%3D%2540testingcatalog%2520Predicate%2520%252B%2520score%2520is%2520basically%2520every%2520if-node%2520in%2520an%2520automation%252C%2520but%2520now%2520with%2520a%2520confidence%2520number%2520you%2520can%2520threshold%2520for%2520human%2520review.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/testingcatalog/status/2113398273352368473#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftestingcatalog%2Fstatus%2F2113398273352368473;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t23', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r24">
       <h2>24. @rauchg</h2>
-      <p class="text" id="t24">Tools as a marketplace inside the gateway is clever. Where does auth live when a tool needs a user's own account instead of a public API?</p>
+      <p class="note-sm">Rauch: generative UI example + AI Gateway tools in 1 LOC</p>
+      <p class="text" id="t24">Tools as a marketplace inside the gateway is clever. Where does auth live when a tool needs a user&#x27;s own account instead of a public API?</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/rauchg/status/2113451268316205515">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113451268316205515&text=%40rauchg%20Tools%20as%20a%20marketplace%20inside%20the%20gateway%20is%20clever.%20Where%20does%20auth%20live%20when%20a%20tool%20needs%20a%20user%27s%20own%20account%20instead%20of%20a%20public%20API%3F">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113451268316205515&amp;text=%40rauchg%20Tools%20as%20a%20marketplace%20inside%20the%20gateway%20is%20clever.%20Where%20does%20auth%20live%20when%20a%20tool%20needs%20a%20user%27s%20own%20account%20instead%20of%20a%20public%20API%3F#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113451268316205515%26text%3D%2540rauchg%2520Tools%2520as%2520a%2520marketplace%2520inside%2520the%2520gateway%2520is%2520clever.%2520Where%2520does%2520auth%2520live%2520when%2520a%2520tool%2520needs%2520a%2520user%2527s%2520own%2520account%2520instead%2520of%2520a%2520public%2520API%253F;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/rauchg/status/2113451268316205515#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2113451268316205515;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t24', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r25">
       <h2>25. @rauchg</h2>
+      <p class="note-sm">vercel deploy --temporary</p>
       <p class="text" id="t25">Temporary deploys are perfect for agent output. Let it ship a preview, a human checks it, and nothing permanent exists until someone says yes.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/rauchg/status/2113383291621671147">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113383291621671147&text=%40rauchg%20Temporary%20deploys%20are%20perfect%20for%20agent%20output.%20Let%20it%20ship%20a%20preview%2C%20a%20human%20checks%20it%2C%20and%20nothing%20permanent%20exists%20until%20someone%20says%20yes.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113383291621671147&amp;text=%40rauchg%20Temporary%20deploys%20are%20perfect%20for%20agent%20output.%20Let%20it%20ship%20a%20preview%2C%20a%20human%20checks%20it%2C%20and%20nothing%20permanent%20exists%20until%20someone%20says%20yes.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113383291621671147%26text%3D%2540rauchg%2520Temporary%2520deploys%2520are%2520perfect%2520for%2520agent%2520output.%2520Let%2520it%2520ship%2520a%2520preview%252C%2520a%2520human%2520checks%2520it%252C%2520and%2520nothing%2520permanent%2520exists%2520until%2520someone%2520says%2520yes.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/rauchg/status/2113383291621671147#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2113383291621671147;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t25', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r26">
       <h2>26. @swyx</h2>
+      <p class="note-sm">swyx: don&#x27;t blame AI for finding bugs, lock in on clearing them</p>
       <p class="text" id="t26">Agree. Triage is the new bottleneck. Ranking bugs by actual exposure matters more than the raw count right now.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/swyx/status/2113359027682050352">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113359027682050352&text=%40swyx%20Agree.%20Triage%20is%20the%20new%20bottleneck.%20Ranking%20bugs%20by%20actual%20exposure%20matters%20more%20than%20the%20raw%20count%20right%20now.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113359027682050352&amp;text=%40swyx%20Agree.%20Triage%20is%20the%20new%20bottleneck.%20Ranking%20bugs%20by%20actual%20exposure%20matters%20more%20than%20the%20raw%20count%20right%20now.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113359027682050352%26text%3D%2540swyx%2520Agree.%2520Triage%2520is%2520the%2520new%2520bottleneck.%2520Ranking%2520bugs%2520by%2520actual%2520exposure%2520matters%2520more%2520than%2520the%2520raw%2520count%2520right%2520now.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/swyx/status/2113359027682050352#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fswyx%2Fstatus%2F2113359027682050352;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t26', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r27">
       <h2>27. @ThePrimeagen</h2>
+      <p class="note-sm">Primeagen: wants to talk through interfaces and ideas without derailing</p>
       <p class="text" id="t27">Voice for design talk and text for code changes feels like the right split. Typing out architecture ideas kills the flow.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/ThePrimeagen/status/2113375327057506499">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113375327057506499&text=%40ThePrimeagen%20Voice%20for%20design%20talk%20and%20text%20for%20code%20changes%20feels%20like%20the%20right%20split.%20Typing%20out%20architecture%20ideas%20kills%20the%20flow.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113375327057506499&amp;text=%40ThePrimeagen%20Voice%20for%20design%20talk%20and%20text%20for%20code%20changes%20feels%20like%20the%20right%20split.%20Typing%20out%20architecture%20ideas%20kills%20the%20flow.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113375327057506499%26text%3D%2540ThePrimeagen%2520Voice%2520for%2520design%2520talk%2520and%2520text%2520for%2520code%2520changes%2520feels%2520like%2520the%2520right%2520split.%2520Typing%2520out%2520architecture%2520ideas%2520kills%2520the%2520flow.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/ThePrimeagen/status/2113375327057506499#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FThePrimeagen%2Fstatus%2F2113375327057506499;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t27', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r28">
       <h2>28. @ThePrimeagen</h2>
+      <p class="note-sm">Primeagen: AI keeps being &#x27;stunned by my insight&#x27;</p>
       <p class="text" id="t28">The flattery is a real cost. If every idea gets called brilliant, you lose the one signal you wanted from it: is this wrong?</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/ThePrimeagen/status/2113377142721692103">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113377142721692103&text=%40ThePrimeagen%20The%20flattery%20is%20a%20real%20cost.%20If%20every%20idea%20gets%20called%20brilliant%2C%20you%20lose%20the%20one%20signal%20you%20wanted%20from%20it%3A%20is%20this%20wrong%3F">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113377142721692103&amp;text=%40ThePrimeagen%20The%20flattery%20is%20a%20real%20cost.%20If%20every%20idea%20gets%20called%20brilliant%2C%20you%20lose%20the%20one%20signal%20you%20wanted%20from%20it%3A%20is%20this%20wrong%3F#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113377142721692103%26text%3D%2540ThePrimeagen%2520The%2520flattery%2520is%2520a%2520real%2520cost.%2520If%2520every%2520idea%2520gets%2520called%2520brilliant%252C%2520you%2520lose%2520the%2520one%2520signal%2520you%2520wanted%2520from%2520it%253A%2520is%2520this%2520wrong%253F;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/ThePrimeagen/status/2113377142721692103#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FThePrimeagen%2Fstatus%2F2113377142721692103;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t28', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r29">
       <h2>29. @mattshumer_</h2>
+      <p class="note-sm">Matt Shumer wrote a security explainer for non-tech family</p>
       <p class="text" id="t29">This is needed. Password manager, 2FA on email first, and stop reusing passwords covers most of the risk for normal people.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/mattshumer_/status/2113363050745217364">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113363050745217364&text=%40mattshumer_%20This%20is%20needed.%20Password%20manager%2C%202FA%20on%20email%20first%2C%20and%20stop%20reusing%20passwords%20covers%20most%20of%20the%20risk%20for%20normal%20people.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113363050745217364&amp;text=%40mattshumer_%20This%20is%20needed.%20Password%20manager%2C%202FA%20on%20email%20first%2C%20and%20stop%20reusing%20passwords%20covers%20most%20of%20the%20risk%20for%20normal%20people.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113363050745217364%26text%3D%2540mattshumer_%2520This%2520is%2520needed.%2520Password%2520manager%252C%25202FA%2520on%2520email%2520first%252C%2520and%2520stop%2520reusing%2520passwords%2520covers%2520most%2520of%2520the%2520risk%2520for%2520normal%2520people.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/mattshumer_/status/2113363050745217364#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fmattshumer_%2Fstatus%2F2113363050745217364;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t29', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r30">
       <h2>30. @petergyang</h2>
+      <p class="note-sm">Peter Yang: 6 steps to secure accounts + AI prompt for a personal report</p>
       <p class="text" id="t30">Nice idea to have AI walk people through it. Step one for most people should be locking down the email account, since everything resets through it.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/petergyang/status/2113405131106742406">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113405131106742406&text=%40petergyang%20Nice%20idea%20to%20have%20AI%20walk%20people%20through%20it.%20Step%20one%20for%20most%20people%20should%20be%20locking%20down%20the%20email%20account%2C%20since%20everything%20resets%20through%20it.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113405131106742406&amp;text=%40petergyang%20Nice%20idea%20to%20have%20AI%20walk%20people%20through%20it.%20Step%20one%20for%20most%20people%20should%20be%20locking%20down%20the%20email%20account%2C%20since%20everything%20resets%20through%20it.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113405131106742406%26text%3D%2540petergyang%2520Nice%2520idea%2520to%2520have%2520AI%2520walk%2520people%2520through%2520it.%2520Step%2520one%2520for%2520most%2520people%2520should%2520be%2520locking%2520down%2520the%2520email%2520account%252C%2520since%2520everything%2520resets%2520through%2520it.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/petergyang/status/2113405131106742406#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fpetergyang%2Fstatus%2F2113405131106742406;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t30', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r31">
       <h2>31. @petergyang</h2>
+      <p class="note-sm">Peter Yang: agents taken down by Comcast outage</p>
       <p class="text" id="t31">The least glamorous agent failure mode. Anything long-running needs to resume cleanly after the network drops.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/petergyang/status/2113393808935391270">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113393808935391270&text=%40petergyang%20The%20least%20glamorous%20agent%20failure%20mode.%20Anything%20long-running%20needs%20to%20resume%20cleanly%20after%20the%20network%20drops.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113393808935391270&amp;text=%40petergyang%20The%20least%20glamorous%20agent%20failure%20mode.%20Anything%20long-running%20needs%20to%20resume%20cleanly%20after%20the%20network%20drops.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113393808935391270%26text%3D%2540petergyang%2520The%2520least%2520glamorous%2520agent%2520failure%2520mode.%2520Anything%2520long-running%2520needs%2520to%2520resume%2520cleanly%2520after%2520the%2520network%2520drops.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/petergyang/status/2113393808935391270#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fpetergyang%2Fstatus%2F2113393808935391270;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t31', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r32">
       <h2>32. @svpino</h2>
-      <p class="text" id="t32">The code isn't going away. The open question is who owns reviewing and maintaining it, and most teams haven't decided.</p>
+      <p class="note-sm">svpino: people in denial that AI-generated code is here to stay</p>
+      <p class="text" id="t32">The code isn&#x27;t going away. The open question is who owns reviewing and maintaining it, and most teams haven&#x27;t decided.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/svpino/status/2113352457359097930">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113352457359097930&text=%40svpino%20The%20code%20isn%27t%20going%20away.%20The%20open%20question%20is%20who%20owns%20reviewing%20and%20maintaining%20it%2C%20and%20most%20teams%20haven%27t%20decided.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113352457359097930&amp;text=%40svpino%20The%20code%20isn%27t%20going%20away.%20The%20open%20question%20is%20who%20owns%20reviewing%20and%20maintaining%20it%2C%20and%20most%20teams%20haven%27t%20decided.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113352457359097930%26text%3D%2540svpino%2520The%2520code%2520isn%2527t%2520going%2520away.%2520The%2520open%2520question%2520is%2520who%2520owns%2520reviewing%2520and%2520maintaining%2520it%252C%2520and%2520most%2520teams%2520haven%2527t%2520decided.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/svpino/status/2113352457359097930#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2113352457359097930;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t32', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r33">
       <h2>33. @Replit</h2>
+      <p class="note-sm">Replit Free mode: Q&amp;A and follow-ups don&#x27;t use paid credits</p>
       <p class="text" id="t33">Free exploration before building is smart. Most bad builds come from a fuzzy brief, not a bad model.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/Replit/status/2113389946430185632">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113389946430185632&text=%40Replit%20Free%20exploration%20before%20building%20is%20smart.%20Most%20bad%20builds%20come%20from%20a%20fuzzy%20brief%2C%20not%20a%20bad%20model.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113389946430185632&amp;text=%40Replit%20Free%20exploration%20before%20building%20is%20smart.%20Most%20bad%20builds%20come%20from%20a%20fuzzy%20brief%2C%20not%20a%20bad%20model.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113389946430185632%26text%3D%2540Replit%2520Free%2520exploration%2520before%2520building%2520is%2520smart.%2520Most%2520bad%2520builds%2520come%2520from%2520a%2520fuzzy%2520brief%252C%2520not%2520a%2520bad%2520model.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/Replit/status/2113389946430185632#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FReplit%2Fstatus%2F2113389946430185632;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t33', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r34">
       <h2>34. @n8n_io</h2>
+      <p class="note-sm">Satya: n8n deploying 50M agentic workflows/month on Foundry</p>
       <p class="text" id="t34">50M a month says a lot. Most real business automation is agent steps inside a deterministic workflow, not one free-roaming agent.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/n8n_io/status/2113337141174383079">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113337141174383079&text=%40n8n_io%2050M%20a%20month%20says%20a%20lot.%20Most%20real%20business%20automation%20is%20agent%20steps%20inside%20a%20deterministic%20workflow%2C%20not%20one%20free-roaming%20agent.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113337141174383079&amp;text=%40n8n_io%2050M%20a%20month%20says%20a%20lot.%20Most%20real%20business%20automation%20is%20agent%20steps%20inside%20a%20deterministic%20workflow%2C%20not%20one%20free-roaming%20agent.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113337141174383079%26text%3D%2540n8n_io%252050M%2520a%2520month%2520says%2520a%2520lot.%2520Most%2520real%2520business%2520automation%2520is%2520agent%2520steps%2520inside%2520a%2520deterministic%2520workflow%252C%2520not%2520one%2520free-roaming%2520agent.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/n8n_io/status/2113337141174383079#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fn8n_io%2Fstatus%2F2113337141174383079;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t34', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r35">
       <h2>35. @n8n_io</h2>
-      <p class="text" id="t35">"Models do the work, the workflow decides what they're allowed to do" is the cleanest summary of agent architecture I've seen.</p>
+      <p class="note-sm">n8n at GTC Berlin: NVIDIA powers models, n8n controls what they&#x27;re allowed to do</p>
+      <p class="text" id="t35">&quot;Models do the work, the workflow decides what they&#x27;re allowed to do&quot; is the cleanest summary of agent architecture I&#x27;ve seen.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/n8n_io/status/2113321873408774616">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113321873408774616&text=%40n8n_io%20%22Models%20do%20the%20work%2C%20the%20workflow%20decides%20what%20they%27re%20allowed%20to%20do%22%20is%20the%20cleanest%20summary%20of%20agent%20architecture%20I%27ve%20seen.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113321873408774616&amp;text=%40n8n_io%20%22Models%20do%20the%20work%2C%20the%20workflow%20decides%20what%20they%27re%20allowed%20to%20do%22%20is%20the%20cleanest%20summary%20of%20agent%20architecture%20I%27ve%20seen.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113321873408774616%26text%3D%2540n8n_io%2520%2522Models%2520do%2520the%2520work%252C%2520the%2520workflow%2520decides%2520what%2520they%2527re%2520allowed%2520to%2520do%2522%2520is%2520the%2520cleanest%2520summary%2520of%2520agent%2520architecture%2520I%2527ve%2520seen.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/n8n_io/status/2113321873408774616#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fn8n_io%2Fstatus%2F2113321873408774616;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t35', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r36">
       <h2>36. @hwchase17</h2>
-      <p class="text" id="t36">Agent server says what it does without overpromising. "OS" makes people expect a lot more than a runtime with state and tools.</p>
+      <p class="note-sm">Harrison Chase: is &#x27;agent server&#x27; a good name? agent os/kernel?</p>
+      <p class="text" id="t36">Agent server says what it does without overpromising. &quot;OS&quot; makes people expect a lot more than a runtime with state and tools.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/hwchase17/status/2113339406299853076">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113339406299853076&text=%40hwchase17%20Agent%20server%20says%20what%20it%20does%20without%20overpromising.%20%22OS%22%20makes%20people%20expect%20a%20lot%20more%20than%20a%20runtime%20with%20state%20and%20tools.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113339406299853076&amp;text=%40hwchase17%20Agent%20server%20says%20what%20it%20does%20without%20overpromising.%20%22OS%22%20makes%20people%20expect%20a%20lot%20more%20than%20a%20runtime%20with%20state%20and%20tools.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113339406299853076%26text%3D%2540hwchase17%2520Agent%2520server%2520says%2520what%2520it%2520does%2520without%2520overpromising.%2520%2522OS%2522%2520makes%2520people%2520expect%2520a%2520lot%2520more%2520than%2520a%2520runtime%2520with%2520state%2520and%2520tools.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/hwchase17/status/2113339406299853076#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fhwchase17%2Fstatus%2F2113339406299853076;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t36', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r37">
       <h2>37. @emollick</h2>
+      <p class="note-sm">Mollick: useful prompt for Codex with computer use</p>
       <p class="text" id="t37">The prompts that work best for computer use usually spell out when to stop and ask. Without that, it just keeps clicking.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/emollick/status/2113361252173091114">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113361252173091114&text=%40emollick%20The%20prompts%20that%20work%20best%20for%20computer%20use%20usually%20spell%20out%20when%20to%20stop%20and%20ask.%20Without%20that%2C%20it%20just%20keeps%20clicking.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113361252173091114&amp;text=%40emollick%20The%20prompts%20that%20work%20best%20for%20computer%20use%20usually%20spell%20out%20when%20to%20stop%20and%20ask.%20Without%20that%2C%20it%20just%20keeps%20clicking.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113361252173091114%26text%3D%2540emollick%2520The%2520prompts%2520that%2520work%2520best%2520for%2520computer%2520use%2520usually%2520spell%2520out%2520when%2520to%2520stop%2520and%2520ask.%2520Without%2520that%252C%2520it%2520just%2520keeps%2520clicking.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/emollick/status/2113361252173091114#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Femollick%2Fstatus%2F2113361252173091114;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t37', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r38">
       <h2>38. @kimmonismus</h2>
+      <p class="note-sm">kimmonismus: AI cyberattacks will accelerate AI defense</p>
       <p class="text" id="t38">The arms race is real, but defense has one structural edge: you know your own systems. Agents with full context on your infra should win that.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/kimmonismus/status/2113372823141896217">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113372823141896217&text=%40kimmonismus%20The%20arms%20race%20is%20real%2C%20but%20defense%20has%20one%20structural%20edge%3A%20you%20know%20your%20own%20systems.%20Agents%20with%20full%20context%20on%20your%20infra%20should%20win%20that.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113372823141896217&amp;text=%40kimmonismus%20The%20arms%20race%20is%20real%2C%20but%20defense%20has%20one%20structural%20edge%3A%20you%20know%20your%20own%20systems.%20Agents%20with%20full%20context%20on%20your%20infra%20should%20win%20that.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113372823141896217%26text%3D%2540kimmonismus%2520The%2520arms%2520race%2520is%2520real%252C%2520but%2520defense%2520has%2520one%2520structural%2520edge%253A%2520you%2520know%2520your%2520own%2520systems.%2520Agents%2520with%2520full%2520context%2520on%2520your%2520infra%2520should%2520win%2520that.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/kimmonismus/status/2113372823141896217#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fkimmonismus%2Fstatus%2F2113372823141896217;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t38', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r39">
       <h2>39. @WesRoth</h2>
+      <p class="note-sm">Ideogram Vector 1.0: editable SVG generation</p>
       <p class="text" id="t39">Editable SVG is the right output. Designers can actually fix one shape instead of regenerating the whole image.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/WesRoth/status/2113442785370259929">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113442785370259929&text=%40WesRoth%20Editable%20SVG%20is%20the%20right%20output.%20Designers%20can%20actually%20fix%20one%20shape%20instead%20of%20regenerating%20the%20whole%20image.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113442785370259929&amp;text=%40WesRoth%20Editable%20SVG%20is%20the%20right%20output.%20Designers%20can%20actually%20fix%20one%20shape%20instead%20of%20regenerating%20the%20whole%20image.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113442785370259929%26text%3D%2540WesRoth%2520Editable%2520SVG%2520is%2520the%2520right%2520output.%2520Designers%2520can%2520actually%2520fix%2520one%2520shape%2520instead%2520of%2520regenerating%2520the%2520whole%2520image.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/WesRoth/status/2113442785370259929#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FWesRoth%2Fstatus%2F2113442785370259929;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t39', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r40">
       <h2>40. @WesRoth</h2>
+      <p class="note-sm">WesRoth: Decisions API GA, up to 10x faster than via Responses API</p>
       <p class="text" id="t40">10x faster matters most in multi-step workflows, where small per-step delays stack up into minutes.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/WesRoth/status/2113435243667693848">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113435243667693848&text=%40WesRoth%2010x%20faster%20matters%20most%20in%20multi-step%20workflows%2C%20where%20small%20per-step%20delays%20stack%20up%20into%20minutes.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113435243667693848&amp;text=%40WesRoth%2010x%20faster%20matters%20most%20in%20multi-step%20workflows%2C%20where%20small%20per-step%20delays%20stack%20up%20into%20minutes.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113435243667693848%26text%3D%2540WesRoth%252010x%2520faster%2520matters%2520most%2520in%2520multi-step%2520workflows%252C%2520where%2520small%2520per-step%2520delays%2520stack%2520up%2520into%2520minutes.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/WesRoth/status/2113435243667693848#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FWesRoth%2Fstatus%2F2113435243667693848;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t40', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r41">
       <h2>41. @testingcatalog</h2>
-      <p class="text" id="t41">Agent Skills on GCP means you can package a workflow once and run it where the company's data already sits. That's what enterprises were waiting for.</p>
+      <p class="note-sm">TestingCatalog: Claude Platform features incl. Agent Skills now on GCP</p>
+      <p class="text" id="t41">Agent Skills on GCP means you can package a workflow once and run it where the company&#x27;s data already sits. That&#x27;s what enterprises were waiting for.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/testingcatalog/status/2113417344877760874">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113417344877760874&text=%40testingcatalog%20Agent%20Skills%20on%20GCP%20means%20you%20can%20package%20a%20workflow%20once%20and%20run%20it%20where%20the%20company%27s%20data%20already%20sits.%20That%27s%20what%20enterprises%20were%20waiting%20for.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113417344877760874&amp;text=%40testingcatalog%20Agent%20Skills%20on%20GCP%20means%20you%20can%20package%20a%20workflow%20once%20and%20run%20it%20where%20the%20company%27s%20data%20already%20sits.%20That%27s%20what%20enterprises%20were%20waiting%20for.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113417344877760874%26text%3D%2540testingcatalog%2520Agent%2520Skills%2520on%2520GCP%2520means%2520you%2520can%2520package%2520a%2520workflow%2520once%2520and%2520run%2520it%2520where%2520the%2520company%2527s%2520data%2520already%2520sits.%2520That%2527s%2520what%2520enterprises%2520were%2520waiting%2520for.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/testingcatalog/status/2113417344877760874#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftestingcatalog%2Fstatus%2F2113417344877760874;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t41', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r42">
       <h2>42. @testingcatalog</h2>
-      <p class="text" id="t42">Fewer prompts is good, since people stop reading them anyway. I'd love to see a log of what auto mode blocked and why.</p>
+      <p class="note-sm">TestingCatalog: Claude auto mode on by default for Pro, Max, Team next week</p>
+      <p class="text" id="t42">Fewer prompts is good, since people stop reading them anyway. I&#x27;d love to see a log of what auto mode blocked and why.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/testingcatalog/status/2113381842187604017">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113381842187604017&text=%40testingcatalog%20Fewer%20prompts%20is%20good%2C%20since%20people%20stop%20reading%20them%20anyway.%20I%27d%20love%20to%20see%20a%20log%20of%20what%20auto%20mode%20blocked%20and%20why.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113381842187604017&amp;text=%40testingcatalog%20Fewer%20prompts%20is%20good%2C%20since%20people%20stop%20reading%20them%20anyway.%20I%27d%20love%20to%20see%20a%20log%20of%20what%20auto%20mode%20blocked%20and%20why.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113381842187604017%26text%3D%2540testingcatalog%2520Fewer%2520prompts%2520is%2520good%252C%2520since%2520people%2520stop%2520reading%2520them%2520anyway.%2520I%2527d%2520love%2520to%2520see%2520a%2520log%2520of%2520what%2520auto%2520mode%2520blocked%2520and%2520why.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/testingcatalog/status/2113381842187604017#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftestingcatalog%2Fstatus%2F2113381842187604017;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t42', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r43">
       <h2>43. @testingcatalog</h2>
+      <p class="note-sm">Envato MonoDesk: freelancer workspace from inquiry to invoice</p>
       <p class="text" id="t43">Auto-creating the project from the signed proposal is the clever part. That handoff is where scope details usually get lost.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/testingcatalog/status/2113379478592168336">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113379478592168336&text=%40testingcatalog%20Auto-creating%20the%20project%20from%20the%20signed%20proposal%20is%20the%20clever%20part.%20That%20handoff%20is%20where%20scope%20details%20usually%20get%20lost.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113379478592168336&amp;text=%40testingcatalog%20Auto-creating%20the%20project%20from%20the%20signed%20proposal%20is%20the%20clever%20part.%20That%20handoff%20is%20where%20scope%20details%20usually%20get%20lost.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113379478592168336%26text%3D%2540testingcatalog%2520Auto-creating%2520the%2520project%2520from%2520the%2520signed%2520proposal%2520is%2520the%2520clever%2520part.%2520That%2520handoff%2520is%2520where%2520scope%2520details%2520usually%2520get%2520lost.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/testingcatalog/status/2113379478592168336#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftestingcatalog%2Fstatus%2F2113379478592168336;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t43', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r44">
       <h2>44. @testingcatalog</h2>
+      <p class="note-sm">Kylon Annotations: remake a video you like around your brand</p>
       <p class="text" id="t44">Breaking a video into components before rebuilding is the right approach. Curious how it handles music and footage rights in the original.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/testingcatalog/status/2113392697964671474">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113392697964671474&text=%40testingcatalog%20Breaking%20a%20video%20into%20components%20before%20rebuilding%20is%20the%20right%20approach.%20Curious%20how%20it%20handles%20music%20and%20footage%20rights%20in%20the%20original.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113392697964671474&amp;text=%40testingcatalog%20Breaking%20a%20video%20into%20components%20before%20rebuilding%20is%20the%20right%20approach.%20Curious%20how%20it%20handles%20music%20and%20footage%20rights%20in%20the%20original.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113392697964671474%26text%3D%2540testingcatalog%2520Breaking%2520a%2520video%2520into%2520components%2520before%2520rebuilding%2520is%2520the%2520right%2520approach.%2520Curious%2520how%2520it%2520handles%2520music%2520and%2520footage%2520rights%2520in%2520the%2520original.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/testingcatalog/status/2113392697964671474#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftestingcatalog%2Fstatus%2F2113392697964671474;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t44', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r45">
       <h2>45. @TheRundownAI</h2>
+      <p class="note-sm">Canva Craft debuts at No. 4 on Design Arena</p>
       <p class="text" id="t45">Planning the layout before drawing is why it converts to editable designs. Same lesson as agents: plan first, then generate.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/TheRundownAI/status/2113392393953104076">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113392393953104076&text=%40TheRundownAI%20Planning%20the%20layout%20before%20drawing%20is%20why%20it%20converts%20to%20editable%20designs.%20Same%20lesson%20as%20agents%3A%20plan%20first%2C%20then%20generate.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113392393953104076&amp;text=%40TheRundownAI%20Planning%20the%20layout%20before%20drawing%20is%20why%20it%20converts%20to%20editable%20designs.%20Same%20lesson%20as%20agents%3A%20plan%20first%2C%20then%20generate.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113392393953104076%26text%3D%2540TheRundownAI%2520Planning%2520the%2520layout%2520before%2520drawing%2520is%2520why%2520it%2520converts%2520to%2520editable%2520designs.%2520Same%2520lesson%2520as%2520agents%253A%2520plan%2520first%252C%2520then%2520generate.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/TheRundownAI/status/2113392393953104076#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FTheRundownAI%2Fstatus%2F2113392393953104076;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t45', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r46">
       <h2>46. @rohanpaul_ai</h2>
+      <p class="note-sm">Canva Craft has a planner that writes composition before pixels</p>
       <p class="text" id="t46">A planner that outputs structure first is basically an agent pattern applied to images. Makes edits far more predictable.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/rohanpaul_ai/status/2113368356099424702">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113368356099424702&text=%40rohanpaul_ai%20A%20planner%20that%20outputs%20structure%20first%20is%20basically%20an%20agent%20pattern%20applied%20to%20images.%20Makes%20edits%20far%20more%20predictable.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113368356099424702&amp;text=%40rohanpaul_ai%20A%20planner%20that%20outputs%20structure%20first%20is%20basically%20an%20agent%20pattern%20applied%20to%20images.%20Makes%20edits%20far%20more%20predictable.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113368356099424702%26text%3D%2540rohanpaul_ai%2520A%2520planner%2520that%2520outputs%2520structure%2520first%2520is%2520basically%2520an%2520agent%2520pattern%2520applied%2520to%2520images.%2520Makes%2520edits%2520far%2520more%2520predictable.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/rohanpaul_ai/status/2113368356099424702#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frohanpaul_ai%2Fstatus%2F2113368356099424702;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t46', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r47">
       <h2>47. @rohanpaul_ai</h2>
+      <p class="note-sm">NVIDIA lays out the full Vera Rubin agentic system stack</p>
       <p class="text" id="t47">Separate hardware for secure agent processing is notable. Isolation is turning into a hardware concern, not just a sandbox setting.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/rohanpaul_ai/status/2113375187840479690">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113375187840479690&text=%40rohanpaul_ai%20Separate%20hardware%20for%20secure%20agent%20processing%20is%20notable.%20Isolation%20is%20turning%20into%20a%20hardware%20concern%2C%20not%20just%20a%20sandbox%20setting.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113375187840479690&amp;text=%40rohanpaul_ai%20Separate%20hardware%20for%20secure%20agent%20processing%20is%20notable.%20Isolation%20is%20turning%20into%20a%20hardware%20concern%2C%20not%20just%20a%20sandbox%20setting.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113375187840479690%26text%3D%2540rohanpaul_ai%2520Separate%2520hardware%2520for%2520secure%2520agent%2520processing%2520is%2520notable.%2520Isolation%2520is%2520turning%2520into%2520a%2520hardware%2520concern%252C%2520not%2520just%2520a%2520sandbox%2520setting.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/rohanpaul_ai/status/2113375187840479690#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frohanpaul_ai%2Fstatus%2F2113375187840479690;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t47', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r48">
       <h2>48. @Prathkum</h2>
+      <p class="note-sm">Prathkum: Claude formal verification is the most underrated AI result</p>
       <p class="text" id="t48">Agreed. Bug finding gets headlines, but proofs are what let you trust code that agents and humans keep changing.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/Prathkum/status/2113393495717421093">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113393495717421093&text=%40Prathkum%20Agreed.%20Bug%20finding%20gets%20headlines%2C%20but%20proofs%20are%20what%20let%20you%20trust%20code%20that%20agents%20and%20humans%20keep%20changing.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113393495717421093&amp;text=%40Prathkum%20Agreed.%20Bug%20finding%20gets%20headlines%2C%20but%20proofs%20are%20what%20let%20you%20trust%20code%20that%20agents%20and%20humans%20keep%20changing.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113393495717421093%26text%3D%2540Prathkum%2520Agreed.%2520Bug%2520finding%2520gets%2520headlines%252C%2520but%2520proofs%2520are%2520what%2520let%2520you%2520trust%2520code%2520that%2520agents%2520and%2520humans%2520keep%2520changing.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/Prathkum/status/2113393495717421093#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FPrathkum%2Fstatus%2F2113393495717421093;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t48', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r49">
       <h2>49. @Hesamation</h2>
+      <p class="note-sm">Hesamation: AI is an accelerator in whichever direction you choose</p>
       <p class="text" id="t49">The Phaedrus quote fits. The difference now is speed. Shortcuts compound faster, and so does curiosity.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/Hesamation/status/2113409048288571635">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113409048288571635&text=%40Hesamation%20The%20Phaedrus%20quote%20fits.%20The%20difference%20now%20is%20speed.%20Shortcuts%20compound%20faster%2C%20and%20so%20does%20curiosity.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113409048288571635&amp;text=%40Hesamation%20The%20Phaedrus%20quote%20fits.%20The%20difference%20now%20is%20speed.%20Shortcuts%20compound%20faster%2C%20and%20so%20does%20curiosity.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113409048288571635%26text%3D%2540Hesamation%2520The%2520Phaedrus%2520quote%2520fits.%2520The%2520difference%2520now%2520is%2520speed.%2520Shortcuts%2520compound%2520faster%252C%2520and%2520so%2520does%2520curiosity.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/Hesamation/status/2113409048288571635#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FHesamation%2Fstatus%2F2113409048288571635;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t49', this)">Copy reply</button>
       </div>
     </article>
     <article class="card" id="r50">
       <h2>50. @ArtificialAnlys</h2>
+      <p class="note-sm">Ming-3.0-tts: top-tier TTS in 0.5B params, MIT licensed</p>
       <p class="text" id="t50">0.5B and MIT licensed means voice agents that run on cheap hardware. That opens up a lot for small business phone flows.</p>
       <div class="actions">
-        <a class="btn primary" href="https://x.com/ArtificialAnlys/status/2113380805552857591">Open post</a>
-        <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2113380805552857591&text=%40ArtificialAnlys%200.5B%20and%20MIT%20licensed%20means%20voice%20agents%20that%20run%20on%20cheap%20hardware.%20That%20opens%20up%20a%20lot%20for%20small%20business%20phone%20flows.">Reply in Chrome</a>
+        <a class="btn primary" href="intent://twitter.com/intent/tweet?in_reply_to=2113380805552857591&amp;text=%40ArtificialAnlys%200.5B%20and%20MIT%20licensed%20means%20voice%20agents%20that%20run%20on%20cheap%20hardware.%20That%20opens%20up%20a%20lot%20for%20small%20business%20phone%20flows.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2113380805552857591%26text%3D%2540ArtificialAnlys%25200.5B%2520and%2520MIT%2520licensed%2520means%2520voice%2520agents%2520that%2520run%2520on%2520cheap%2520hardware.%2520That%2520opens%2520up%2520a%2520lot%2520for%2520small%2520business%2520phone%2520flows.;end">Reply in Chrome</a>
+        <a class="btn" href="intent://x.com/ArtificialAnlys/status/2113380805552857591#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FArtificialAnlys%2Fstatus%2F2113380805552857591;end">Open post in Chrome</a>
         <button type="button" class="btn" onclick="copyText('t50', this)">Copy reply</button>
       </div>
     </article>
@@ -480,9 +531,8 @@
 function copyText(id, btn) {
   const t = document.getElementById(id).innerText;
   navigator.clipboard.writeText(t).then(() => {
-    btn.textContent = 'Copied';
-    btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = 'Copy reply'; btn.classList.remove('copied'); }, 1500);
+    const old = btn.textContent; btn.textContent = 'Copied'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = old; btn.classList.remove('copied'); }, 1200);
   });
 }
 </script>
