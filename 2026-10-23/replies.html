@@ -35,8 +35,8 @@
     </ol>
   </div>
   <p class="note">
-    After that setting: <b>Copy + Reply</b> copies the text and opens the reply composer in Chrome under their post.
-    If Chrome still jumps to the X app, the setting isn’t off yet.
+    <b>Copy + Reply</b> copies the text and opens the composer in a <b>new tab</b> (this list stays open).
+    Same for <b>Open post</b>.
   </p>
     <article class="card" id="r1">
       <h2>1. @claudeai</h2>
@@ -549,7 +549,9 @@ function copyText(id, btn) {
   });
 }
 function copyThenOpen(id, url, btn) {
-  copyText(id, btn).finally(() => { window.location.href = url; });
+  copyText(id, btn).finally(() => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
 }
 </script>
 </body>
