@@ -45,6 +45,56 @@
     Prefer <b>Reply in Chrome</b> / <b>Open post in Chrome</b> over the plain Open buttons.
   </div>
   <p class="note">X “Open supported links” must stay OFF (Settings → Apps → X → Open by default). Oct 25 pack: 30 replies on big accounts (mega = 100k+ followers).</p>
+
+  <div class="card" style="border-color:#00ba7c;background:#0b1a14;">
+    <h2>🔥 COMMUNITY POST #1 — Build in Public (269k members) <span class="tier" style="background:#00ba7c;color:#000;">269k AUDIENCE</span></h2>
+    <p class="note-sm">Step 1: Tap <b>Copy post</b> · Step 2: Tap <b>Download Diagram</b> · Step 3: Tap <b>Open Community in Chrome</b> (join if needed, tap +, attach diagram, check "Also share with followers", Post)</p>
+    <p class="text" id="comm1">The 3-part reliability gate we run before putting any webhook or AI agent into production:
+
+1. Idempotency lock: hash event_id in Redis/Postgres first so duplicate webhooks never double-bill or double-email.
+2. Dead-letter queue: catch 500s/timeouts with raw JSON payload + Slack alert.
+3. Human gate: read = auto, external write/money = 1-click approve.</p>
+    <div class="actions">
+      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm1', this)">Copy post</button>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-10-25/reliability-gate.png?v=6f7bd64" download="reliability-gate.png" target="_blank">Download Diagram</a>
+      <a class="btn primary" href="intent://x.com/i/communities/1493446837214187523#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1493446837214187523;end">Open Community in Chrome</a>
+      <a class="btn" href="https://x.com/i/communities/1493446837214187523" target="_blank" rel="noopener">Open Community</a>
+    </div>
+  </div>
+
+  <div class="card" style="border-color:#1d9bf0;background:#0b1520;">
+    <h2>🔥 COMMUNITY POST #2 — RAG &amp; AI Agent Developers (23.6k members) <span class="tier mega">23.6k AUDIENCE</span></h2>
+    <p class="note-sm">Step 1: Tap <b>Copy post</b> · Step 2: Tap <b>Download Diagram</b> · Step 3: Tap <b>Open Community in Chrome</b> (join if needed, tap +, attach diagram, check "Also share with followers", Post)</p>
+    <p class="text" id="comm2">How we cut AI agent API costs by 80% on support &amp; ops queues without losing accuracy:
+
+1. Never send raw tickets straight to Claude Sonnet or GPT-5.
+2. Put a 150ms small classifier in front to route: billing / bug / refund / spam.
+3. Trigger deterministic webhooks for the 70% routine cases.
+4. Only invoke the heavy reasoning model on the 30% edge cases.</p>
+    <div class="actions">
+      <button class="btn primary" type="button" onclick="copyText('comm2', this)">Copy post</button>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-10-25/ops-pipeline.png?v=6f7bd64" download="ops-pipeline.png" target="_blank">Download Diagram</a>
+      <a class="btn primary" href="intent://x.com/i/communities/1838763245567369450#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1838763245567369450;end">Open Community in Chrome</a>
+      <a class="btn" href="https://x.com/i/communities/1838763245567369450" target="_blank" rel="noopener">Open Community</a>
+    </div>
+  </div>
+
+  <div class="card" style="border-color:#1d9bf0;background:#0b1520;">
+    <h2>🔥 COMMUNITY POST #3 — 1337: AI, Python, Data (41.7k members) <span class="tier mega">41.7k AUDIENCE</span></h2>
+    <p class="note-sm">Step 1: Tap <b>Copy post</b> · Step 2: Tap <b>Open Community in Chrome</b> (join if needed, tap +, paste, Post)</p>
+    <p class="text" id="comm3">Most internal Python/ops automations fail at 2 AM for the exact same reason: happy-path assumptions.
+
+Before shipping any webhook worker:
+- Enforce idempotency on event_id (Redis SETNX or Postgres unique constraint)
+- Push 500s/timeouts to a dead-letter table with raw payload
+- Gate external writes behind a 1-click Slack approve</p>
+    <div class="actions">
+      <button class="btn primary" type="button" onclick="copyText('comm3', this)">Copy post</button>
+      <a class="btn primary" href="intent://x.com/i/communities/1508750875442954242#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1508750875442954242;end">Open Community in Chrome</a>
+      <a class="btn" href="https://x.com/i/communities/1508750875442954242" target="_blank" rel="noopener">Open Community</a>
+    </div>
+  </div>
+
     <article class="card" id="r1" data-n="1">
       <label class="done"><input type="checkbox" data-done="1" onchange="saveDone()"/> Done</label>
       <h2>1. @theo <span class="tier mega">mega</span></h2>
