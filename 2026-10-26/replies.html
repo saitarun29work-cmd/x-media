@@ -124,30 +124,28 @@
     <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
   </div>
   <div class="warn" style="background:#0c241b;border-color:#00ba7c;">
-    <b>Community posts (text + live diagram card):</b> tap <b>Open Prefilled Post</b> → at the top of the X composer change <b>"Everyone ▾"</b> to the Community → <b>Post</b>. The link at the end embeds your live diagram post. Join each community once first.
+    <b>Community posts — No links inside the text (keeps full algorithmic reach!):</b><br/>
+    • <b>Clean Text Only (1-Tap):</b> Tap <b>Open Clean Post (No Link)</b> → choose the Community at top (<b>"Everyone ▾"</b>) → <b>Post</b>.<br/>
+    • <b>Want the diagram image too?</b> Tap <b>Download Diagram PNG</b> first (or long-press image → Save), then attach it in the composer — or use <b>With Embedded Card</b> if you want the quote-post link included.
   </div>
   <div class="card" style="border-color:#00ba7c;background:#0b1a14;">
     <label class="done"><input type="checkbox" data-done="comm1" onchange="saveDone()"/> Done</label>
     <h2>🔥 COMMUNITY POST #1: Build in Public (269k members)</h2>
-    <p class="text" id="comm1">Building in public: the 3 checks every webhook worker of ours must pass before it touches production.
+    <p class="text" id="comm1">The 4th webhook check most teams forget: a Silence Alert.
 
-1. Idempotency lock on event_id
-2. Dead-letter table for 500s with the raw payload
-3. 1-click approve before any external write
+If a webhook sender stops sending entirely, nothing throws a 500 — your queue just goes quiet.
 
-What would you add?
-
-https://x.com/SaiTarunRonanki/status/2114324992225841606</p>
+We track last_event_at per source and page when the gap exceeds 3x its p95 for that hour of the day.</p>
+    <img src="https://saitarun29work-cmd.github.io/x-media/2026-10-26/silence-alert.png" alt="Diagram" style="width:100%;border-radius:8px;border:1px solid #2f3336;margin-bottom:10px;"/>
     <div class="actions">
-      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm1', this)">1. Copy text</button>
-      <a class="btn" href="intent://twitter.com/intent/tweet?text=Building%20in%20public%3A%20the%203%20checks%20every%20webhook%20worker%20of%20ours%20must%20pass%20before%20it%20touches%20production.%0A%0A1.%20Idempotency%20lock%20on%20event_id%0A2.%20Dead-letter%20table%20for%20500s%20with%20the%20raw%20payload%0A3.%201-click%20approve%20before%20any%20external%20write%0A%0AWhat%20would%20you%20add%3F%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114324992225841606#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DBuilding%2520in%2520public%253A%2520the%25203%2520checks%2520every%2520webhook%2520worker%2520of%2520ours%2520must%2520pass%2520before%2520it%2520touches%2520production.%250A%250A1.%2520Idempotency%2520lock%2520on%2520event_id%250A2.%2520Dead-letter%2520table%2520for%2520500s%2520with%2520the%2520raw%2520payload%250A3.%25201-click%2520approve%2520before%2520any%2520external%2520write%250A%250AWhat%2520would%2520you%2520add%253F%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki%252Fstatus%252F2114324992225841606;end" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Prefilled Post (Chrome)</a>
-      <a class="btn" href="https://twitter.com/intent/tweet?text=Building%20in%20public%3A%20the%203%20checks%20every%20webhook%20worker%20of%20ours%20must%20pass%20before%20it%20touches%20production.%0A%0A1.%20Idempotency%20lock%20on%20event_id%0A2.%20Dead-letter%20table%20for%20500s%20with%20the%20raw%20payload%0A3.%201-click%20approve%20before%20any%20external%20write%0A%0AWhat%20would%20you%20add%3F%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114324992225841606" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer (New Tab)</a>
+      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm1', this)">1. Copy clean text (No link)</button>
+      <a class="btn primary" href="intent://twitter.com/intent/tweet?text=The%204th%20webhook%20check%20most%20teams%20forget%3A%20a%20Silence%20Alert.%0A%0AIf%20a%20webhook%20sender%20stops%20sending%20entirely%2C%20nothing%20throws%20a%20500%20%E2%80%94%20your%20queue%20just%20goes%20quiet.%0A%0AWe%20track%20last_event_at%20per%20source%20and%20page%20when%20the%20gap%20exceeds%203x%20its%20p95%20for%20that%20hour%20of%20the%20day.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DThe%25204th%2520webhook%2520check%2520most%2520teams%2520forget%253A%2520a%2520Silence%2520Alert.%250A%250AIf%2520a%2520webhook%2520sender%2520stops%2520sending%2520entirely%252C%2520nothing%2520throws%2520a%2520500%2520%25E2%2580%2594%2520your%2520queue%2520just%2520goes%2520quiet.%250A%250AWe%2520track%2520last_event_at%2520per%2520source%2520and%2520page%2520when%2520the%2520gap%2520exceeds%25203x%2520its%2520p95%2520for%2520that%2520hour%2520of%2520the%2520day.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Clean Post — No Link (Chrome)</a>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-10-26/silence-alert.png" download target="_blank" rel="noopener">Download Diagram PNG</a>
+      <a class="btn" href="intent://twitter.com/intent/tweet?text=The%204th%20webhook%20check%20most%20teams%20forget%3A%20a%20Silence%20Alert.%0A%0AIf%20a%20webhook%20sender%20stops%20sending%20entirely%2C%20nothing%20throws%20a%20500%20%E2%80%94%20your%20queue%20just%20goes%20quiet.%0A%0AWe%20track%20last_event_at%20per%20source%20and%20page%20when%20the%20gap%20exceeds%203x%20its%20p95%20for%20that%20hour%20of%20the%20day.%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114324992225841606#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DThe%25204th%2520webhook%2520check%2520most%2520teams%2520forget%253A%2520a%2520Silence%2520Alert.%250A%250AIf%2520a%2520webhook%2520sender%2520stops%2520sending%2520entirely%252C%2520nothing%2520throws%2520a%2520500%2520%25E2%2580%2594%2520your%2520queue%2520just%2520goes%2520quiet.%250A%250AWe%2520track%2520last_event_at%2520per%2520source%2520and%2520page%2520when%2520the%2520gap%2520exceeds%25203x%2520its%2520p95%2520for%2520that%2520hour%2520of%2520the%2520day.%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki%252Fstatus%252F2114324992225841606;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open With Embedded Link Card</a>
       <a class="btn" href="intent://x.com/i/communities/1493446837214187523#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1493446837214187523;end" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-post')">Join Community (Chrome)</a>
-      <a class="btn" href="https://x.com/i/communities/1493446837214187523" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-post')">Join Community</a>
+         onclick="return openNamed(event, this, 'x-reply-post')">Open Community</a>
     </div>
   </div>
   <div class="card" style="border-color:#00ba7c;background:#0b1a14;">
@@ -155,43 +153,39 @@ https://x.com/SaiTarunRonanki/status/2114324992225841606</p>
     <h2>🔥 COMMUNITY POST #2: RAG and AI Agent Developers (23.6k members)</h2>
     <p class="text" id="comm2">For agent builders: put a ~150ms small-model router in front of your frontier model.
 
-It returns {route, confidence, reason}. High-confidence routine cases go to deterministic webhooks; the rest go to the big model + human approval.
-
-Full breakdown:
-
-https://x.com/SaiTarunRonanki/status/2114325202482160049</p>
+It returns {route, confidence, reason}:
+• confidence &gt;= 0.85 -&gt; deterministic webhook ($0.0002)
+• confidence &lt; 0.85 or money-moving intent -&gt; frontier model + Slack approval</p>
+    <img src="https://saitarun29work-cmd.github.io/x-media/2026-10-26/confidence-router.png" alt="Diagram" style="width:100%;border-radius:8px;border:1px solid #2f3336;margin-bottom:10px;"/>
     <div class="actions">
-      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm2', this)">1. Copy text</button>
-      <a class="btn" href="intent://twitter.com/intent/tweet?text=For%20agent%20builders%3A%20put%20a%20~150ms%20small-model%20router%20in%20front%20of%20your%20frontier%20model.%0A%0AIt%20returns%20%7Broute%2C%20confidence%2C%20reason%7D.%20High-confidence%20routine%20cases%20go%20to%20deterministic%20webhooks%3B%20the%20rest%20go%20to%20the%20big%20model%20%2B%20human%20approval.%0A%0AFull%20breakdown%3A%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114325202482160049#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DFor%2520agent%2520builders%253A%2520put%2520a%2520~150ms%2520small-model%2520router%2520in%2520front%2520of%2520your%2520frontier%2520model.%250A%250AIt%2520returns%2520%257Broute%252C%2520confidence%252C%2520reason%257D.%2520High-confidence%2520routine%2520cases%2520go%2520to%2520deterministic%2520webhooks%253B%2520the%2520rest%2520go%2520to%2520the%2520big%2520model%2520%252B%2520human%2520approval.%250A%250AFull%2520breakdown%253A%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki%252Fstatus%252F2114325202482160049;end" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Prefilled Post (Chrome)</a>
-      <a class="btn" href="https://twitter.com/intent/tweet?text=For%20agent%20builders%3A%20put%20a%20~150ms%20small-model%20router%20in%20front%20of%20your%20frontier%20model.%0A%0AIt%20returns%20%7Broute%2C%20confidence%2C%20reason%7D.%20High-confidence%20routine%20cases%20go%20to%20deterministic%20webhooks%3B%20the%20rest%20go%20to%20the%20big%20model%20%2B%20human%20approval.%0A%0AFull%20breakdown%3A%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114325202482160049" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer (New Tab)</a>
+      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm2', this)">1. Copy clean text (No link)</button>
+      <a class="btn primary" href="intent://twitter.com/intent/tweet?text=For%20agent%20builders%3A%20put%20a%20~150ms%20small-model%20router%20in%20front%20of%20your%20frontier%20model.%0A%0AIt%20returns%20%7Broute%2C%20confidence%2C%20reason%7D%3A%0A%E2%80%A2%20confidence%20%3E%3D%200.85%20-%3E%20deterministic%20webhook%20%28%240.0002%29%0A%E2%80%A2%20confidence%20%3C%200.85%20or%20money-moving%20intent%20-%3E%20frontier%20model%20%2B%20Slack%20approval#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DFor%2520agent%2520builders%253A%2520put%2520a%2520~150ms%2520small-model%2520router%2520in%2520front%2520of%2520your%2520frontier%2520model.%250A%250AIt%2520returns%2520%257Broute%252C%2520confidence%252C%2520reason%257D%253A%250A%25E2%2580%25A2%2520confidence%2520%253E%253D%25200.85%2520-%253E%2520deterministic%2520webhook%2520%2528%25240.0002%2529%250A%25E2%2580%25A2%2520confidence%2520%253C%25200.85%2520or%2520money-moving%2520intent%2520-%253E%2520frontier%2520model%2520%252B%2520Slack%2520approval;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Clean Post — No Link (Chrome)</a>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-10-26/confidence-router.png" download target="_blank" rel="noopener">Download Diagram PNG</a>
+      <a class="btn" href="intent://twitter.com/intent/tweet?text=For%20agent%20builders%3A%20put%20a%20~150ms%20small-model%20router%20in%20front%20of%20your%20frontier%20model.%0A%0AIt%20returns%20%7Broute%2C%20confidence%2C%20reason%7D%3A%0A%E2%80%A2%20confidence%20%3E%3D%200.85%20-%3E%20deterministic%20webhook%20%28%240.0002%29%0A%E2%80%A2%20confidence%20%3C%200.85%20or%20money-moving%20intent%20-%3E%20frontier%20model%20%2B%20Slack%20approval%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114325202482160049#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DFor%2520agent%2520builders%253A%2520put%2520a%2520~150ms%2520small-model%2520router%2520in%2520front%2520of%2520your%2520frontier%2520model.%250A%250AIt%2520returns%2520%257Broute%252C%2520confidence%252C%2520reason%257D%253A%250A%25E2%2580%25A2%2520confidence%2520%253E%253D%25200.85%2520-%253E%2520deterministic%2520webhook%2520%2528%25240.0002%2529%250A%25E2%2580%25A2%2520confidence%2520%253C%25200.85%2520or%2520money-moving%2520intent%2520-%253E%2520frontier%2520model%2520%252B%2520Slack%2520approval%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki%252Fstatus%252F2114325202482160049;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open With Embedded Link Card</a>
       <a class="btn" href="intent://x.com/i/communities/1838763245567369450#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1838763245567369450;end" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-post')">Join Community (Chrome)</a>
-      <a class="btn" href="https://x.com/i/communities/1838763245567369450" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-post')">Join Community</a>
+         onclick="return openNamed(event, this, 'x-reply-post')">Open Community</a>
     </div>
   </div>
   <div class="card" style="border-color:#00ba7c;background:#0b1a14;">
     <label class="done"><input type="checkbox" data-done="comm3" onchange="saveDone()"/> Done</label>
     <h2>🔥 COMMUNITY POST #3: 1337: AI, Python, Data (41.7k members)</h2>
-    <p class="text" id="comm3">Python ops automation pattern we reuse everywhere:
+    <p class="text" id="comm3">How we scope tool permissions for production AI agents:
 
-ingest (webhook / email / PDF) -&gt; pydantic schema validation -&gt; idempotent upsert to Postgres or CRM -&gt; Slack alert only on exceptions.
-
-Architecture diagram:
-
-https://x.com/SaiTarunRonanki/status/2114379037179027745</p>
+• Reads (search, fetch, SQL SELECT) -&gt; run automatically
+• Internal writes (drafts, staging tables, logs) -&gt; auto + audit log
+• External writes (send email, charge card, prodwebhook) -&gt; 1-click human approval</p>
+    <img src="https://saitarun29work-cmd.github.io/x-media/2026-10-26/read-write-split.png" alt="Diagram" style="width:100%;border-radius:8px;border:1px solid #2f3336;margin-bottom:10px;"/>
     <div class="actions">
-      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm3', this)">1. Copy text</button>
-      <a class="btn" href="intent://twitter.com/intent/tweet?text=Python%20ops%20automation%20pattern%20we%20reuse%20everywhere%3A%0A%0Aingest%20%28webhook%20%2F%20email%20%2F%20PDF%29%20-%3E%20pydantic%20schema%20validation%20-%3E%20idempotent%20upsert%20to%20Postgres%20or%20CRM%20-%3E%20Slack%20alert%20only%20on%20exceptions.%0A%0AArchitecture%20diagram%3A%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114379037179027745#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DPython%2520ops%2520automation%2520pattern%2520we%2520reuse%2520everywhere%253A%250A%250Aingest%2520%2528webhook%2520%252F%2520email%2520%252F%2520PDF%2529%2520-%253E%2520pydantic%2520schema%2520validation%2520-%253E%2520idempotent%2520upsert%2520to%2520Postgres%2520or%2520CRM%2520-%253E%2520Slack%2520alert%2520only%2520on%2520exceptions.%250A%250AArchitecture%2520diagram%253A%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki%252Fstatus%252F2114379037179027745;end" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Prefilled Post (Chrome)</a>
-      <a class="btn" href="https://twitter.com/intent/tweet?text=Python%20ops%20automation%20pattern%20we%20reuse%20everywhere%3A%0A%0Aingest%20%28webhook%20%2F%20email%20%2F%20PDF%29%20-%3E%20pydantic%20schema%20validation%20-%3E%20idempotent%20upsert%20to%20Postgres%20or%20CRM%20-%3E%20Slack%20alert%20only%20on%20exceptions.%0A%0AArchitecture%20diagram%3A%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114379037179027745" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer (New Tab)</a>
+      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm3', this)">1. Copy clean text (No link)</button>
+      <a class="btn primary" href="intent://twitter.com/intent/tweet?text=How%20we%20scope%20tool%20permissions%20for%20production%20AI%20agents%3A%0A%0A%E2%80%A2%20Reads%20%28search%2C%20fetch%2C%20SQL%20SELECT%29%20-%3E%20run%20automatically%0A%E2%80%A2%20Internal%20writes%20%28drafts%2C%20staging%20tables%2C%20logs%29%20-%3E%20auto%20%2B%20audit%20log%0A%E2%80%A2%20External%20writes%20%28send%20email%2C%20charge%20card%2C%20prodwebhook%29%20-%3E%201-click%20human%20approval#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DHow%2520we%2520scope%2520tool%2520permissions%2520for%2520production%2520AI%2520agents%253A%250A%250A%25E2%2580%25A2%2520Reads%2520%2528search%252C%2520fetch%252C%2520SQL%2520SELECT%2529%2520-%253E%2520run%2520automatically%250A%25E2%2580%25A2%2520Internal%2520writes%2520%2528drafts%252C%2520staging%2520tables%252C%2520logs%2529%2520-%253E%2520auto%2520%252B%2520audit%2520log%250A%25E2%2580%25A2%2520External%2520writes%2520%2528send%2520email%252C%2520charge%2520card%252C%2520prodwebhook%2529%2520-%253E%25201-click%2520human%2520approval;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Clean Post — No Link (Chrome)</a>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-10-26/read-write-split.png" download target="_blank" rel="noopener">Download Diagram PNG</a>
+      <a class="btn" href="intent://twitter.com/intent/tweet?text=How%20we%20scope%20tool%20permissions%20for%20production%20AI%20agents%3A%0A%0A%E2%80%A2%20Reads%20%28search%2C%20fetch%2C%20SQL%20SELECT%29%20-%3E%20run%20automatically%0A%E2%80%A2%20Internal%20writes%20%28drafts%2C%20staging%20tables%2C%20logs%29%20-%3E%20auto%20%2B%20audit%20log%0A%E2%80%A2%20External%20writes%20%28send%20email%2C%20charge%20card%2C%20prodwebhook%29%20-%3E%201-click%20human%20approval%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki%2Fstatus%2F2114379037179027745#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DHow%2520we%2520scope%2520tool%2520permissions%2520for%2520production%2520AI%2520agents%253A%250A%250A%25E2%2580%25A2%2520Reads%2520%2528search%252C%2520fetch%252C%2520SQL%2520SELECT%2529%2520-%253E%2520run%2520automatically%250A%25E2%2580%25A2%2520Internal%2520writes%2520%2528drafts%252C%2520staging%2520tables%252C%2520logs%2529%2520-%253E%2520auto%2520%252B%2520audit%2520log%250A%25E2%2580%25A2%2520External%2520writes%2520%2528send%2520email%252C%2520charge%2520card%252C%2520prodwebhook%2529%2520-%253E%25201-click%2520human%2520approval%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki%252Fstatus%252F2114379037179027745;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open With Embedded Link Card</a>
       <a class="btn" href="intent://x.com/i/communities/1508750875442954242#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1508750875442954242;end" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-post')">Join Community (Chrome)</a>
-      <a class="btn" href="https://x.com/i/communities/1508750875442954242" target="_blank" rel="opener"
-         onclick="return openNamed(event, this, 'x-reply-post')">Join Community</a>
+         onclick="return openNamed(event, this, 'x-reply-post')">Open Community</a>
     </div>
   </div>
 
