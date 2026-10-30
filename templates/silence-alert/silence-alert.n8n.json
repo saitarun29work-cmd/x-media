@@ -1,0 +1,202 @@
+{
+  "name": "Silence Alert · catch workflows that quietly stopped (by @SaiTarunRonanki)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "id": "9c20755e-38ac-41ea-ad22-290784243519",
+      "name": "Every 15 min",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Edit this list: each workflow and how long it may stay quiet\nreturn [{ json: { watch: [\n  { id: 'REPLACE_WORKFLOW_ID_1', name: 'Lead intake', max_silence_min: 60 },\n  { id: 'REPLACE_WORKFLOW_ID_2', name: 'Nightly sync', max_silence_min: 1500 },\n] } }];"
+      },
+      "id": "156f5931-9e49-45d3-86d9-d1d3d498e25e",
+      "name": "Watchlist",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.N8N_BASE_URL }}/api/v1/executions",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "limit",
+              "value": "250"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-N8N-API-KEY",
+              "value": "={{ $env.N8N_API_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e18be53b-f564-4b1a-af24-72297624ee07",
+      "name": "Get Executions",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Flag workflows with no successful run inside their window, or whose last run failed\nconst watch = $('Watchlist').first().json.watch;\nconst runs = $input.first().json.data || [];\nconst now = Date.now();\nconst store = $getWorkflowStaticData('global');\nstore.alerted = store.alerted || {};\nconst issues = [];\nfor (const w of watch) {\n  const mine = runs.filter(r => String(r.workflowId) === String(w.id));\n  const lastOk = mine.filter(r => r.status === 'success').map(r => Date.parse(r.stoppedAt)).sort((a, b) => b - a)[0];\n  const latest = mine.map(r => ({ t: Date.parse(r.startedAt), s: r.status })).sort((a, b) => b.t - a.t)[0];\n  const quietMin = lastOk ? Math.round((now - lastOk) / 60000) : null;\n  let problem = null;\n  if (!lastOk || quietMin > w.max_silence_min) problem = lastOk ? `silent for ${quietMin} min (limit ${w.max_silence_min})` : 'no successful run in recent history';\n  else if (latest && latest.s === 'error') problem = 'latest run failed';\n  if (problem) {\n    if (!store.alerted[w.id]) { issues.push({ ...w, problem }); store.alerted[w.id] = now; } // alert once per incident\n  } else if (store.alerted[w.id]) { issues.push({ ...w, problem: 'recovered', recovered: true }); delete store.alerted[w.id]; }\n}\nreturn [{ json: { issues, count: issues.length } }];"
+      },
+      "id": "e1d06dc1-c424-4c30-9468-71824f38334e",
+      "name": "Find Silent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "971cd595-c5bc-41d7-800d-9de31226d999",
+              "leftValue": "={{ $json.count }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "59d5224c-488d-4f25-ae3d-cc9239fd127c",
+      "name": "Anything Wrong?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        880,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "#alerts",
+          "mode": "name"
+        },
+        "text": "={{ $json.issues.map(i => (i.recovered ? '✅ ' : '🔕 ') + i.name + ': ' + i.problem).join('\\n') }}",
+        "otherOptions": {}
+      },
+      "id": "6f15d1db-e4f8-49b0-bdad-1a1042976e65",
+      "name": "Alert Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        1100,
+        240
+      ]
+    }
+  ],
+  "connections": {
+    "Every 15 min": {
+      "main": [
+        [
+          {
+            "node": "Watchlist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Watchlist": {
+      "main": [
+        [
+          {
+            "node": "Get Executions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Executions": {
+      "main": [
+        [
+          {
+            "node": "Find Silent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find Silent": {
+      "main": [
+        [
+          {
+            "node": "Anything Wrong?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anything Wrong?": {
+      "main": [
+        [
+          {
+            "node": "Alert Slack",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  }
+}
