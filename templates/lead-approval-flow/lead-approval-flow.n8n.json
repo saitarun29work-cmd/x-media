@@ -1,0 +1,451 @@
+{
+  "name": "Lead Approval Flow · AI scores, human approves (by @SaiTarunRonanki)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "lead-in",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "0fe84924-e1b8-4855-9204-740316eb85bc",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "00ce80c4-585c-455b-b143-ac5ba8777230"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Normalize the lead and reject junk before any model call\nconst b = $input.first().json.body || {};\nconst email = String(b.email || '').trim().toLowerCase();\nconst valid = /^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(email) && !!b.message;\nconst freeMail = /@(gmail|yahoo|hotmail|outlook)\\./.test(email);\nreturn [{ json: { name: b.name || '', email, company: b.company || '', message: String(b.message || '').slice(0, 2000), source: b.source || 'form', free_mail: freeMail, valid } }];"
+      },
+      "id": "b62695d7-db9d-4c7b-93ac-cd7cc97e6d56",
+      "name": "Validate Lead",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "40ff578b-b637-4beb-b1dd-338cf87572de",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "e01ec1d4-74bd-4258-a49d-ce36facefa09",
+      "name": "Valid?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ status: 'received' }) }}",
+        "options": {}
+      },
+      "id": "aa482716-eb32-4701-ae95-042671aefc38",
+      "name": "Ack",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ status: 'rejected', reason: 'missing email or message' }) }}",
+        "options": {
+          "responseCode": 422
+        }
+      },
+      "id": "4452c405-9bde-4a38-abe7-1847e3412d52",
+      "name": "Reject",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const l = $input.first().json;\nconst prompt = `You qualify inbound B2B leads. Return ONLY JSON:\n{\"score\": 0-100, \"reason\": string (one line), \"draft_reply\": string (short, friendly, no promises on price)}\n\nLead:\nName: ${l.name}\nCompany: ${l.company}\nEmail domain is free mail: ${l.free_mail}\nSource: ${l.source}\nMessage: ${l.message}`;\nreturn [{ json: { ...l, prompt } }];"
+      },
+      "id": "260c64ce-d893-421b-be25-1f9a2794cae6",
+      "name": "Build Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $env.ANTHROPIC_API_KEY }}"
+            },
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'claude-haiku-4-5', max_tokens: 600, messages: [{ role: 'user', content: $json.prompt }] }) }}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "a6ad1c53-c614-4acf-b95d-d083dc4d321a",
+      "name": "Claude (Score + Draft)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const lead = $('Build Prompt').first().json;\nlet out = { score: 0, reason: 'Unparseable model output', draft_reply: '' };\ntry { out = JSON.parse($input.first().json.content[0].text); } catch (e) {}\nconst threshold = Number($env.LEAD_SCORE_THRESHOLD || 70);\nreturn [{ json: { ...lead, ...out, hot: Number(out.score) >= threshold, threshold } }];"
+      },
+      "id": "e7bea9ef-ab60-4090-8e88-a05cfa7ef0bb",
+      "name": "Parse Score",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1100,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "9cfcfe20-1e66-4cc2-9c7f-3d2f444f92e2",
+              "leftValue": "={{ $json.hot }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "df556202-0ccc-4ad4-bb77-4c15429a7437",
+      "name": "Hot Lead?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1320,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "#leads",
+          "mode": "name"
+        },
+        "message": "=*New lead · score {{ $json.score }}*\n{{ $json.name }} · {{ $json.company }} · {{ $json.email }}\n_{{ $json.reason }}_\n\nDraft reply:\n>{{ $json.draft_reply }}",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double"
+          }
+        },
+        "options": {
+          "limitWaitTime": {
+            "values": {
+              "limitType": "afterTimeInterval",
+              "resumeAmount": 24,
+              "resumeUnit": "hours"
+            }
+          }
+        }
+      },
+      "id": "fa08907a-d279-4213-9a37-468a70ecdb90",
+      "name": "Slack Approval",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        1540,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "adb7637d-d14a-4a0f-b158-f3150538e4d6",
+              "leftValue": "={{ $json.data.approved }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a3cdf0b3-b851-4e75-8ebd-4db9c497fdea",
+      "name": "Approved?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1760,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('Parse Score').first().json.email }}",
+        "subject": "=Re: your message",
+        "emailType": "text",
+        "message": "={{ $('Parse Score').first().json.draft_reply }}",
+        "options": {}
+      },
+      "id": "baa05272-d5de-40e5-bcd8-f8a4387f3155",
+      "name": "Send Reply",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1980,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "#alerts",
+          "mode": "name"
+        },
+        "text": "=Lead declined by reviewer: {{ $('Parse Score').first().json.email }}",
+        "otherOptions": {}
+      },
+      "id": "b9f4285a-5abc-4ca8-817d-0cfdb4f6ca9d",
+      "name": "Log Rejected",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        1980,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "#alerts",
+          "mode": "name"
+        },
+        "text": "=Cold lead (score {{ $json.score }} < {{ $json.threshold }}): {{ $json.email }} · {{ $json.reason }}",
+        "otherOptions": {}
+      },
+      "id": "59831582-4679-452c-932d-8ecd4073b769",
+      "name": "Log Cold Lead",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        1540,
+        420
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Lead": {
+      "main": [
+        [
+          {
+            "node": "Valid?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valid?": {
+      "main": [
+        [
+          {
+            "node": "Ack",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Build Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Reject",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Prompt": {
+      "main": [
+        [
+          {
+            "node": "Claude (Score + Draft)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Claude (Score + Draft)": {
+      "main": [
+        [
+          {
+            "node": "Parse Score",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Score": {
+      "main": [
+        [
+          {
+            "node": "Hot Lead?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hot Lead?": {
+      "main": [
+        [
+          {
+            "node": "Slack Approval",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log Cold Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Slack Approval": {
+      "main": [
+        [
+          {
+            "node": "Approved?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Approved?": {
+      "main": [
+        [
+          {
+            "node": "Send Reply",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log Rejected",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  }
+}
