@@ -5,6 +5,9 @@ Free, production-minded n8n workflows by [@SaiTarunRonanki](https://x.com/SaiTar
 | Template | What it does | Folder |
 |----------|--------------|--------|
 | AI Incident Agent · 8 Guardrail Gates | Alert in, Claude drafts a patch, 8 gates and a human approve it | [`ai-agent-8-gates`](./ai-agent-8-gates) |
+| Lead Approval Flow | Claude scores a lead and drafts a reply, a human approves in Slack before it sends | [`lead-approval-flow`](./lead-approval-flow) |
+| LLM Retry Budget | Backoff, model fallback, and a hard stop for any LLM call | [`llm-retry-budget`](./llm-retry-budget) |
+| Silence Alert | Pings Slack when a workflow quietly stops running, and when it recovers | [`silence-alert`](./silence-alert) |
 
 ## Folder layout
 
