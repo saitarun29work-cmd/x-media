@@ -1,0 +1,307 @@
+{
+  "name": "LLM Retry Budget · backoff + model fallback (by @SaiTarunRonanki)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "llm",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "cf52d921-e549-48c8-9e08-835c9fb54bda",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "65951297-ebae-49ba-8acc-695abd656601"
+    },
+    {
+      "parameters": {
+        "jsCode": "// One budget per request: which model to try on each attempt\nconst b = $input.first().json.body || {};\nconst models = ($env.LLM_MODEL_CHAIN || 'claude-sonnet-4-5,claude-sonnet-4-5,claude-haiku-4-5').split(',').map(s => s.trim());\nreturn [{ json: { prompt: String(b.prompt || ''), max_tokens: Number(b.max_tokens || 800), models, attempt: 1, model: models[0], started: Date.now() } }];"
+      },
+      "id": "a6f4aa56-677f-4f1d-b113-ee28586c0db2",
+      "name": "Init Budget",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $env.ANTHROPIC_API_KEY }}"
+            },
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: $json.model, max_tokens: $json.max_tokens, messages: [{ role: 'user', content: $json.prompt }] }) }}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "a6e16161-2416-4a62-9b69-d4ae88b8be81",
+      "name": "Call LLM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        300
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $('Retry Budget').isExecuted ? $('Retry Budget').last().json : $('Init Budget').first().json;\nconst r = $input.first().json;\nreturn [{ json: { status: 'ok', answer: r.content?.[0]?.text || '', model: r.model || state.model, attempts: state.attempt, ms: Date.now() - state.started } }];"
+      },
+      "id": "9fcec419-9049-4428-aa97-5508c3291ed2",
+      "name": "Format Answer",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        700,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "532c3555-a661-49cc-adf9-8262cd6bc370",
+      "name": "Respond OK",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        920,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Decide: retry, fall back to the next model, or give up\nconst base = $('Init Budget').first().json;\nconst attempt = $runIndex + 2;               // next attempt number\nconst maxAttempts = base.models.length;\nconst elapsed = Date.now() - base.started;\nconst maxMs = Number($env.LLM_MAX_TOTAL_MS || 45000);\nconst err = $input.first().json.error || $input.first().json;\nconst giveUp = attempt > maxAttempts || elapsed > maxMs;\nconst wait_s = Math.min(2 ** (attempt - 1), 8); // 1s, 2s, 4s, capped at 8s\nreturn [{ json: { ...base, attempt, model: base.models[Math.min(attempt, maxAttempts) - 1], wait_s, give_up: giveUp, last_error: String(err.message || err).slice(0, 300), elapsed_ms: elapsed } }];"
+      },
+      "id": "1a96f81c-94ba-4f97-ae04-3cf2d91e242c",
+      "name": "Retry Budget",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        700,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "45ecd3a8-e54e-4eea-a2b8-d3307846cac1",
+              "leftValue": "={{ $json.give_up }}",
+              "rightValue": false,
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "c42d5b0d-a180-4ff5-8c6d-df536130dc26",
+      "name": "Budget Left?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        920,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.wait_s }}",
+        "unit": "seconds"
+      },
+      "id": "41bcc872-7d1e-49e6-a293-257fabfe81c1",
+      "name": "Backoff",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1140,
+        360
+      ],
+      "webhookId": "e96cb4e6-010f-4b8a-b5df-39abbd7f25e2"
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "#alerts",
+          "mode": "name"
+        },
+        "text": "=LLM call failed after {{ $json.attempt - 1 }} attempts ({{ $json.elapsed_ms }} ms). Last error: {{ $json.last_error }}",
+        "otherOptions": {}
+      },
+      "id": "568b5f80-5705-4594-a1e7-38830420acbc",
+      "name": "Alert: Budget Spent",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        1140,
+        540
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ status: 'failed', attempts: $('Retry Budget').last().json.attempt - 1, error: $('Retry Budget').last().json.last_error }) }}",
+        "options": {
+          "responseCode": 503
+        }
+      },
+      "id": "7965e793-9935-474d-8572-4b10276383c9",
+      "name": "Respond 503",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1360,
+        540
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Init Budget",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Init Budget": {
+      "main": [
+        [
+          {
+            "node": "Call LLM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call LLM": {
+      "main": [
+        [
+          {
+            "node": "Format Answer",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Retry Budget",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Answer": {
+      "main": [
+        [
+          {
+            "node": "Respond OK",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Retry Budget": {
+      "main": [
+        [
+          {
+            "node": "Budget Left?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Budget Left?": {
+      "main": [
+        [
+          {
+            "node": "Backoff",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Alert: Budget Spent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Backoff": {
+      "main": [
+        [
+          {
+            "node": "Call LLM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Alert: Budget Spent": {
+      "main": [
+        [
+          {
+            "node": "Respond 503",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  }
+}
