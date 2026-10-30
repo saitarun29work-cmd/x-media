@@ -17,6 +17,9 @@
 | Template | What it does | Get it |
 |----------|--------------|--------|
 | **AI Incident Agent · 8 Guardrail Gates** | Alert in, Claude drafts a patch, 8 gates and a human approve it before anything ships | [Open →](./templates/ai-agent-8-gates) |
+| **Lead Approval Flow** | Claude scores a lead and drafts a reply, a human approves before it sends | [Open →](./templates/lead-approval-flow) |
+| **LLM Retry Budget** | Backoff, model fallback, and a hard stop for any LLM call | [Open →](./templates/llm-retry-budget) |
+| **Silence Alert** | Pings Slack when a workflow quietly stops running | [Open →](./templates/silence-alert) |
 
 Import any `.n8n.json` file in n8n with **Workflows → Import from File**. No keys are stored in any template. Full list in [`templates/`](./templates).
 
