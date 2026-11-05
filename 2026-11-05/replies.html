@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<title>30 X replies — Nov 5</title>
+<style>
+  :root { font-family: system-ui, sans-serif; color: #e7e9ea; background: #000; }
+  body { margin: 0; padding: 16px; max-width: 640px; margin-inline: auto; padding-bottom: 72px; }
+  h1 { font-size: 1.25rem; margin-bottom: 8px; }
+  .bar { position: sticky; top: 0; z-index: 5; background:#000; padding: 8px 0 12px;
+          border-bottom: 1px solid #2f3336; margin-bottom: 12px; }
+  .progress { color:#8b98a5; font-size:0.9rem; }
+  .warn { background:#3d1f00; border:1px solid #f4212e; border-radius:12px; padding:14px; margin-bottom:16px; line-height:1.45; font-size:0.9rem; }
+  .note { color: #8b98a5; font-size: 0.9rem; line-height: 1.45; margin-bottom: 1rem; }
+  .note-sm { color: #8b98a5; font-size: 0.8rem; margin: 0 0 8px; }
+  .hint { color:#8b98a5; font-size:0.75rem; margin: 8px 0 0; }
+  .card { border: 1px solid #2f3336; border-radius: 12px; padding: 14px; margin-bottom: 12px; position:relative; }
+  .card.finished { opacity: 0.45; }
+  .card h2 { margin: 0 0 8px; font-size: 1rem; padding-right: 72px; }
+  .tier { font-size:0.7rem; font-weight:600; padding:2px 8px; border-radius:999px; margin-left:6px; vertical-align:middle; }
+  .tier.mega { background:#1d9bf0; color:#fff; }
+  .tier.mid { background:#2f3336; color:#e7e9ea; }
+  .done { position:absolute; top:14px; right:14px; font-size:0.85rem; color:#8b98a5; }
+  .text { margin: 0 0 12px; white-space: pre-wrap; line-height: 1.4; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn { appearance: none; border: 1px solid #2f3336; background: #16181c; color: #e7e9ea;
+         border-radius: 999px; padding: 10px 14px; text-decoration: none; font-size: 0.85rem; cursor: pointer; display:inline-block; }
+  .btn.primary { background: #1d9bf0; border-color: #1d9bf0; color: #fff; font-weight: 600; }
+  .btn.copied { background: #00ba7c; border-color: #00ba7c; color: #fff; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <h1>30 mega replies — stay on this list</h1>
+    <div class="progress" id="progress">0 / 30 done</div>
+  </div>
+  <div class="warn">
+    <b>How to use (Android Chrome)</b><br/>
+    1) Tap <b>Copy reply</b> (you stay here)<br/>
+    2) Tap <b>Reply in Chrome</b> — forces Chrome, not the X app<br/>
+    3) Paste → Post → swipe back to this list<br/><br/>
+    If a button still takes over this tab: <b>long-press</b> it → <b>Open in new tab</b>. That always works.<br/>
+    Prefer <b>Reply in Chrome</b> / <b>Open post in Chrome</b> over the plain Open buttons.
+  </div>
+  <p class="note">X “Open supported links” must stay OFF (Settings → Apps → X → Open by default). Nov 5 pack: 30 replies on big accounts (mega = 100k+ followers).</p>
+
+  
+  
+  
+  
+<h2 style="margin:18px 0 8px;">💬 COMMENTS ON YOUR POSTS (reply to these first)</h2>
+  <div class="card" style="border-color:#f59e0b;background:#1c1608;">
+    <label class="done"><input type="checkbox" data-done="inbox1" onchange="saveDone()"/> Done</label>
+    <h2>💬 @HoldAlarms (20 followers) <span class="tier" style="background:#f59e0b;color:#000;">CARRIED</span></h2>
+    <p class="note-sm">Their comment: <i>"Fair, the Monday backlog bites harder than the quiet weekend. An age limit per alert does the same job: anything too old gets logged, not acted on."</i></p>
+    <p class="text" id="inbox1">Yes, a max age per alert type is cleaner than a backfill cap. Store event_ts next to received_at, and anything where the gap is past its TTL goes to a stale table for the morning digest instead of paging. Same data, no 9 AM storm.</p>
+    <div class="actions">
+      <button class="btn primary" style="background:#f59e0b;border-color:#f59e0b;color:#000;" type="button" onclick="copyText('inbox1', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2116099690446082055&amp;text=Yes%2C%20a%20max%20age%20per%20alert%20type%20is%20cleaner%20than%20a%20backfill%20cap.%20Store%20event_ts%20next%20to%20received_at%2C%20and%20anything%20where%20the%20gap%20is%20past%20its%20TTL%20goes%20to%20a%20stale%20table%20for%20the%20morning%20digest%20instead%20of%20paging.%20Same%20data%2C%20no%209%20AM%20storm.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2116099690446082055%26text%3DYes%252C%2520a%2520max%2520age%2520per%2520alert%2520type%2520is%2520cleaner%2520than%2520a%2520backfill%2520cap.%2520Store%2520event_ts%2520next%2520to%2520received_at%252C%2520and%2520anything%2520where%2520the%2520gap%2520is%2520past%2520its%2520TTL%2520goes%2520to%2520a%2520stale%2520table%2520for%2520the%2520morning%2520digest%2520instead%2520of%2520paging.%2520Same%2520data%252C%2520no%25209%2520AM%2520storm.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2116099690446082055&amp;text=Yes%2C%20a%20max%20age%20per%20alert%20type%20is%20cleaner%20than%20a%20backfill%20cap.%20Store%20event_ts%20next%20to%20received_at%2C%20and%20anything%20where%20the%20gap%20is%20past%20its%20TTL%20goes%20to%20a%20stale%20table%20for%20the%20morning%20digest%20instead%20of%20paging.%20Same%20data%2C%20no%209%20AM%20storm." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/HoldAlarms/status/2116099690446082055#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FHoldAlarms%2Fstatus%2F2116099690446082055;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open comment in Chrome</a>
+      <a class="btn" href="https://x.com/HoldAlarms/status/2116099690446082055" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open comment</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#f59e0b;background:#1c1608;">
+    <label class="done"><input type="checkbox" data-done="inbox2" onchange="saveDone()"/> Done</label>
+    <h2>💬 @WSterlingSpace (425 followers) <span class="tier" style="background:#f59e0b;color:#000;">MENTION</span></h2>
+    <p class="note-sm">Their comment: <i>"(Roundup mention) 4 posts from this week that a remodeling or repair shop owner should save..."</i></p>
+    <p class="text" id="inbox2">Thanks for including me. For repair shops the cheapest win I&#x27;d add: a daily missed-reply check. One query for customer messages with no answer in 24h, sent to the owner every morning. No AI needed.</p>
+    <div class="actions">
+      <button class="btn primary" style="background:#f59e0b;border-color:#f59e0b;color:#000;" type="button" onclick="copyText('inbox2', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2114171827140309188&amp;text=Thanks%20for%20including%20me.%20For%20repair%20shops%20the%20cheapest%20win%20I%27d%20add%3A%20a%20daily%20missed-reply%20check.%20One%20query%20for%20customer%20messages%20with%20no%20answer%20in%2024h%2C%20sent%20to%20the%20owner%20every%20morning.%20No%20AI%20needed.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2114171827140309188%26text%3DThanks%2520for%2520including%2520me.%2520For%2520repair%2520shops%2520the%2520cheapest%2520win%2520I%2527d%2520add%253A%2520a%2520daily%2520missed-reply%2520check.%2520One%2520query%2520for%2520customer%2520messages%2520with%2520no%2520answer%2520in%252024h%252C%2520sent%2520to%2520the%2520owner%2520every%2520morning.%2520No%2520AI%2520needed.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2114171827140309188&amp;text=Thanks%20for%20including%20me.%20For%20repair%20shops%20the%20cheapest%20win%20I%27d%20add%3A%20a%20daily%20missed-reply%20check.%20One%20query%20for%20customer%20messages%20with%20no%20answer%20in%2024h%2C%20sent%20to%20the%20owner%20every%20morning.%20No%20AI%20needed." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/WSterlingSpace/status/2114171827140309188#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FWSterlingSpace%2Fstatus%2F2114171827140309188;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open mention in Chrome</a>
+      <a class="btn" href="https://x.com/WSterlingSpace/status/2114171827140309188" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open mention</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="warn" style="background:#0c241b;border-color:#00ba7c;">
+    <b>Community posts (join each community once first):</b><br/>
+    • <b>Text + Image:</b> tap <b>Download GIF</b> (or long-press the image → Save), then <b>Open Clean Post</b>, pick the Community in <b>"Everyone ▾"</b>, attach the GIF, <b>Post</b>.<br/>
+    • <b>Text + live diagram card:</b> tap <b>Open With Embedded Card</b> appends a link that X turns into a card. Today's GIF posts go live via Buffer at 9:30 and 18:30 IST, so the link is your profile (https://x.com/SaiTarunRonanki) for now; after they post, you can swap in the live post URL.
+  </div>
+  <div class="card" style="border-color:#00ba7c;background:#0b1a14;">
+    <label class="done"><input type="checkbox" data-done="comm1" onchange="saveDone()"/> Done</label>
+    <h2>🔥 COMMUNITY POST #1: Build in Public (269k members)</h2>
+    <p class="text" id="comm1">Building in public: Medibill FEFO is a Prisma query.
+
+PostgreSQL stock ledger: qty&gt;0, expiry&gt;now(), ORDER BY expiry ASC. First batch wins. Qty decrements inside a $transaction, then a StockLedger out-row with batch_id + bill_id.
+
+No spreadsheet guess at the counter.</p>
+    <img src="https://saitarun29work-cmd.github.io/x-media/2026-11-05/prisma-fefo-pick.gif" alt="Animated diagram" style="width:100%;border-radius:8px;border:1px solid #2f3336;margin-bottom:10px;"/>
+    <div class="actions">
+      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm1', this)">1. Copy clean text</button>
+      <a class="btn primary" href="intent://twitter.com/intent/tweet?text=Building%20in%20public%3A%20Medibill%20FEFO%20is%20a%20Prisma%20query.%0A%0APostgreSQL%20stock%20ledger%3A%20qty%3E0%2C%20expiry%3Enow%28%29%2C%20ORDER%20BY%20expiry%20ASC.%20First%20batch%20wins.%20Qty%20decrements%20inside%20a%20%24transaction%2C%20then%20a%20StockLedger%20out-row%20with%20batch_id%20%2B%20bill_id.%0A%0ANo%20spreadsheet%20guess%20at%20the%20counter.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DBuilding%2520in%2520public%253A%2520Medibill%2520FEFO%2520is%2520a%2520Prisma%2520query.%250A%250APostgreSQL%2520stock%2520ledger%253A%2520qty%253E0%252C%2520expiry%253Enow%2528%2529%252C%2520ORDER%2520BY%2520expiry%2520ASC.%2520First%2520batch%2520wins.%2520Qty%2520decrements%2520inside%2520a%2520%2524transaction%252C%2520then%2520a%2520StockLedger%2520out-row%2520with%2520batch_id%2520%252B%2520bill_id.%250A%250ANo%2520spreadsheet%2520guess%2520at%2520the%2520counter.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Clean Post (Chrome)</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?text=Building%20in%20public%3A%20Medibill%20FEFO%20is%20a%20Prisma%20query.%0A%0APostgreSQL%20stock%20ledger%3A%20qty%3E0%2C%20expiry%3Enow%28%29%2C%20ORDER%20BY%20expiry%20ASC.%20First%20batch%20wins.%20Qty%20decrements%20inside%20a%20%24transaction%2C%20then%20a%20StockLedger%20out-row%20with%20batch_id%20%2B%20bill_id.%0A%0ANo%20spreadsheet%20guess%20at%20the%20counter." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-11-05/prisma-fefo-pick.gif" download target="_blank" rel="noopener">Download GIF</a>
+      <a class="btn" href="intent://twitter.com/intent/tweet?text=Building%20in%20public%3A%20Medibill%20FEFO%20is%20a%20Prisma%20query.%0A%0APostgreSQL%20stock%20ledger%3A%20qty%3E0%2C%20expiry%3Enow%28%29%2C%20ORDER%20BY%20expiry%20ASC.%20First%20batch%20wins.%20Qty%20decrements%20inside%20a%20%24transaction%2C%20then%20a%20StockLedger%20out-row%20with%20batch_id%20%2B%20bill_id.%0A%0ANo%20spreadsheet%20guess%20at%20the%20counter.%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DBuilding%2520in%2520public%253A%2520Medibill%2520FEFO%2520is%2520a%2520Prisma%2520query.%250A%250APostgreSQL%2520stock%2520ledger%253A%2520qty%253E0%252C%2520expiry%253Enow%2528%2529%252C%2520ORDER%2520BY%2520expiry%2520ASC.%2520First%2520batch%2520wins.%2520Qty%2520decrements%2520inside%2520a%2520%2524transaction%252C%2520then%2520a%2520StockLedger%2520out-row%2520with%2520batch_id%2520%252B%2520bill_id.%250A%250ANo%2520spreadsheet%2520guess%2520at%2520the%2520counter.%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open With Embedded Card (Chrome)</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?text=Building%20in%20public%3A%20Medibill%20FEFO%20is%20a%20Prisma%20query.%0A%0APostgreSQL%20stock%20ledger%3A%20qty%3E0%2C%20expiry%3Enow%28%29%2C%20ORDER%20BY%20expiry%20ASC.%20First%20batch%20wins.%20Qty%20decrements%20inside%20a%20%24transaction%2C%20then%20a%20StockLedger%20out-row%20with%20batch_id%20%2B%20bill_id.%0A%0ANo%20spreadsheet%20guess%20at%20the%20counter.%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Embedded Card composer</a>
+      <a class="btn" href="intent://x.com/i/communities/1493446837214187523#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1493446837214187523;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Join Community (Chrome)</a>
+      <a class="btn" href="https://x.com/i/communities/1493446837214187523" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Join Community</a>
+    </div>
+  </div>
+  <div class="card" style="border-color:#00ba7c;background:#0b1a14;">
+    <label class="done"><input type="checkbox" data-done="comm2" onchange="saveDone()"/> Done</label>
+    <h2>🔥 COMMUNITY POST #2: RAG and AI Agent Developers (23.6k members)</h2>
+    <p class="text" id="comm2">Agent builders: gate writes before the tool runs.
+
+Medibill Next.js API routes: Better Auth cookie → getSession → 401/403 → only then Prisma touches stock or bills.
+
+No anonymous ledger writes. Same rule I&#x27;d put on any money tool.</p>
+    <img src="https://saitarun29work-cmd.github.io/x-media/2026-11-05/better-auth-api-route.gif" alt="Animated diagram" style="width:100%;border-radius:8px;border:1px solid #2f3336;margin-bottom:10px;"/>
+    <div class="actions">
+      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm2', this)">1. Copy clean text</button>
+      <a class="btn primary" href="intent://twitter.com/intent/tweet?text=Agent%20builders%3A%20gate%20writes%20before%20the%20tool%20runs.%0A%0AMedibill%20Next.js%20API%20routes%3A%20Better%20Auth%20cookie%20%E2%86%92%20getSession%20%E2%86%92%20401%2F403%20%E2%86%92%20only%20then%20Prisma%20touches%20stock%20or%20bills.%0A%0ANo%20anonymous%20ledger%20writes.%20Same%20rule%20I%27d%20put%20on%20any%20money%20tool.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DAgent%2520builders%253A%2520gate%2520writes%2520before%2520the%2520tool%2520runs.%250A%250AMedibill%2520Next.js%2520API%2520routes%253A%2520Better%2520Auth%2520cookie%2520%25E2%2586%2592%2520getSession%2520%25E2%2586%2592%2520401%252F403%2520%25E2%2586%2592%2520only%2520then%2520Prisma%2520touches%2520stock%2520or%2520bills.%250A%250ANo%2520anonymous%2520ledger%2520writes.%2520Same%2520rule%2520I%2527d%2520put%2520on%2520any%2520money%2520tool.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Clean Post (Chrome)</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?text=Agent%20builders%3A%20gate%20writes%20before%20the%20tool%20runs.%0A%0AMedibill%20Next.js%20API%20routes%3A%20Better%20Auth%20cookie%20%E2%86%92%20getSession%20%E2%86%92%20401%2F403%20%E2%86%92%20only%20then%20Prisma%20touches%20stock%20or%20bills.%0A%0ANo%20anonymous%20ledger%20writes.%20Same%20rule%20I%27d%20put%20on%20any%20money%20tool." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-11-05/better-auth-api-route.gif" download target="_blank" rel="noopener">Download GIF</a>
+      <a class="btn" href="intent://twitter.com/intent/tweet?text=Agent%20builders%3A%20gate%20writes%20before%20the%20tool%20runs.%0A%0AMedibill%20Next.js%20API%20routes%3A%20Better%20Auth%20cookie%20%E2%86%92%20getSession%20%E2%86%92%20401%2F403%20%E2%86%92%20only%20then%20Prisma%20touches%20stock%20or%20bills.%0A%0ANo%20anonymous%20ledger%20writes.%20Same%20rule%20I%27d%20put%20on%20any%20money%20tool.%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DAgent%2520builders%253A%2520gate%2520writes%2520before%2520the%2520tool%2520runs.%250A%250AMedibill%2520Next.js%2520API%2520routes%253A%2520Better%2520Auth%2520cookie%2520%25E2%2586%2592%2520getSession%2520%25E2%2586%2592%2520401%252F403%2520%25E2%2586%2592%2520only%2520then%2520Prisma%2520touches%2520stock%2520or%2520bills.%250A%250ANo%2520anonymous%2520ledger%2520writes.%2520Same%2520rule%2520I%2527d%2520put%2520on%2520any%2520money%2520tool.%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open With Embedded Card (Chrome)</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?text=Agent%20builders%3A%20gate%20writes%20before%20the%20tool%20runs.%0A%0AMedibill%20Next.js%20API%20routes%3A%20Better%20Auth%20cookie%20%E2%86%92%20getSession%20%E2%86%92%20401%2F403%20%E2%86%92%20only%20then%20Prisma%20touches%20stock%20or%20bills.%0A%0ANo%20anonymous%20ledger%20writes.%20Same%20rule%20I%27d%20put%20on%20any%20money%20tool.%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Embedded Card composer</a>
+      <a class="btn" href="intent://x.com/i/communities/1838763245567369450#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1838763245567369450;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Join Community (Chrome)</a>
+      <a class="btn" href="https://x.com/i/communities/1838763245567369450" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Join Community</a>
+    </div>
+  </div>
+  <div class="card" style="border-color:#00ba7c;background:#0b1a14;">
+    <label class="done"><input type="checkbox" data-done="comm3" onchange="saveDone()"/> Done</label>
+    <h2>🔥 COMMUNITY POST #3: 1337: AI, Python, Data (41.7k members)</h2>
+    <p class="text" id="comm3">Python/data angle from a pharmacy SaaS:
+
+OCR (OpenCV + ONNX) matches the strip → Prisma FEFO pick in Postgres → bill line shows batch + expiry.
+
+Indian strips have no barcodes. Domain query &gt; generic FIFO.</p>
+    <img src="https://saitarun29work-cmd.github.io/x-media/2026-11-05/prisma-fefo-pick.gif" alt="Animated diagram" style="width:100%;border-radius:8px;border:1px solid #2f3336;margin-bottom:10px;"/>
+    <div class="actions">
+      <button class="btn primary" style="background:#00ba7c;border-color:#00ba7c;color:#000;" type="button" onclick="copyText('comm3', this)">1. Copy clean text</button>
+      <a class="btn primary" href="intent://twitter.com/intent/tweet?text=Python%2Fdata%20angle%20from%20a%20pharmacy%20SaaS%3A%0A%0AOCR%20%28OpenCV%20%2B%20ONNX%29%20matches%20the%20strip%20%E2%86%92%20Prisma%20FEFO%20pick%20in%20Postgres%20%E2%86%92%20bill%20line%20shows%20batch%20%2B%20expiry.%0A%0AIndian%20strips%20have%20no%20barcodes.%20Domain%20query%20%3E%20generic%20FIFO.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DPython%252Fdata%2520angle%2520from%2520a%2520pharmacy%2520SaaS%253A%250A%250AOCR%2520%2528OpenCV%2520%252B%2520ONNX%2529%2520matches%2520the%2520strip%2520%25E2%2586%2592%2520Prisma%2520FEFO%2520pick%2520in%2520Postgres%2520%25E2%2586%2592%2520bill%2520line%2520shows%2520batch%2520%252B%2520expiry.%250A%250AIndian%2520strips%2520have%2520no%2520barcodes.%2520Domain%2520query%2520%253E%2520generic%2520FIFO.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Open Clean Post (Chrome)</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?text=Python%2Fdata%20angle%20from%20a%20pharmacy%20SaaS%3A%0A%0AOCR%20%28OpenCV%20%2B%20ONNX%29%20matches%20the%20strip%20%E2%86%92%20Prisma%20FEFO%20pick%20in%20Postgres%20%E2%86%92%20bill%20line%20shows%20batch%20%2B%20expiry.%0A%0AIndian%20strips%20have%20no%20barcodes.%20Domain%20query%20%3E%20generic%20FIFO." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="https://saitarun29work-cmd.github.io/x-media/2026-11-05/prisma-fefo-pick.gif" download target="_blank" rel="noopener">Download GIF</a>
+      <a class="btn" href="intent://twitter.com/intent/tweet?text=Python%2Fdata%20angle%20from%20a%20pharmacy%20SaaS%3A%0A%0AOCR%20%28OpenCV%20%2B%20ONNX%29%20matches%20the%20strip%20%E2%86%92%20Prisma%20FEFO%20pick%20in%20Postgres%20%E2%86%92%20bill%20line%20shows%20batch%20%2B%20expiry.%0A%0AIndian%20strips%20have%20no%20barcodes.%20Domain%20query%20%3E%20generic%20FIFO.%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DPython%252Fdata%2520angle%2520from%2520a%2520pharmacy%2520SaaS%253A%250A%250AOCR%2520%2528OpenCV%2520%252B%2520ONNX%2529%2520matches%2520the%2520strip%2520%25E2%2586%2592%2520Prisma%2520FEFO%2520pick%2520in%2520Postgres%2520%25E2%2586%2592%2520bill%2520line%2520shows%2520batch%2520%252B%2520expiry.%250A%250AIndian%2520strips%2520have%2520no%2520barcodes.%2520Domain%2520query%2520%253E%2520generic%2520FIFO.%250A%250Ahttps%253A%252F%252Fx.com%252FSaiTarunRonanki;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open With Embedded Card (Chrome)</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?text=Python%2Fdata%20angle%20from%20a%20pharmacy%20SaaS%3A%0A%0AOCR%20%28OpenCV%20%2B%20ONNX%29%20matches%20the%20strip%20%E2%86%92%20Prisma%20FEFO%20pick%20in%20Postgres%20%E2%86%92%20bill%20line%20shows%20batch%20%2B%20expiry.%0A%0AIndian%20strips%20have%20no%20barcodes.%20Domain%20query%20%3E%20generic%20FIFO.%0A%0Ahttps%3A%2F%2Fx.com%2FSaiTarunRonanki" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Embedded Card composer</a>
+      <a class="btn" href="intent://x.com/i/communities/1508750875442954242#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fi%2Fcommunities%2F1508750875442954242;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Join Community (Chrome)</a>
+      <a class="btn" href="https://x.com/i/communities/1508750875442954242" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Join Community</a>
+    </div>
+  </div>
+<h2 style="margin:18px 0 8px;">🚀 30 REPLIES on 50k+ accounts (newest first, reply to the top ones soonest)</h2>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t1" onchange="saveDone()"/> Done</label>
+    <h2>1. @jasonlk (255,444) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Vercel LQ agent &lt;$5k/yr + 20% eng · posted 7:58 IST (Nov 5)</p>
+    <p class="text" id="t1">Sub-$5k/year for a lead-qual agent is the right cost shape. I&#x27;d still keep Cashfree charges and stock writes off the autonomous path — Medibill gates those behind Better Auth + a human click.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t1', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118168422295191671&amp;text=Sub-%245k%2Fyear%20for%20a%20lead-qual%20agent%20is%20the%20right%20cost%20shape.%20I%27d%20still%20keep%20Cashfree%20charges%20and%20stock%20writes%20off%20the%20autonomous%20path%20%E2%80%94%20Medibill%20gates%20those%20behind%20Better%20Auth%20%2B%20a%20human%20click.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118168422295191671%26text%3DSub-%25245k%252Fyear%2520for%2520a%2520lead-qual%2520agent%2520is%2520the%2520right%2520cost%2520shape.%2520I%2527d%2520still%2520keep%2520Cashfree%2520charges%2520and%2520stock%2520writes%2520off%2520the%2520autonomous%2520path%2520%25E2%2580%2594%2520Medibill%2520gates%2520those%2520behind%2520Better%2520Auth%2520%252B%2520a%2520human%2520click.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118168422295191671&amp;text=Sub-%245k%2Fyear%20for%20a%20lead-qual%20agent%20is%20the%20right%20cost%20shape.%20I%27d%20still%20keep%20Cashfree%20charges%20and%20stock%20writes%20off%20the%20autonomous%20path%20%E2%80%94%20Medibill%20gates%20those%20behind%20Better%20Auth%20%2B%20a%20human%20click." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/jasonlk/status/2118168422295191671#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fjasonlk%2Fstatus%2F2118168422295191671;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/jasonlk/status/2118168422295191671" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t2" onchange="saveDone()"/> Done</label>
+    <h2>2. @jasonlk (255,444) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Top 1% AI spend stalled; Anthropic $5.4B Q3 add · posted 7:56 IST (Nov 5)</p>
+    <p class="text" id="t2">Whale spend stalling is why I keep OCR on our Mumbai VPS CPU instead of a metered vision API. Domain models you own survive when frontier budgets freeze.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t2', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118168130887241932&amp;text=Whale%20spend%20stalling%20is%20why%20I%20keep%20OCR%20on%20our%20Mumbai%20VPS%20CPU%20instead%20of%20a%20metered%20vision%20API.%20Domain%20models%20you%20own%20survive%20when%20frontier%20budgets%20freeze.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118168130887241932%26text%3DWhale%2520spend%2520stalling%2520is%2520why%2520I%2520keep%2520OCR%2520on%2520our%2520Mumbai%2520VPS%2520CPU%2520instead%2520of%2520a%2520metered%2520vision%2520API.%2520Domain%2520models%2520you%2520own%2520survive%2520when%2520frontier%2520budgets%2520freeze.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118168130887241932&amp;text=Whale%20spend%20stalling%20is%20why%20I%20keep%20OCR%20on%20our%20Mumbai%20VPS%20CPU%20instead%20of%20a%20metered%20vision%20API.%20Domain%20models%20you%20own%20survive%20when%20frontier%20budgets%20freeze." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/jasonlk/status/2118168130887241932#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fjasonlk%2Fstatus%2F2118168130887241932;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/jasonlk/status/2118168130887241932" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t3" onchange="saveDone()"/> Done</label>
+    <h2>3. @rauchg (916,889) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">AI will rewrite slow/insecure/underspec software · posted 7:52 IST (Nov 5)</p>
+    <p class="text" id="t3">Agree — but rewrite the ledger carefully. Medibill&#x27;s Prisma FEFO pick and idempotent returns stay typed SQL with an idempotency key; agents propose, humans approve money moves.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t3', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118166970273292299&amp;text=Agree%20%E2%80%94%20but%20rewrite%20the%20ledger%20carefully.%20Medibill%27s%20Prisma%20FEFO%20pick%20and%20idempotent%20returns%20stay%20typed%20SQL%20with%20an%20idempotency%20key%3B%20agents%20propose%2C%20humans%20approve%20money%20moves.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118166970273292299%26text%3DAgree%2520%25E2%2580%2594%2520but%2520rewrite%2520the%2520ledger%2520carefully.%2520Medibill%2527s%2520Prisma%2520FEFO%2520pick%2520and%2520idempotent%2520returns%2520stay%2520typed%2520SQL%2520with%2520an%2520idempotency%2520key%253B%2520agents%2520propose%252C%2520humans%2520approve%2520money%2520moves.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118166970273292299&amp;text=Agree%20%E2%80%94%20but%20rewrite%20the%20ledger%20carefully.%20Medibill%27s%20Prisma%20FEFO%20pick%20and%20idempotent%20returns%20stay%20typed%20SQL%20with%20an%20idempotency%20key%3B%20agents%20propose%2C%20humans%20approve%20money%20moves." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/rauchg/status/2118166970273292299#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2118166970273292299;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/rauchg/status/2118166970273292299" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t4" onchange="saveDone()"/> Done</label>
+    <h2>4. @swyx (210,560) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">$0 to $100B ARR in 2.5 years · posted 6:55 IST (Nov 5)</p>
+    <p class="text" id="t4">Insane pace. For builders the takeaway is still unit economics: Medibill tools spend ~₹3,000 and OCR runs on the same 10-core VPS. Flat infra beats rented tokens when volume grows.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t4', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118152585911869634&amp;text=Insane%20pace.%20For%20builders%20the%20takeaway%20is%20still%20unit%20economics%3A%20Medibill%20tools%20spend%20~%E2%82%B93%2C000%20and%20OCR%20runs%20on%20the%20same%2010-core%20VPS.%20Flat%20infra%20beats%20rented%20tokens%20when%20volume%20grows.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118152585911869634%26text%3DInsane%2520pace.%2520For%2520builders%2520the%2520takeaway%2520is%2520still%2520unit%2520economics%253A%2520Medibill%2520tools%2520spend%2520~%25E2%2582%25B93%252C000%2520and%2520OCR%2520runs%2520on%2520the%2520same%252010-core%2520VPS.%2520Flat%2520infra%2520beats%2520rented%2520tokens%2520when%2520volume%2520grows.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118152585911869634&amp;text=Insane%20pace.%20For%20builders%20the%20takeaway%20is%20still%20unit%20economics%3A%20Medibill%20tools%20spend%20~%E2%82%B93%2C000%20and%20OCR%20runs%20on%20the%20same%2010-core%20VPS.%20Flat%20infra%20beats%20rented%20tokens%20when%20volume%20grows." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/swyx/status/2118152585911869634#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fswyx%2Fstatus%2F2118152585911869634;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/swyx/status/2118152585911869634" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t5" onchange="saveDone()"/> Done</label>
+    <h2>5. @rauchg (916,889) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">6817 vulns found; 1411 patched by agent · posted 6:53 IST (Nov 5)</p>
+    <p class="text" id="t5">Auto-patch volume is great. Gate merges that touch Better Auth sessions or payment webhooks — low-risk dep bumps auto-PR, auth/payment still need a human click.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t5', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118152230260092940&amp;text=Auto-patch%20volume%20is%20great.%20Gate%20merges%20that%20touch%20Better%20Auth%20sessions%20or%20payment%20webhooks%20%E2%80%94%20low-risk%20dep%20bumps%20auto-PR%2C%20auth%2Fpayment%20still%20need%20a%20human%20click.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118152230260092940%26text%3DAuto-patch%2520volume%2520is%2520great.%2520Gate%2520merges%2520that%2520touch%2520Better%2520Auth%2520sessions%2520or%2520payment%2520webhooks%2520%25E2%2580%2594%2520low-risk%2520dep%2520bumps%2520auto-PR%252C%2520auth%252Fpayment%2520still%2520need%2520a%2520human%2520click.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118152230260092940&amp;text=Auto-patch%20volume%20is%20great.%20Gate%20merges%20that%20touch%20Better%20Auth%20sessions%20or%20payment%20webhooks%20%E2%80%94%20low-risk%20dep%20bumps%20auto-PR%2C%20auth%2Fpayment%20still%20need%20a%20human%20click." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/rauchg/status/2118152230260092940#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2118152230260092940;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/rauchg/status/2118152230260092940" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t6" onchange="saveDone()"/> Done</label>
+    <h2>6. @bindureddy (394,752) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Pause tech advancement = kill shot to US economy · posted 6:19 IST (Nov 5)</p>
+    <p class="text" id="t6">If compute gets political, local inference wins. Medibill&#x27;s OpenCV + ONNX sidecar already runs on our Mumbai VPS for that reason — no per-scan cloud OCR meter.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t6', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118143574252621947&amp;text=If%20compute%20gets%20political%2C%20local%20inference%20wins.%20Medibill%27s%20OpenCV%20%2B%20ONNX%20sidecar%20already%20runs%20on%20our%20Mumbai%20VPS%20for%20that%20reason%20%E2%80%94%20no%20per-scan%20cloud%20OCR%20meter.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118143574252621947%26text%3DIf%2520compute%2520gets%2520political%252C%2520local%2520inference%2520wins.%2520Medibill%2527s%2520OpenCV%2520%252B%2520ONNX%2520sidecar%2520already%2520runs%2520on%2520our%2520Mumbai%2520VPS%2520for%2520that%2520reason%2520%25E2%2580%2594%2520no%2520per-scan%2520cloud%2520OCR%2520meter.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118143574252621947&amp;text=If%20compute%20gets%20political%2C%20local%20inference%20wins.%20Medibill%27s%20OpenCV%20%2B%20ONNX%20sidecar%20already%20runs%20on%20our%20Mumbai%20VPS%20for%20that%20reason%20%E2%80%94%20no%20per-scan%20cloud%20OCR%20meter." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/bindureddy/status/2118143574252621947#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fbindureddy%2Fstatus%2F2118143574252621947;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/bindureddy/status/2118143574252621947" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t7" onchange="saveDone()"/> Done</label>
+    <h2>7. @yongfook (175,152) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Productized service first, SaaS later · posted 6:17 IST (Nov 5)</p>
+    <p class="text" id="t7">This is Showroom OS: demo the daybook to a real bike showroom before SaaS-ifying. HTML/CSS/JS + MySQL screens first. Deal in talks — not a confirmed customer yet.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t7', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118143216944124094&amp;text=This%20is%20Showroom%20OS%3A%20demo%20the%20daybook%20to%20a%20real%20bike%20showroom%20before%20SaaS-ifying.%20HTML%2FCSS%2FJS%20%2B%20MySQL%20screens%20first.%20Deal%20in%20talks%20%E2%80%94%20not%20a%20confirmed%20customer%20yet.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118143216944124094%26text%3DThis%2520is%2520Showroom%2520OS%253A%2520demo%2520the%2520daybook%2520to%2520a%2520real%2520bike%2520showroom%2520before%2520SaaS-ifying.%2520HTML%252FCSS%252FJS%2520%252B%2520MySQL%2520screens%2520first.%2520Deal%2520in%2520talks%2520%25E2%2580%2594%2520not%2520a%2520confirmed%2520customer%2520yet.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118143216944124094&amp;text=This%20is%20Showroom%20OS%3A%20demo%20the%20daybook%20to%20a%20real%20bike%20showroom%20before%20SaaS-ifying.%20HTML%2FCSS%2FJS%20%2B%20MySQL%20screens%20first.%20Deal%20in%20talks%20%E2%80%94%20not%20a%20confirmed%20customer%20yet." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/yongfook/status/2118143216944124094#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fyongfook%2Fstatus%2F2118143216944124094;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/yongfook/status/2118143216944124094" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t8" onchange="saveDone()"/> Done</label>
+    <h2>8. @swyx (210,560) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Respect breadth vs only B2B SaaS · posted 6:00 IST (Nov 5)</p>
+    <p class="text" id="t8">Breadth is fine if each surface has a ship gate. My gate: one pharmacy on FEFO billing and one showroom off Zoho tabs — not another demo agent.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t8', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118138737419067758&amp;text=Breadth%20is%20fine%20if%20each%20surface%20has%20a%20ship%20gate.%20My%20gate%3A%20one%20pharmacy%20on%20FEFO%20billing%20and%20one%20showroom%20off%20Zoho%20tabs%20%E2%80%94%20not%20another%20demo%20agent.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118138737419067758%26text%3DBreadth%2520is%2520fine%2520if%2520each%2520surface%2520has%2520a%2520ship%2520gate.%2520My%2520gate%253A%2520one%2520pharmacy%2520on%2520FEFO%2520billing%2520and%2520one%2520showroom%2520off%2520Zoho%2520tabs%2520%25E2%2580%2594%2520not%2520another%2520demo%2520agent.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118138737419067758&amp;text=Breadth%20is%20fine%20if%20each%20surface%20has%20a%20ship%20gate.%20My%20gate%3A%20one%20pharmacy%20on%20FEFO%20billing%20and%20one%20showroom%20off%20Zoho%20tabs%20%E2%80%94%20not%20another%20demo%20agent." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/swyx/status/2118138737419067758#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fswyx%2Fstatus%2F2118138737419067758;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/swyx/status/2118138737419067758" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t9" onchange="saveDone()"/> Done</label>
+    <h2>9. @kimmonismus (156,343) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">WorkBuddy agent + Hy4 built 3D headphones in Blender · posted 5:42 IST (Nov 5)</p>
+    <p class="text" id="t9">Constrained domain + tight feedback is the win. Same pattern as pharmacy OCR: OpenCV + ONNX on Indian strips beats a general vision chat that hallucinates batch codes.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t9', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118134211744026913&amp;text=Constrained%20domain%20%2B%20tight%20feedback%20is%20the%20win.%20Same%20pattern%20as%20pharmacy%20OCR%3A%20OpenCV%20%2B%20ONNX%20on%20Indian%20strips%20beats%20a%20general%20vision%20chat%20that%20hallucinates%20batch%20codes.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118134211744026913%26text%3DConstrained%2520domain%2520%252B%2520tight%2520feedback%2520is%2520the%2520win.%2520Same%2520pattern%2520as%2520pharmacy%2520OCR%253A%2520OpenCV%2520%252B%2520ONNX%2520on%2520Indian%2520strips%2520beats%2520a%2520general%2520vision%2520chat%2520that%2520hallucinates%2520batch%2520codes.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118134211744026913&amp;text=Constrained%20domain%20%2B%20tight%20feedback%20is%20the%20win.%20Same%20pattern%20as%20pharmacy%20OCR%3A%20OpenCV%20%2B%20ONNX%20on%20Indian%20strips%20beats%20a%20general%20vision%20chat%20that%20hallucinates%20batch%20codes." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/kimmonismus/status/2118134211744026913#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fkimmonismus%2Fstatus%2F2118134211744026913;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/kimmonismus/status/2118134211744026913" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t10" onchange="saveDone()"/> Done</label>
+    <h2>10. @bindureddy (394,752) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Fix AI&#x27;s reputation: 10x creativity, boring work · posted 5:40 IST (Nov 5)</p>
+    <p class="text" id="t10">Boring work is the product. FEFO stock picks, Better Auth gates, WhatsApp invoice share — that&#x27;s the pharmacy loop, not a chat demo.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t10', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118133934299214175&amp;text=Boring%20work%20is%20the%20product.%20FEFO%20stock%20picks%2C%20Better%20Auth%20gates%2C%20WhatsApp%20invoice%20share%20%E2%80%94%20that%27s%20the%20pharmacy%20loop%2C%20not%20a%20chat%20demo.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118133934299214175%26text%3DBoring%2520work%2520is%2520the%2520product.%2520FEFO%2520stock%2520picks%252C%2520Better%2520Auth%2520gates%252C%2520WhatsApp%2520invoice%2520share%2520%25E2%2580%2594%2520that%2527s%2520the%2520pharmacy%2520loop%252C%2520not%2520a%2520chat%2520demo.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118133934299214175&amp;text=Boring%20work%20is%20the%20product.%20FEFO%20stock%20picks%2C%20Better%20Auth%20gates%2C%20WhatsApp%20invoice%20share%20%E2%80%94%20that%27s%20the%20pharmacy%20loop%2C%20not%20a%20chat%20demo." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/bindureddy/status/2118133934299214175#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fbindureddy%2Fstatus%2F2118133934299214175;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/bindureddy/status/2118133934299214175" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t11" onchange="saveDone()"/> Done</label>
+    <h2>11. @gdb (1,085,674) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">~1000 Linux LPEs via cyber pipeline ~$1k each · posted 5:23 IST (Nov 4)</p>
+    <p class="text" id="t11">$1k per validated LPE is a scalable hardening loop. I&#x27;d still separate finding from shipping: auto-ticket vulns, human merge for anything that touches auth or deploy keys.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t11', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118129547443056763&amp;text=%241k%20per%20validated%20LPE%20is%20a%20scalable%20hardening%20loop.%20I%27d%20still%20separate%20finding%20from%20shipping%3A%20auto-ticket%20vulns%2C%20human%20merge%20for%20anything%20that%20touches%20auth%20or%20deploy%20keys.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118129547443056763%26text%3D%25241k%2520per%2520validated%2520LPE%2520is%2520a%2520scalable%2520hardening%2520loop.%2520I%2527d%2520still%2520separate%2520finding%2520from%2520shipping%253A%2520auto-ticket%2520vulns%252C%2520human%2520merge%2520for%2520anything%2520that%2520touches%2520auth%2520or%2520deploy%2520keys.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118129547443056763&amp;text=%241k%20per%20validated%20LPE%20is%20a%20scalable%20hardening%20loop.%20I%27d%20still%20separate%20finding%20from%20shipping%3A%20auto-ticket%20vulns%2C%20human%20merge%20for%20anything%20that%20touches%20auth%20or%20deploy%20keys." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/gdb/status/2118129547443056763#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fgdb%2Fstatus%2F2118129547443056763;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/gdb/status/2118129547443056763" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t12" onchange="saveDone()"/> Done</label>
+    <h2>12. @Hesamation (93,408) <span class="tier mid">mid</span></h2>
+    <p class="note-sm">Linux held by toothpicks; 948 working LPEs · posted 5:15 IST (Nov 4)</p>
+    <p class="text" id="t12">Supply-chain + kernel vulns are why I pin installers and keep prod deploy keys off the coding-agent machine. Medibill&#x27;s Mumbai VPS gets SSH from a narrow allowlist only.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t12', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118127508994547804&amp;text=Supply-chain%20%2B%20kernel%20vulns%20are%20why%20I%20pin%20installers%20and%20keep%20prod%20deploy%20keys%20off%20the%20coding-agent%20machine.%20Medibill%27s%20Mumbai%20VPS%20gets%20SSH%20from%20a%20narrow%20allowlist%20only.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118127508994547804%26text%3DSupply-chain%2520%252B%2520kernel%2520vulns%2520are%2520why%2520I%2520pin%2520installers%2520and%2520keep%2520prod%2520deploy%2520keys%2520off%2520the%2520coding-agent%2520machine.%2520Medibill%2527s%2520Mumbai%2520VPS%2520gets%2520SSH%2520from%2520a%2520narrow%2520allowlist%2520only.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118127508994547804&amp;text=Supply-chain%20%2B%20kernel%20vulns%20are%20why%20I%20pin%20installers%20and%20keep%20prod%20deploy%20keys%20off%20the%20coding-agent%20machine.%20Medibill%27s%20Mumbai%20VPS%20gets%20SSH%20from%20a%20narrow%20allowlist%20only." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/Hesamation/status/2118127508994547804#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FHesamation%2Fstatus%2F2118127508994547804;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/Hesamation/status/2118127508994547804" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t13" onchange="saveDone()"/> Done</label>
+    <h2>13. @jasonlk (255,444) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">What free users will/won&#x27;t forgive · posted 5:15 IST (Nov 4)</p>
+    <p class="text" id="t13">Same filter for pharmacy staff: they&#x27;ll forgive a slower OCR retry; they won&#x27;t forgive a double stock credit. That&#x27;s why returns need a client return_key before Prisma restocks.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t13', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118127402119319873&amp;text=Same%20filter%20for%20pharmacy%20staff%3A%20they%27ll%20forgive%20a%20slower%20OCR%20retry%3B%20they%20won%27t%20forgive%20a%20double%20stock%20credit.%20That%27s%20why%20returns%20need%20a%20client%20return_key%20before%20Prisma%20restocks.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118127402119319873%26text%3DSame%2520filter%2520for%2520pharmacy%2520staff%253A%2520they%2527ll%2520forgive%2520a%2520slower%2520OCR%2520retry%253B%2520they%2520won%2527t%2520forgive%2520a%2520double%2520stock%2520credit.%2520That%2527s%2520why%2520returns%2520need%2520a%2520client%2520return_key%2520before%2520Prisma%2520restocks.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118127402119319873&amp;text=Same%20filter%20for%20pharmacy%20staff%3A%20they%27ll%20forgive%20a%20slower%20OCR%20retry%3B%20they%20won%27t%20forgive%20a%20double%20stock%20credit.%20That%27s%20why%20returns%20need%20a%20client%20return_key%20before%20Prisma%20restocks." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/jasonlk/status/2118127402119319873#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fjasonlk%2Fstatus%2F2118127402119319873;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/jasonlk/status/2118127402119319873" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t14" onchange="saveDone()"/> Done</label>
+    <h2>14. @trq212 (401,501) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Manifesting Apple lets apps build Shortcuts · posted 5:02 IST (Nov 4)</p>
+    <p class="text" id="t14">App Intents as tools is the right contract. Same lesson as Better Auth on API routes: one idempotent action with a typed schema beats scraping the UI.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t14', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118124218839859700&amp;text=App%20Intents%20as%20tools%20is%20the%20right%20contract.%20Same%20lesson%20as%20Better%20Auth%20on%20API%20routes%3A%20one%20idempotent%20action%20with%20a%20typed%20schema%20beats%20scraping%20the%20UI.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118124218839859700%26text%3DApp%2520Intents%2520as%2520tools%2520is%2520the%2520right%2520contract.%2520Same%2520lesson%2520as%2520Better%2520Auth%2520on%2520API%2520routes%253A%2520one%2520idempotent%2520action%2520with%2520a%2520typed%2520schema%2520beats%2520scraping%2520the%2520UI.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118124218839859700&amp;text=App%20Intents%20as%20tools%20is%20the%20right%20contract.%20Same%20lesson%20as%20Better%20Auth%20on%20API%20routes%3A%20one%20idempotent%20action%20with%20a%20typed%20schema%20beats%20scraping%20the%20UI." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/trq212/status/2118124218839859700#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftrq212%2Fstatus%2F2118124218839859700;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/trq212/status/2118124218839859700" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t15" onchange="saveDone()"/> Done</label>
+    <h2>15. @LinusEkenstam (245,802) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Fisherman on AGI: help pull the lobster net · posted 5:00 IST (Nov 4)</p>
+    <p class="text" id="t15">The useful bar. Showroom OS starts with the daybook staff already run — not AGI theater. Demoed. In talks. Voice-calling agent discussed next, not shipped.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t15', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118123778454769901&amp;text=The%20useful%20bar.%20Showroom%20OS%20starts%20with%20the%20daybook%20staff%20already%20run%20%E2%80%94%20not%20AGI%20theater.%20Demoed.%20In%20talks.%20Voice-calling%20agent%20discussed%20next%2C%20not%20shipped.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118123778454769901%26text%3DThe%2520useful%2520bar.%2520Showroom%2520OS%2520starts%2520with%2520the%2520daybook%2520staff%2520already%2520run%2520%25E2%2580%2594%2520not%2520AGI%2520theater.%2520Demoed.%2520In%2520talks.%2520Voice-calling%2520agent%2520discussed%2520next%252C%2520not%2520shipped.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118123778454769901&amp;text=The%20useful%20bar.%20Showroom%20OS%20starts%20with%20the%20daybook%20staff%20already%20run%20%E2%80%94%20not%20AGI%20theater.%20Demoed.%20In%20talks.%20Voice-calling%20agent%20discussed%20next%2C%20not%20shipped." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/LinusEkenstam/status/2118123778454769901#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2FLinusEkenstam%2Fstatus%2F2118123778454769901;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/LinusEkenstam/status/2118123778454769901" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t16" onchange="saveDone()"/> Done</label>
+    <h2>16. @levelsio (989,543) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Battlefield 1942 full multiplayer in mobile browser · posted 4:35 IST (Nov 4)</p>
+    <p class="text" id="t16">Claude building a Direct3D→WebGL layer is the harness story. Same split I use: agent plans, dedicated tools (Playwright/ffmpeg, OCR sidecar) do the pixels.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t16', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118117357172191242&amp;text=Claude%20building%20a%20Direct3D%E2%86%92WebGL%20layer%20is%20the%20harness%20story.%20Same%20split%20I%20use%3A%20agent%20plans%2C%20dedicated%20tools%20%28Playwright%2Fffmpeg%2C%20OCR%20sidecar%29%20do%20the%20pixels.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118117357172191242%26text%3DClaude%2520building%2520a%2520Direct3D%25E2%2586%2592WebGL%2520layer%2520is%2520the%2520harness%2520story.%2520Same%2520split%2520I%2520use%253A%2520agent%2520plans%252C%2520dedicated%2520tools%2520%2528Playwright%252Fffmpeg%252C%2520OCR%2520sidecar%2529%2520do%2520the%2520pixels.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118117357172191242&amp;text=Claude%20building%20a%20Direct3D%E2%86%92WebGL%20layer%20is%20the%20harness%20story.%20Same%20split%20I%20use%3A%20agent%20plans%2C%20dedicated%20tools%20%28Playwright%2Fffmpeg%2C%20OCR%20sidecar%29%20do%20the%20pixels." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/levelsio/status/2118117357172191242#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Flevelsio%2Fstatus%2F2118117357172191242;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/levelsio/status/2118117357172191242" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t17" onchange="saveDone()"/> Done</label>
+    <h2>17. @hnshah (368,211) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">2/3 of voters keep Claude Code; teaching Agents 101 · posted 4:14 IST (Nov 4)</p>
+    <p class="text" id="t17">Teaching non-coders agents is useful. Pair it with a fail-closed rule: no schema match, no side effect — especially on stock and Cashfree.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t17', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118112051021398380&amp;text=Teaching%20non-coders%20agents%20is%20useful.%20Pair%20it%20with%20a%20fail-closed%20rule%3A%20no%20schema%20match%2C%20no%20side%20effect%20%E2%80%94%20especially%20on%20stock%20and%20Cashfree.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118112051021398380%26text%3DTeaching%2520non-coders%2520agents%2520is%2520useful.%2520Pair%2520it%2520with%2520a%2520fail-closed%2520rule%253A%2520no%2520schema%2520match%252C%2520no%2520side%2520effect%2520%25E2%2580%2594%2520especially%2520on%2520stock%2520and%2520Cashfree.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118112051021398380&amp;text=Teaching%20non-coders%20agents%20is%20useful.%20Pair%20it%20with%20a%20fail-closed%20rule%3A%20no%20schema%20match%2C%20no%20side%20effect%20%E2%80%94%20especially%20on%20stock%20and%20Cashfree." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/hnshah/status/2118112051021398380#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fhnshah%2Fstatus%2F2118112051021398380;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/hnshah/status/2118112051021398380" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t18" onchange="saveDone()"/> Done</label>
+    <h2>18. @jarredsumner (198,549) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Bun v1.5 filming; AOT compiler incoming · posted 4:09 IST (Nov 4)</p>
+    <p class="text" id="t18">AOT in Bun is the kind of local speedup I want next to OCR. Keep the hot path on our CPU; don&#x27;t rent a metered API for every pharmacy strip.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t18', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118110874108105064&amp;text=AOT%20in%20Bun%20is%20the%20kind%20of%20local%20speedup%20I%20want%20next%20to%20OCR.%20Keep%20the%20hot%20path%20on%20our%20CPU%3B%20don%27t%20rent%20a%20metered%20API%20for%20every%20pharmacy%20strip.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118110874108105064%26text%3DAOT%2520in%2520Bun%2520is%2520the%2520kind%2520of%2520local%2520speedup%2520I%2520want%2520next%2520to%2520OCR.%2520Keep%2520the%2520hot%2520path%2520on%2520our%2520CPU%253B%2520don%2527t%2520rent%2520a%2520metered%2520API%2520for%2520every%2520pharmacy%2520strip.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118110874108105064&amp;text=AOT%20in%20Bun%20is%20the%20kind%20of%20local%20speedup%20I%20want%20next%20to%20OCR.%20Keep%20the%20hot%20path%20on%20our%20CPU%3B%20don%27t%20rent%20a%20metered%20API%20for%20every%20pharmacy%20strip." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/jarredsumner/status/2118110874108105064#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fjarredsumner%2Fstatus%2F2118110874108105064;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/jarredsumner/status/2118110874108105064" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t19" onchange="saveDone()"/> Done</label>
+    <h2>19. @jasonlk (255,444) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Vercel support agents resolve 93% of tickets · posted 3:56 IST (Nov 4)</p>
+    <p class="text" id="t19">93% is strong. The remaining 7% are where money/state live — same cut I use: agents draft invoices, humans approve WhatsApp send and returns.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t19', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118107521026277536&amp;text=93%25%20is%20strong.%20The%20remaining%207%25%20are%20where%20money%2Fstate%20live%20%E2%80%94%20same%20cut%20I%20use%3A%20agents%20draft%20invoices%2C%20humans%20approve%20WhatsApp%20send%20and%20returns.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118107521026277536%26text%3D93%2525%2520is%2520strong.%2520The%2520remaining%25207%2525%2520are%2520where%2520money%252Fstate%2520live%2520%25E2%2580%2594%2520same%2520cut%2520I%2520use%253A%2520agents%2520draft%2520invoices%252C%2520humans%2520approve%2520WhatsApp%2520send%2520and%2520returns.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118107521026277536&amp;text=93%25%20is%20strong.%20The%20remaining%207%25%20are%20where%20money%2Fstate%20live%20%E2%80%94%20same%20cut%20I%20use%3A%20agents%20draft%20invoices%2C%20humans%20approve%20WhatsApp%20send%20and%20returns." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/jasonlk/status/2118107521026277536#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fjasonlk%2Fstatus%2F2118107521026277536;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/jasonlk/status/2118107521026277536" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t20" onchange="saveDone()"/> Done</label>
+    <h2>20. @theo (420,701) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Deepmind team world class despite Gemini critiques · posted 3:36 IST (Nov 4)</p>
+    <p class="text" id="t20">Credit the team, still pin the eval. Medibill OCR stays on a frozen OpenCV + ONNX hash until our Indian-strip set scores higher — not until a lab ships a new checkpoint.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t20', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118102666811441181&amp;text=Credit%20the%20team%2C%20still%20pin%20the%20eval.%20Medibill%20OCR%20stays%20on%20a%20frozen%20OpenCV%20%2B%20ONNX%20hash%20until%20our%20Indian-strip%20set%20scores%20higher%20%E2%80%94%20not%20until%20a%20lab%20ships%20a%20new%20checkpoint.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118102666811441181%26text%3DCredit%2520the%2520team%252C%2520still%2520pin%2520the%2520eval.%2520Medibill%2520OCR%2520stays%2520on%2520a%2520frozen%2520OpenCV%2520%252B%2520ONNX%2520hash%2520until%2520our%2520Indian-strip%2520set%2520scores%2520higher%2520%25E2%2580%2594%2520not%2520until%2520a%2520lab%2520ships%2520a%2520new%2520checkpoint.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118102666811441181&amp;text=Credit%20the%20team%2C%20still%20pin%20the%20eval.%20Medibill%20OCR%20stays%20on%20a%20frozen%20OpenCV%20%2B%20ONNX%20hash%20until%20our%20Indian-strip%20set%20scores%20higher%20%E2%80%94%20not%20until%20a%20lab%20ships%20a%20new%20checkpoint." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/theo/status/2118102666811441181#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2118102666811441181;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/theo/status/2118102666811441181" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t21" onchange="saveDone()"/> Done</label>
+    <h2>21. @svpino (457,376) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Redis Iris: intent router + agent playbooks · posted 3:32 IST (Nov 4)</p>
+    <p class="text" id="t21">Intent router + reusable playbooks are the right memory shape. I&#x27;d version each playbook with a last-pass eval and a max age — stale ones get disabled, not maybe-still-works.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t21', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118101702968770912&amp;text=Intent%20router%20%2B%20reusable%20playbooks%20are%20the%20right%20memory%20shape.%20I%27d%20version%20each%20playbook%20with%20a%20last-pass%20eval%20and%20a%20max%20age%20%E2%80%94%20stale%20ones%20get%20disabled%2C%20not%20maybe-still-works.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118101702968770912%26text%3DIntent%2520router%2520%252B%2520reusable%2520playbooks%2520are%2520the%2520right%2520memory%2520shape.%2520I%2527d%2520version%2520each%2520playbook%2520with%2520a%2520last-pass%2520eval%2520and%2520a%2520max%2520age%2520%25E2%2580%2594%2520stale%2520ones%2520get%2520disabled%252C%2520not%2520maybe-still-works.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118101702968770912&amp;text=Intent%20router%20%2B%20reusable%20playbooks%20are%20the%20right%20memory%20shape.%20I%27d%20version%20each%20playbook%20with%20a%20last-pass%20eval%20and%20a%20max%20age%20%E2%80%94%20stale%20ones%20get%20disabled%2C%20not%20maybe-still-works." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/svpino/status/2118101702968770912#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2118101702968770912;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/svpino/status/2118101702968770912" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t22" onchange="saveDone()"/> Done</label>
+    <h2>22. @levelsio (989,543) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">BF1942 upgraded v1.0→v1.61 on web multiplayer · posted 2:21 IST (Nov 4)</p>
+    <p class="text" id="t22">Decompile → fix → redeploy is the vibe. Medibill&#x27;s OCR sidecar gets the same loop: tune OpenCV/ONNX on our VPS, redeploy the container, no vendor wait.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t22', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118083863318610403&amp;text=Decompile%20%E2%86%92%20fix%20%E2%86%92%20redeploy%20is%20the%20vibe.%20Medibill%27s%20OCR%20sidecar%20gets%20the%20same%20loop%3A%20tune%20OpenCV%2FONNX%20on%20our%20VPS%2C%20redeploy%20the%20container%2C%20no%20vendor%20wait.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118083863318610403%26text%3DDecompile%2520%25E2%2586%2592%2520fix%2520%25E2%2586%2592%2520redeploy%2520is%2520the%2520vibe.%2520Medibill%2527s%2520OCR%2520sidecar%2520gets%2520the%2520same%2520loop%253A%2520tune%2520OpenCV%252FONNX%2520on%2520our%2520VPS%252C%2520redeploy%2520the%2520container%252C%2520no%2520vendor%2520wait.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118083863318610403&amp;text=Decompile%20%E2%86%92%20fix%20%E2%86%92%20redeploy%20is%20the%20vibe.%20Medibill%27s%20OCR%20sidecar%20gets%20the%20same%20loop%3A%20tune%20OpenCV%2FONNX%20on%20our%20VPS%2C%20redeploy%20the%20container%2C%20no%20vendor%20wait." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/levelsio/status/2118083863318610403#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Flevelsio%2Fstatus%2F2118083863318610403;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/levelsio/status/2118083863318610403" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t23" onchange="saveDone()"/> Done</label>
+    <h2>23. @theo (420,701) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">T3 Code users 3x token throughput · posted 2:20 IST (Nov 4)</p>
+    <p class="text" id="t23">App quality beating raw model quality matches what I see. A better Next.js route + Prisma txn beats throwing more tokens at a double-submit return.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t23', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118083608309289045&amp;text=App%20quality%20beating%20raw%20model%20quality%20matches%20what%20I%20see.%20A%20better%20Next.js%20route%20%2B%20Prisma%20txn%20beats%20throwing%20more%20tokens%20at%20a%20double-submit%20return.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118083608309289045%26text%3DApp%2520quality%2520beating%2520raw%2520model%2520quality%2520matches%2520what%2520I%2520see.%2520A%2520better%2520Next.js%2520route%2520%252B%2520Prisma%2520txn%2520beats%2520throwing%2520more%2520tokens%2520at%2520a%2520double-submit%2520return.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118083608309289045&amp;text=App%20quality%20beating%20raw%20model%20quality%20matches%20what%20I%20see.%20A%20better%20Next.js%20route%20%2B%20Prisma%20txn%20beats%20throwing%20more%20tokens%20at%20a%20double-submit%20return." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/theo/status/2118083608309289045#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2118083608309289045;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/theo/status/2118083608309289045" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t24" onchange="saveDone()"/> Done</label>
+    <h2>24. @rauchg (916,889) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Greatness = million iterations, agents or otherwise · posted 1:50 IST (Nov 4)</p>
+    <p class="text" id="t24">Iterations need a ship gate. My iteration metric: FEFO pick correctness and OCR confidence on real strips — not another prompt rewrite.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t24', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118075898830463048&amp;text=Iterations%20need%20a%20ship%20gate.%20My%20iteration%20metric%3A%20FEFO%20pick%20correctness%20and%20OCR%20confidence%20on%20real%20strips%20%E2%80%94%20not%20another%20prompt%20rewrite.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118075898830463048%26text%3DIterations%2520need%2520a%2520ship%2520gate.%2520My%2520iteration%2520metric%253A%2520FEFO%2520pick%2520correctness%2520and%2520OCR%2520confidence%2520on%2520real%2520strips%2520%25E2%2580%2594%2520not%2520another%2520prompt%2520rewrite.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118075898830463048&amp;text=Iterations%20need%20a%20ship%20gate.%20My%20iteration%20metric%3A%20FEFO%20pick%20correctness%20and%20OCR%20confidence%20on%20real%20strips%20%E2%80%94%20not%20another%20prompt%20rewrite." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/rauchg/status/2118075898830463048#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Frauchg%2Fstatus%2F2118075898830463048;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/rauchg/status/2118075898830463048" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t25" onchange="saveDone()"/> Done</label>
+    <h2>25. @swyx (210,560) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Ripple-65B Preview trained for $32M · posted 1:41 IST (Nov 4)</p>
+    <p class="text" id="t25">1/10th prior open SOTA cost is the direction. Until small domain models win, I still run pharmacy OCR as ONNX on our 10-core box.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t25', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118073650356384239&amp;text=1%2F10th%20prior%20open%20SOTA%20cost%20is%20the%20direction.%20Until%20small%20domain%20models%20win%2C%20I%20still%20run%20pharmacy%20OCR%20as%20ONNX%20on%20our%2010-core%20box.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118073650356384239%26text%3D1%252F10th%2520prior%2520open%2520SOTA%2520cost%2520is%2520the%2520direction.%2520Until%2520small%2520domain%2520models%2520win%252C%2520I%2520still%2520run%2520pharmacy%2520OCR%2520as%2520ONNX%2520on%2520our%252010-core%2520box.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118073650356384239&amp;text=1%2F10th%20prior%20open%20SOTA%20cost%20is%20the%20direction.%20Until%20small%20domain%20models%20win%2C%20I%20still%20run%20pharmacy%20OCR%20as%20ONNX%20on%20our%2010-core%20box." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/swyx/status/2118073650356384239#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fswyx%2Fstatus%2F2118073650356384239;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/swyx/status/2118073650356384239" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t26" onchange="saveDone()"/> Done</label>
+    <h2>26. @theo (420,701) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">T3 Code competitor joined Meta · posted 1:23 IST (Nov 4)</p>
+    <p class="text" id="t26">Talent moves; your harness stays. Pin tool schemas and idempotency keys so a model swap doesn&#x27;t double-bill or double-restock.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t26', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118069196638834708&amp;text=Talent%20moves%3B%20your%20harness%20stays.%20Pin%20tool%20schemas%20and%20idempotency%20keys%20so%20a%20model%20swap%20doesn%27t%20double-bill%20or%20double-restock.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118069196638834708%26text%3DTalent%2520moves%253B%2520your%2520harness%2520stays.%2520Pin%2520tool%2520schemas%2520and%2520idempotency%2520keys%2520so%2520a%2520model%2520swap%2520doesn%2527t%2520double-bill%2520or%2520double-restock.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118069196638834708&amp;text=Talent%20moves%3B%20your%20harness%20stays.%20Pin%20tool%20schemas%20and%20idempotency%20keys%20so%20a%20model%20swap%20doesn%27t%20double-bill%20or%20double-restock." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/theo/status/2118069196638834708#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Ftheo%2Fstatus%2F2118069196638834708;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/theo/status/2118069196638834708" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t27" onchange="saveDone()"/> Done</label>
+    <h2>27. @jasonlk (255,444) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Best founders know their space 10,000% cold · posted 0:46 IST (Nov 4)</p>
+    <p class="text" id="t27">Cold means the daybook, not the pitch. Showroom OS got in talks because we mapped sales/service/finance tabs the floor already types.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t27', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118059706019086607&amp;text=Cold%20means%20the%20daybook%2C%20not%20the%20pitch.%20Showroom%20OS%20got%20in%20talks%20because%20we%20mapped%20sales%2Fservice%2Ffinance%20tabs%20the%20floor%20already%20types.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118059706019086607%26text%3DCold%2520means%2520the%2520daybook%252C%2520not%2520the%2520pitch.%2520Showroom%2520OS%2520got%2520in%2520talks%2520because%2520we%2520mapped%2520sales%252Fservice%252Ffinance%2520tabs%2520the%2520floor%2520already%2520types.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118059706019086607&amp;text=Cold%20means%20the%20daybook%2C%20not%20the%20pitch.%20Showroom%20OS%20got%20in%20talks%20because%20we%20mapped%20sales%2Fservice%2Ffinance%20tabs%20the%20floor%20already%20types." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/jasonlk/status/2118059706019086607#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fjasonlk%2Fstatus%2F2118059706019086607;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/jasonlk/status/2118059706019086607" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t28" onchange="saveDone()"/> Done</label>
+    <h2>28. @hnshah (368,211) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Free AI skill helping family navigate cancer care · posted 0:41 IST (Nov 4)</p>
+    <p class="text" id="t28">Domain skills with a human in the loop are the right use. Same pattern: agents draft, humans approve anything that changes records or money.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t28', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118058447753363475&amp;text=Domain%20skills%20with%20a%20human%20in%20the%20loop%20are%20the%20right%20use.%20Same%20pattern%3A%20agents%20draft%2C%20humans%20approve%20anything%20that%20changes%20records%20or%20money.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118058447753363475%26text%3DDomain%2520skills%2520with%2520a%2520human%2520in%2520the%2520loop%2520are%2520the%2520right%2520use.%2520Same%2520pattern%253A%2520agents%2520draft%252C%2520humans%2520approve%2520anything%2520that%2520changes%2520records%2520or%2520money.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118058447753363475&amp;text=Domain%20skills%20with%20a%20human%20in%20the%20loop%20are%20the%20right%20use.%20Same%20pattern%3A%20agents%20draft%2C%20humans%20approve%20anything%20that%20changes%20records%20or%20money." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/hnshah/status/2118058447753363475#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fhnshah%2Fstatus%2F2118058447753363475;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/hnshah/status/2118058447753363475" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t29" onchange="saveDone()"/> Done</label>
+    <h2>29. @svpino (457,376) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">3 weeks turning 40+ workflows into agents · posted 0:31 IST (Nov 4)</p>
+    <p class="text" id="t29">Workflow→agent only works if each step already had an idempotency story. Medibill returns refuse a second credit without the same return_key.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t29', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118055940796870962&amp;text=Workflow%E2%86%92agent%20only%20works%20if%20each%20step%20already%20had%20an%20idempotency%20story.%20Medibill%20returns%20refuse%20a%20second%20credit%20without%20the%20same%20return_key.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118055940796870962%26text%3DWorkflow%25E2%2586%2592agent%2520only%2520works%2520if%2520each%2520step%2520already%2520had%2520an%2520idempotency%2520story.%2520Medibill%2520returns%2520refuse%2520a%2520second%2520credit%2520without%2520the%2520same%2520return_key.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118055940796870962&amp;text=Workflow%E2%86%92agent%20only%20works%20if%20each%20step%20already%20had%20an%20idempotency%20story.%20Medibill%20returns%20refuse%20a%20second%20credit%20without%20the%20same%20return_key." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/svpino/status/2118055940796870962#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2118055940796870962;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/svpino/status/2118055940796870962" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+  <div class="card" style="border-color:#2f3336;background:transparent;">
+    <label class="done"><input type="checkbox" data-done="t30" onchange="saveDone()"/> Done</label>
+    <h2>30. @svpino (457,376) <span class="tier mega">mega</span></h2>
+    <p class="note-sm">Desktop agent: video models + Blender/DaVinci/Premiere · posted 0:22 IST (Nov 4)</p>
+    <p class="text" id="t30">Tell-it-what-you-want is fine for drafts. Keep export/publish behind a human click — same gate I use before WhatsApp invoices leave Medibill.</p>
+    <div class="actions">
+      <button class="btn primary" style="" type="button" onclick="copyText('t30', this)">1. Copy reply</button>
+      <a class="btn" href="intent://twitter.com/intent/tweet?in_reply_to=2118053842093027528&amp;text=Tell-it-what-you-want%20is%20fine%20for%20drafts.%20Keep%20export%2Fpublish%20behind%20a%20human%20click%20%E2%80%94%20same%20gate%20I%20use%20before%20WhatsApp%20invoices%20leave%20Medibill.#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fin_reply_to%3D2118053842093027528%26text%3DTell-it-what-you-want%2520is%2520fine%2520for%2520drafts.%2520Keep%2520export%252Fpublish%2520behind%2520a%2520human%2520click%2520%25E2%2580%2594%2520same%2520gate%2520I%2520use%2520before%2520WhatsApp%2520invoices%2520leave%2520Medibill.;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">2. Reply in Chrome</a>
+      <a class="btn" href="https://twitter.com/intent/tweet?in_reply_to=2118053842093027528&amp;text=Tell-it-what-you-want%20is%20fine%20for%20drafts.%20Keep%20export%2Fpublish%20behind%20a%20human%20click%20%E2%80%94%20same%20gate%20I%20use%20before%20WhatsApp%20invoices%20leave%20Medibill." target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-composer')">Open composer</a>
+      <a class="btn" href="intent://x.com/svpino/status/2118053842093027528#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fsvpino%2Fstatus%2F2118053842093027528;end" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post in Chrome</a>
+      <a class="btn" href="https://x.com/svpino/status/2118053842093027528" target="_blank" rel="opener"
+         onclick="return openNamed(event, this, 'x-reply-post')">Open post</a>
+    </div>
+    <p class="hint">Opens in a new tab. If Chrome replaces this page: <b>long-press → Open in new tab</b>.</p>
+  </div>
+<script>
+const KEY = 'x-replies-done-2026-11-05';
+function loadDone() {
+  try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { return {}; }
+}
+function saveDone() {
+  const map = {};
+  document.querySelectorAll('input[data-done]').forEach(cb => {
+    map[cb.getAttribute('data-done')] = cb.checked;
+    cb.closest('.card').classList.toggle('finished', cb.checked);
+  });
+  localStorage.setItem(KEY, JSON.stringify(map));
+  const n = Object.values(map).filter(Boolean).length;
+  document.getElementById('progress').textContent = n + ' / '+document.querySelectorAll('input[data-done]').length+' done';
+}
+function restoreDone() {
+  const map = loadDone();
+  document.querySelectorAll('input[data-done]').forEach(cb => {
+    const id = cb.getAttribute('data-done');
+    cb.checked = !!map[id];
+    cb.closest('.card').classList.toggle('finished', cb.checked);
+  });
+  saveDone();
+}
+function copyText(id, btn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const t = el.innerText;
+  const flash = () => {
+    if (!btn) return;
+    const old = btn.textContent; btn.textContent = 'Copied'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = old; btn.classList.remove('copied'); }, 1000);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(t).then(flash).catch(() => fallbackCopy(t, flash));
+  } else fallbackCopy(t, flash);
+}
+function fallbackCopy(t, flash) {
+  const ta = document.createElement('textarea');
+  ta.value = t; document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch(e) {}
+  document.body.removeChild(ta); flash();
+}
+// Open in a named window/tab synchronously from the click gesture.
+// Return false to cancel default nav in THIS tab if open succeeds.
+function openNamed(event, anchor, name) {
+  try {
+    const w = window.open(anchor.href, name);
+    if (w) {
+      try { w.focus(); } catch(e) {}
+      event.preventDefault();
+      return false;
+    }
+  } catch(e) {}
+  return true;
+}
+restoreDone();
+</script>
+</body>
+</html>
